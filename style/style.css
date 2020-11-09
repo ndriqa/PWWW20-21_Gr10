@@ -1,0 +1,42 @@
+:root {
+    --our-cyan:  #55D7F0;
+}
+html {
+    padding: 10px;
+    overflow-x: hidden;
+
+}
+ul#menu li {
+    display: inline;
+}
+.header-right {
+    float: right;
+}
+.header-low {
+    margin-bottom: 0px;
+}
+.header-left {
+    float: left;
+}
+.header-hr {
+    opacity: 0.0;
+    width: 100%;
+}
+.header-title {
+    font-size: xx-large;
+}
+.header-description {
+    font-size: medium;
+}
+.top-page-accent-line {
+    width: 150%;
+    height: 5px;
+    margin-top: -20px;
+    margin-left: -20px;
+    background-color: var(--our-cyan);
+}
+.homepage-description{
+    font-family: "Times New Roman", Times, serif;
+    line-height: 0%;
+    font-weight: 100;
+}
