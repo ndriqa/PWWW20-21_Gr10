@@ -44,3 +44,23 @@ ul#menu li {
     width: 200%;
     margin-left: -30px;
 }
+.nav-item {
+    display: block;
+    font-weight: bold;
+    color: dimgray;
+    text-decoration: none;
+}
+.no-link {
+    text-decoration: none;
+}
+.nav-item:active {
+    color: var(--our-cyan);
+}
+#LINKEDIN{
+    width: 24px;
+    background-image: url("/images/icons/linkedin.png");
+}
+#LINKEDIN:hover{
+    width: 24px;
+    background-image: url("/images/icons/colored/linkedinColor.png");
+}
