@@ -1,13 +1,14 @@
 :root {
-    --our-cyan:  #55D7F0;
+    --our-cyan: #3BAFBE;
+    --our-dark-gray: #353535;
 }
+
 html {
     padding: 10px;
     overflow-x: hidden;
     font-family: 'Old Standard TT', serif;
     overflow-anchor: none;
 }
-
 
 html, body {
     font-family: Georgia, 'Times New Roman', Times, serif, sans-serif;
@@ -21,12 +22,13 @@ body {
     font-size: 100%;
     background-color: #FFFFFF;
 }
+
 a {
- text-decoration: none;
+    text-decoration: none;
 }
+
 .social-top {
     background-color: #ffffff;
-    border-bottom: 1px solid #97455F;
     padding: 10px;
     position: relative;
     transition: all 350ms ease-in-out;
@@ -72,29 +74,35 @@ a {
     text-decoration: none;
 }
 
-
 ul#menu li {
     display: inline;
 }
+
 .header-right {
     float: right;
 }
+
 .header-low {
     margin-bottom: 0px;
 }
+
 .header-left {
     float: left;
 }
+
 .header-hr {
     opacity: 0.0;
     width: 100%;
 }
+
 .header-title {
     font-size: xx-large;
 }
+
 .header-description {
     font-size: medium;
 }
+
 .top-page-accent-line {
     width: 150%;
     height: 5px;
@@ -102,12 +110,32 @@ ul#menu li {
     margin-left: -20px;
     background-color: var(--our-cyan);
 }
-.homepage-description{
+
+.homepage-description {
     font-family: "Times New Roman", Times, serif;
     line-height: 0%;
     font-weight: 100;
 }
+
 .separator {
     width: 200%;
     margin-left: -30px;
+}
+
+input {
+    height: 33px;
+    border-radius: 10px;
+    border: none;
+    color: white;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+input[type=submit] {
+    background-color: var(--our-cyan);
+}
+input[type=text] {
+    background-color: var(--our-dark-gray);
+}
+::placeholder {
+    color: white;
 }
