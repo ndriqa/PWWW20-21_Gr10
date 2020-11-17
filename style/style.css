@@ -4,7 +4,8 @@
 html {
     padding: 10px;
     overflow-x: hidden;
-
+    font-family: 'Old Standard TT', serif;
+    overflow-anchor: none;
 }
 ul#menu li {
     display: inline;
