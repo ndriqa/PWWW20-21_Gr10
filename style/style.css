@@ -7,6 +7,72 @@ html {
     font-family: 'Old Standard TT', serif;
     overflow-anchor: none;
 }
+
+
+html, body {
+    font-family: Georgia, 'Times New Roman', Times, serif, sans-serif;
+    font-size: 14px;
+    line-height: 1.5;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-size: 100%;
+    background-color: #FFFFFF;
+}
+a {
+ text-decoration: none;
+}
+.social-top {
+    background-color: #ffffff;
+    border-bottom: 1px solid #97455F;
+    padding: 10px;
+    position: relative;
+    transition: all 350ms ease-in-out;
+}
+
+.social-top-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.social-icons {
+    display: flex;
+}
+
+.social-icons a {
+    background-color: #D2D2D2;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 33px;
+    height: 33px;
+    margin-left: 5px;
+    margin-right: 5px;
+    text-decoration: none;
+    border-radius: 50px;
+}
+
+.social-icons a:hover {
+    background-color: #EE802F;
+    cursor: pointer;
+}
+
+.social-icons a i {
+    font-size: 18px;
+    color: #FFFFFF;
+    text-align: center;
+}
+
+.social-links a {
+    color: #97455F;
+    padding: 0 5px;
+    text-decoration: none;
+}
+
+
 ul#menu li {
     display: inline;
 }
@@ -44,24 +110,4 @@ ul#menu li {
 .separator {
     width: 200%;
     margin-left: -30px;
-}
-.nav-item {
-    display: block;
-    font-weight: bold;
-    color: dimgray;
-    text-decoration: none;
-}
-.no-link {
-    text-decoration: none;
-}
-.nav-item:active {
-    color: var(--our-cyan);
-}
-#LINKEDIN{
-    width: 24px;
-    background-image: url("/images/icons/linkedin.png");
-}
-#LINKEDIN:hover{
-    width: 24px;
-    background-image: url("/images/icons/colored/linkedinColor.png");
 }
