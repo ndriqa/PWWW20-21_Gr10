@@ -31,9 +31,14 @@ a {
     background-color: #ffffff;
     padding: 10px;
     position: relative;
-    transition: all 350ms ease-in-out;
+    /* transition: all 350ms ease-in-out; */
 }
-
+#the-header{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    width: 100%;
+}
 .social-top-content {
     display: flex;
     align-items: center;
@@ -82,30 +87,21 @@ ul#menu li {
     display: flex;
     justify-content: space-between;
 }
-
-.header-right {
-    float: right;
-}
-
-.header-low {
-    margin-bottom: 0px;
-}
-
-.header-left {
-    float: left;
-}
-
 .header-hr {
     opacity: 0.0;
     width: 100%;
 }
-
 .header-title {
     font-size: xx-large;
 }
 
 .header-description {
+    flex: 1;
     font-size: medium;
+}
+.header-nav-bar{
+    display: flex;
+    flex: 2;
 }
 
 .top-page-accent-line {
@@ -158,7 +154,6 @@ input[type=text] {
     /* Shumica e shfletuesve */
     color: white;
 }
-
 ::-ms-input-placeholder {
     /* Microsoft Edge */
     color: white;
@@ -181,6 +176,14 @@ button:focus {
     flex: 3;
     display: flex;
     flex-basis: 20%;
+    max-width: 600px;
+    padding: 1vw;
+    background: url(../images/homepage/tepsia.png);
+    background-size: 100%;
+    background-repeat: no-repeat;
+}
+.space {
+    flex: 1;
 }
 
 .dishes-slides {
@@ -189,19 +192,9 @@ button:focus {
     flex-direction: column;
 }
 
-.tray {
-    position: absolute;
-    z-index: 1;
-    width: 42vw;
-}
-
 .dish {
     position: relative;
-    z-index: 2;
-    top: 1vw;
-    left: 1vw;
-    width: 40vw;
-    height: ;
+    width: 100%;
 }
 .dots{
     padding: 10px;
@@ -215,5 +208,18 @@ button:focus {
   display: inline-block;
 }
 .dot:active{
+    background: radial-gradient(ellipse at center, 
+                                rgba(white, 1) 60%, 
+                                rgba(--our-cyan, 1) 55%);
+}
 
+.speciality {
+    flex: 1;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+}
+.speciality-image {
+    width: 300px;
+    height: 160px;
 }
