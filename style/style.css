@@ -107,6 +107,24 @@ ul#menu li {
     font-size: 12px;
 }
 
+#foto1{
+    position: relative;
+    
+}
+#tekst1 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    font-family: Brush Script MT;
+    font-size: 40px;
+    color: #999999;
+    font-weight: 10;
+}
+#rezervimi {
+    color:aliceblue;
+}
+
 .logo-info {
     display: flex;
     justify-content: space-between;
