@@ -7,6 +7,18 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA==" crossorigin="anonymous"/>
   <link rel="stylesheet" type="text/css" href="style/style.css">
   <title>Reservations</title>
+    
+    <style> 
+.fixed-bg {
+  background-image: url("Images/reservation/1.jpg");
+  min-height: 500px;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+</style>
+    
 </head>
     
     
@@ -60,13 +72,24 @@
   <hr class="separator">
   <div id="foto1" >  
     <div>
-        <img src="Images/reservation/pasta.jpg" width=100% height="500px">
+       <img id="foto"  src="Images/reservation/hamburger1.jfif">
         
     </div>
     <div id="tekst1">
         <h4 id="rezervimi">Reservation</h4>
     </div>
-  </div>    
+  </div>  
+    
+    
+    
+    
+    
+    <p>BEST RESTAURANT IN TOWN  <strong>Note:</strong> Try every food.</p>
+ 
+<div class="fixed-bg"></div>
+
+<div style="height:800px;background-color:white;">
+
     
     
     <form method="post" action="//submit.form" onSubmit="return validateForm();">
@@ -115,7 +138,7 @@
 <!--<script src="https://www.100forms.com/js/FORMKEY:GP2NQBS3GS2Z/SEND:my@email.com" type="text/javascript"></script>-->
 </div>
 </form>
-
+</div>
 <script type="text/javascript">
 function validateForm() {
 if (isEmpty(document.getElementById('data_3').value.trim())) {
@@ -155,7 +178,22 @@ return isEmpty(email) || re.test(email);
        <img id="pjate"  src="Images/reservation/pjate.jfif" width="600px"> 
       </div>
       
-      
+      <script>
+var myIndex = 0;
+carousel();
+
+function carousel() {
+  var i;
+  var x = document.getElementsByClassName("mySlides");
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";  
+  }
+  myIndex++;
+  if (myIndex > x.length) {myIndex = 1}    
+  x[myIndex-1].style.display = "block";  
+  setTimeout(carousel, 9000);    
+}
+</script>
 
 
   </main>

@@ -95,10 +95,6 @@ a {
     text-decoration: none;
 }
 
-#tekst {
-    color:aliceblue;
-}
-
 ul#menu li {
     display: inline;
     opacity:2;
@@ -107,8 +103,9 @@ ul#menu li {
     font-size: 12px;
 }
 
-#foto1{
+#foto{
     position: relative;
+    width: 100%;
     
 }
 #tekst1 {
@@ -122,7 +119,8 @@ ul#menu li {
     font-weight: 10;
 }
 #rezervimi {
-    color:aliceblue;
+    color:white;
+    font-size: 100px;
 }
 
 .logo-info {
