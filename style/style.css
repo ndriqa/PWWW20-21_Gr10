@@ -27,7 +27,7 @@ a {
     text-decoration: none;
 }
 
-    #pjate {
+#pjate {
     background-position: left center;
     background-repeat: repeat-x;
     background-attachment: fixed;
@@ -40,7 +40,7 @@ a {
 }
 
 .background {
-    position:static;
+    position: static;
 }
 
 .social-top {
@@ -49,12 +49,14 @@ a {
     position: relative;
     /* transition: all 350ms ease-in-out; */
 }
-#the-header{
+
+#the-header {
     display: flex;
     justify-content: space-between;
-    align-items: flex-end;
+    align-content: flex-end;
     width: 100%;
 }
+
 .social-top-content {
     display: flex;
     align-items: center;
@@ -66,7 +68,7 @@ a {
 }
 
 .social-icons a {
-    background-color: #D2D2D2;
+    background-color: black;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -97,29 +99,30 @@ a {
 
 ul#menu li {
     display: inline;
-    opacity:2;
-    color:#999999;
-    font-family: Georgia,Georgia,MyriadPro-Regular,AdobeInvisFont;
+    opacity: 2;
+    color: #999999;
+    font-family: Georgia, Georgia, MyriadPro-Regular, AdobeInvisFont;
     font-size: 12px;
 }
 
-#foto{
+#foto {
     position: relative;
     width: 100%;
-    
 }
+
 #tekst1 {
     position: absolute;
     top: 50%;
     left: 50%;
-    transform: translate(-50%,-50%);
+    transform: translate(-50%, -50%);
     font-family: Brush Script MT;
     font-size: 40px;
     color: #999999;
     font-weight: 10;
 }
+
 #rezervimi {
-    color:white;
+    color: white;
     font-size: 100px;
 }
 
@@ -127,10 +130,12 @@ ul#menu li {
     display: flex;
     justify-content: space-between;
 }
+
 .header-hr {
     opacity: 0.0;
     width: 100%;
 }
+
 .header-title {
     font-size: xx-large;
 }
@@ -139,7 +144,8 @@ ul#menu li {
     flex: 1;
     font-size: medium;
 }
-.header-nav-bar{
+
+.header-nav-bar {
     display: flex;
     flex: 2;
 }
@@ -186,6 +192,15 @@ button {
     border: none;
     width: fit-content;
 }
+
+button:hover {
+    cursor: pointer;
+}
+
+input[type=submit]:hover {
+    cursor: pointer;
+}
+
 input[type=text] {
     background-color: var(--our-dark-gray);
 }
@@ -194,6 +209,7 @@ input[type=text] {
     /* Shumica e shfletuesve */
     color: white;
 }
+
 ::-ms-input-placeholder {
     /* Microsoft Edge */
     color: white;
@@ -202,64 +218,91 @@ input[type=text] {
 input:focus {
     outline: none;
 }
+
 button:focus {
     outline: none;
 }
 
 .container {
     display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    padding: 10px;
+}
+
+.sections {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
     justify-content: space-between;
+    padding: 10px;
+}
+.speciality-section {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
     padding: 10px;
 }
 
 .dishes-panel {
     flex: 3;
     display: flex;
-    flex-basis: 20%;
+    flex-basis: 30%;
     max-width: 600px;
     padding: 1vw;
     background: url(../images/homepage/tepsia.png);
     background-size: 100%;
     background-repeat: no-repeat;
 }
+
 .space {
     flex: 1;
 }
 
 .dishes-slides {
     flex: 5;
+    flex-basis: 50%;
     display: flex;
     flex-direction: column;
 }
 
 .dish {
-    position: relative;
-    width: 100%;
+    max-width: 100%; 
+    height: auto;
 }
-.dots{
+
+.dots {
     padding: 10px;
     margin-left: auto;
 }
-.dot{
-  height: 15px;
-  width: 15px;
-  background-color: var(--our-cyan);
-  border-radius: 50%;
-  display: inline-block;
+
+.dot {
+    height: 15px;
+    width: 15px;
+    background-color: var(--our-cyan);
+    border-radius: 50%;
+    display: inline-block;
 }
-.dot:active{
-    background: radial-gradient(ellipse at center, 
-                                rgba(white, 1) 60%, 
-                                rgba(--our-cyan, 1) 55%);
+
+.dot:active {
+    background: radial-gradient(ellipse at center, rgba(white, 1) 60%, rgba(--our-cyan, 1) 55%);
 }
 
 .speciality {
     flex: 1;
     padding: 10px;
     display: flex;
+    flex-basis: 33%;
     flex-direction: column;
+    max-width: 30%;
 }
+
 .speciality-image {
-    width: 300px;
-    height: 160px;
+    width: 100%;
+    max-width: 300px;
+    max-height: 160px;
+    border-radius: 10px;
 }
