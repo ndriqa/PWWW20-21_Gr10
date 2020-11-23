@@ -129,6 +129,10 @@ ul#menu li a:active{
     width: 100%;
 }
 
+#txt {
+    display: inline;
+}
+
 #tekst1 {
     position: absolute;
     top: 50%;
