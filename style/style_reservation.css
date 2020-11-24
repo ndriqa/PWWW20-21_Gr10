@@ -4,9 +4,9 @@
     --our-gray: #454545;
 }
 /* html {
-    overflow-x: hidden;
-    font-family: 'Old Standard TT', serif;
-    overflow-anchor: none;
+overflow-x: hidden;
+font-family: 'Old Standard TT', serif;
+overflow-anchor: none;
 } */
 
 h1, h2, h3 {
@@ -25,10 +25,10 @@ html, body {
 }
 
 /* body {
-    margin: 0;
-    padding: 0;
-    font-size: 100%;
-    background-color: #FFFFFF; */
+margin: 0;
+padding: 0;
+font-size: 100%;
+background-color: #FFFFFF; */
 /* } */
 
 a {
@@ -123,6 +123,30 @@ ul#menu li a:active{
 .active{
     color: var(--our-cyan);
 }
+
+#foto {
+    position: relative;
+    width: 100%;
+}
+
+
+
+#tekst1 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-family: Brush Script MT;
+    font-size: 40px;
+    color: #999999;
+    font-weight: 10;
+}
+
+#rezervimi {
+    color: white;
+    font-size: 100px;
+}
+
 .logo-info {
     display: flex;
     justify-content: space-between;
@@ -174,7 +198,12 @@ input {
     padding-left: 10px;
     padding-right: 10px;
 }
-
+.subscribe-form {
+    text-align: left;
+}
+.footer-subscribe {
+    display: inline;
+}
 input[type=submit] {
     background-color: var(--our-cyan);
 }
@@ -202,15 +231,6 @@ input[type=text] {
     background-color: var(--our-dark-gray);
 }
 
-::placeholder {
-    /* Shumica e shfletuesve */
-    color: white;
-}
-
-::-ms-input-placeholder {
-    /* Microsoft Edge */
-    color: white;
-}
 
 input:focus {
     outline: none;
@@ -227,138 +247,45 @@ button:focus {
     align-content: center;
     padding: 10px;
 }
-
-.sections {
+#delicious {
+    text-align: center;
+    padding: inherit; 3em 1em 1em 1em;
+    /* font-family: Brush Script MT; */
+    font-size: 30px;
+}
+.booking {
+    background-color: skyblue;
+    padding: 70px;
+    border: 1px solid #4CAF50;
+}
+.booking_link{
+    color: black;
+    font-family: sans-serif;
+    border-style: solid;
+}
+.footer-div {
+    display: inline;
     display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    align-items: center;
-    justify-content: space-evenly;
-    padding: 10px;
+    
+}
+.footer-subscribe{
+    padding-left: 200px;
+}
+.footer-links{
+    padding-left: 200px;
+
+}
+.footer-blog{
+    padding-left: 200px;
+
+}
+.ftco-heading-2 {
+    color: white;
+}
+.ftco-heading-2 p{
+    color: white;
 }
 
-.speciality-section {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: space-evenly;
-    padding: 10px;
-}
-
-.dishes-panel {
-    flex: 3;
-    display: flex;
-    flex-basis: 30%;
-    max-width: 500px;
-    padding: 1vw;
-    background: url(../images/homepage/tepsia.png);
-    background-size: 100%;
-    background-repeat: no-repeat;
-}
-
-.space {
-    flex: 1;
-}
-
-.dishes-slides {
-    flex: 5;
-    flex-basis: 50%;
-    display: flex;
-    padding: 0px 20px;
-    flex-direction: column;
-    align-content: space-between;
-}
-
-.dish {
-    max-width: 100%;
-    height: auto;
-}
-
-.dots {
-    padding: 10px;
-    margin-left: auto;
-}
-
-.dot {
-    height: 15px;
-    width: 15px;
-    background-color: var(--our-cyan);
-    border-radius: 50%;
-    display: inline-block;
-}
-
-.dot:active {
-    background: radial-gradient(ellipse at center, rgba(white, 1) 60%, rgba(--our-cyan, 1) 55%);
-}
-
-.speciality {
-    flex: 1;
-    padding: 10px;
-    display: flex;
-    flex-basis: 33%;
-    flex-direction: column;
-    max-width: 30%;
-}
-
-.speciality h1 {
-    border: dashed var(--our-dark-gray);
-    padding-left: 10px;
-    border-radius: 10px;
-    border-width: 1px;
-}
-
-.speciality-image {
-    width: 100%;
-    max-width: 300px;
-    max-height: 160px;
-    border-radius: 10px;
-}
-
-#critics-opinions {
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-}
-
-.opinions {
-    display: flex;
-    justify-content: space-around;
-}
-
-.critic {
-    display: flex;
-    align-items: center;
-    flex-basis: 33%;
-    flex-direction: row;
-}
-
-.critic .avatar {
-    display: flex;
-    border: solid var(--our-gray);
-    padding: 3px;
-    border-radius: 5px;
-    border-width: 1px;
-}
-
-.critic img {
-    border-radius: 5px;
-    max-width: 80px;
-    max-height: 80px;
-}
-
-.critic .opinion {
-    padding: 5px;
-    display: flex;
-    flex-direction: column;
-    flex: 2;
-    line-height: 1;
-}
-
-.critic .opinion a {
-    font-weight: bold;
-    color: var(--our-cyan);
-}
-
-.deep-thought {
-    max-width: 700px;
+.footer-div{
+    background-color: #33302f;
 }
