@@ -1,0 +1,221 @@
+:root {
+    --our-cyan: #3BAFBE;
+    --our-dark-gray: #353535;
+    --our-gray: #454545;
+}
+/* html {
+    overflow-x: hidden;
+    font-family: 'Old Standard TT', serif;
+    overflow-anchor: none;
+} */
+
+h1, h2, h3 {
+    color: var(--our-dark-gray);
+}
+
+p {
+    color: var(--our-gray);
+}
+
+html, body {
+    font-family: Georgia, 'Times New Roman', Times, serif, sans-serif;
+    font-size: 14px;
+    line-height: 1.5;
+    overflow-x: hidden;
+}
+
+/* body {
+    margin: 0;
+    padding: 0;
+    font-size: 100%;
+    background-color: #FFFFFF; */
+/* } */
+
+a {
+    text-decoration: none;
+}
+
+#pjate {
+    background-position: left center;
+    background-repeat: repeat-x;
+    background-attachment: fixed;
+    font-size: 30px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#lorem {
+    color: aliceblue;
+}
+
+.background {
+    position: static;
+}
+
+.social-top {
+    background-color: #ffffff;
+    padding: 10px;
+    position: relative;
+    /* transition: all 350ms ease-in-out; */
+}
+
+#the-header {
+    display: flex;
+    justify-content: space-around;
+    align-content: flex-end;
+    width: 100%;
+    padding: 10px;
+}
+
+.social-top-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.social-icons {
+    display: flex;
+}
+
+.social-icons a {
+    background-color: var(--our-dark-gray);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 33px;
+    height: 33px;
+    margin-left: 5px;
+    margin-right: 5px;
+    text-decoration: none;
+    border-radius: 50px;
+}
+
+.social-icons a:hover {
+    background-color: #EE802F;
+    cursor: pointer;
+}
+
+.social-icons a i {
+    font-size: 18px;
+    color: #FFFFFF;
+    text-align: center;
+}
+
+.social-links a {
+    color: #97455F;
+    padding: 0 5px;
+    text-decoration: none;
+}
+ul#menu li {
+    display: inline;
+    opacity: 2;
+    color: #999999;
+    font-family: Georgia, Georgia, MyriadPro-Regular, AdobeInvisFont;
+    font-size: 12px;
+}
+ul#menu li a{
+    color: var(--our-gray);
+    font-size: 12px;
+    font-weight: bold;
+}
+ul#menu li a:active{
+    color: var(--our-cyan);
+}
+.active{
+    color: var(--our-cyan);
+}
+.logo-info {
+    display: flex;
+    justify-content: space-between;
+}
+
+.header-hr {
+    opacity: 0.0;
+    width: 100%;
+}
+
+.header-title {
+    font-size: xx-large;
+}
+
+.header-description {
+    flex: 1;
+    font-size: medium;
+}
+
+.header-nav-bar {
+    display: flex;
+    flex: 2;
+}
+
+.top-page-accent-line {
+    width: 150%;
+    height: 5px;
+    margin-top: -20px;
+    margin-left: -20px;
+    background-color: var(--our-cyan);
+}
+
+.homepage-description {
+    font-family: "Times New Roman", Times, serif;
+    line-height: 0%;
+    font-weight: 100;
+}
+
+.separator {
+    width: 200%;
+    margin-left: -30px;
+}
+
+input {
+    height: 33px;
+    border-radius: 10px;
+    border: none;
+    color: white;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+input[type=submit] {
+    background-color: var(--our-cyan);
+}
+
+button {
+    color: white;
+    background-color: var(--our-cyan);
+    padding-left: 10px;
+    padding-right: 10px;
+    height: 33px;
+    border-radius: 10px;
+    border: none;
+    width: fit-content;
+}
+
+button:hover {
+    cursor: pointer;
+}
+
+input[type=submit]:hover {
+    cursor: pointer;
+}
+
+input[type=text] {
+    background-color: var(--our-dark-gray);
+}
+
+::placeholder {
+    /* Shumica e shfletuesve */
+    color: white;
+}
+
+::-ms-input-placeholder {
+    /* Microsoft Edge */
+    color: white;
+}
+
+input:focus {
+    outline: none;
+}
+
+button:focus {
+    outline: none;
+}
