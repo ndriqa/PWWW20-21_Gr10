@@ -311,6 +311,31 @@ input:focus, textarea:focus, keygen:focus, select:focus {
     z-index: 99;
 }
 
+.nav-item {
+    border: none;
+    outline: none;
+    padding: 10px 16px;
+    cursor: pointer;
+    font-size: 18px;
+    
+  }
+  
+  .active, .nav-item:hover {
+    color: skyblue;
+  }
+  
+  .header-right {
+     text-align: center;
+     position: relative;
+     overflow: hidden;
+  }
+  
+  .active, .nav-item:hover {
+    background-color: #DCDCDC;
+    color: white;
+  }
+  
+
 
 @media only screen and (max-width: 660px) {
 	.container {
