@@ -60,9 +60,10 @@ a {
     /* transition: all 350ms ease-in-out; */
 }
 
-#the-header {
+.the-header {
     display: flex;
-    justify-content: space-around;
+    box-sizing: border-box;
+    justify-content: space-between;
     align-content: flex-end;
     width: 100%;
     padding: 10px;
@@ -129,23 +130,16 @@ ul#menu li a:active{
     display: flex;
     justify-content: space-between;
 }
-
+header{
+    display: flex;
+    flex-direction: column;
+}
 .header-hr {
     opacity: 0.0;
     width: 100%;
 }
 
-.header-title {
-    font-size: xx-large;
-}
-
-.header-description {
-    flex: 1;
-    font-size: medium;
-}
-
 .header-nav-bar {
-    display: flex;
     flex: 2;
 }
 
@@ -159,7 +153,7 @@ ul#menu li a:active{
 
 .homepage-description {
     font-family: "Times New Roman", Times, serif;
-    line-height: 0%;
+    line-height: 0;
     font-weight: 100;
 }
 
