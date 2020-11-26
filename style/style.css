@@ -1,7 +1,8 @@
 :root {
     --our-cyan: #3BAFBE;
-    --our-dark-gray: #353535;
-    --our-gray: #454545;
+    --our-dark-gray: #202020;
+    --our-light-gray: #999999;
+    --our-gray: #303030;
 }
 /* html {
     overflow-x: hidden;
@@ -22,6 +23,7 @@ html, body {
     font-size: 14px;
     line-height: 1.5;
     overflow-x: hidden;
+    margin: 0;
 }
 
 /* body {
@@ -361,4 +363,56 @@ button:focus {
 
 .deep-thought {
     max-width: 700px;
+}
+.main-footer{
+    display: flex;
+    box-sizing: border-box;
+    justify-content: space-between;
+    align-content: center;
+    background-color: var(--our-gray);
+    color: whitesmoke;
+}
+.main-footer .sector {
+    color: whitesmoke;
+    line-height: 1;
+    margin: 0;
+    flex-basis: 24%;
+}
+.main-footer .sector h1{
+    color: whitesmoke;
+    font-size: 22px;
+    font-weight: 100;
+}
+.main-footer .sector p{
+    color: var(--our-light-gray);
+}
+.main-footer .sector pre{
+    color: var(--our-light-gray);
+    line-height: 1.5;
+}
+.main-footer .sector input{
+    display: block;
+    margin-top: 10px;
+}
+.main-footer .sector input::placeholder{
+    color: var(--our-light-gray);
+    opacity: 0.5;
+}
+a {
+    color: var(--our-cyan);
+}
+.sep{
+    width: 100%;
+    background-color: var(--our-light-gray);
+    opacity: 0.1;
+    height: 1px;
+    border: none;
+}
+.end-footer {
+    background-color: var(--our-dark-gray);
+    display: flex;
+    justify-content: space-between;
+}
+.end-footer p {
+    color: var(--our-light-gray);
 }
