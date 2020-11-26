@@ -219,3 +219,18 @@ input:focus {
 button:focus {
     outline: none;
 }
+
+/* contact from design */
+.container {
+	padding: 20px 50px 70px;
+}
+.sec1title {
+	text-align: center;
+}
+.sec1title h1 {
+	    font-size: 40px;
+    margin: 25px;
+    text-transform: uppercase;
+    color: #16F1D4;
+    font-weight: 400;
+}
