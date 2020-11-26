@@ -238,7 +238,7 @@ input:focus, textarea:focus, keygen:focus, select:focus {
 	opacity: 1;
 }
 ::-webkit-input-placeholder {
-	color: #666;
+	color:white;
 	font-weight: 300;
 }
 
