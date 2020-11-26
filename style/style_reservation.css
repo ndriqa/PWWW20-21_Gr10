@@ -23,6 +23,10 @@ html, body {
     line-height: 1.5;
     overflow-x: hidden;
 }
+.container {
+    width: 1140px;
+    margin: 0 auto;
+}
 
 /* body {
 margin: 0;
@@ -33,6 +37,9 @@ background-color: #FFFFFF; */
 
 a {
     text-decoration: none;
+}
+.header-right {
+    float: right;
 }
 
 #pjate {
@@ -296,4 +303,16 @@ button:focus {
 #p1 {
     padding-top: 100px;
     padding-left: 30px;
+}
+.nav-item {
+  border: none;
+  outline: none;
+  padding: 10px 16px;
+  cursor: pointer;
+  font-size: 18px;
+}
+
+/* Style the active class, and buttons on mouse-over */
+.active, .nav-item:hover {
+  color: skyblue;
 }

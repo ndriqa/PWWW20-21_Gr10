@@ -35,6 +35,7 @@
 
 
         <header>
+            <div class="container">
             <div class="social-top" id="social-top">
                 <div class="social-top-content">
                     <div class="social-icons">
@@ -67,7 +68,7 @@
                 <nav class="header-right ">
                     <ul id="menu">
                         <li class="nav-item"><a href="index.html" class="nav-link">HOME</a> </li>
-                        <li class="nav-item"><a href="about.html">ABOUT US </a></li>
+                        <li class="nav-item active"><a href="about.html">ABOUT US </a></li>
                         <li class="nav-item"><a href="meny.html">MENU </a></li>
                         <li class="nav-item"><a href="order.html">ORDER NOW </a></li>
                         <li class="nav-item"><a href="reservations.html">RESERVATION </a>
@@ -76,9 +77,13 @@
                     </ul>
                 </nav>
             </div>
+                 <hr class="separator">
+          </div>
+            
         </header>
 
-        <hr class="separator">
+         <main> 
+             <div class="container">
         <div id="foto1" >  
             <div>
                 <img id="foto"  src="Images/reservation/food.jpg" height="400px">
@@ -195,7 +200,18 @@
 
 
         </div>
-        <main>
+       <script>
+// Add active class to the current button (highlight it)
+var header = document.getElementById("header-right");
+var btns = header.getElementsByClassName("nav-item");
+for (var i = 0; i < btns.length; i++) {
+  btns[i].addEventListener("click", function() {
+  var current = document.getElementsByClassName("active");
+  current[0].className = current[0].className.replace(" active", "");
+  this.className += " active";
+  });
+}
+</script>
 
 
             <!--      <script>
@@ -224,10 +240,12 @@ setTimeout(carousel, 9000);
                     </div>
                 </div>
             </section>
+             </div>
         </main>
 
 
         <footer class="ftco-footer">
+            <div class="container">
             <div class="footer-div">
                 <div class="footer-contact">
                     <h2 class="ftco-heading-2" >CONTACT</h2>
@@ -267,7 +285,7 @@ setTimeout(carousel, 9000);
             <p>
                 Copyright &copy; 2020 - All rights reserved - Freshness
             </p>
-
+           </div>
         </footer>
     </body>
 
