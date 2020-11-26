@@ -97,55 +97,64 @@
 
         <div class="fixed-bg"></div>
 
-        <div style="height:800px;background-color:white;">
+        <div class="reservation-form" >
+
+            <div style="height:800px;background-color:white;">
 
 
-            <form method="post" action="//submit.form" onSubmit="return validateForm();">
-                <div style="max-width: 400px;">
-                </div>
-                <div style="padding-bottom: 18px;font-size : 50px; font-family:  Brush Script MT, Brush Script Std, cursive; color:#87a3ab;" >Table Reservation</div>
-                <div style="padding-bottom: 18px;font-size : 18px;">We would be glad to reserve a table for you at our restaurant!</div>
-                <div style="padding-bottom: 18px;">Name<span style="color: red;"> *</span><br/>
-                    <input type="text" id="data_3" name="data_3" style="max-width : 400px;" class="form-control"/>
-                </div>
-                <div style="padding-bottom: 18px;">Phone<br/>
-                    <input type="text" id="data_4" name="data_4" style="max-width : 400px;" class="form-control"/>
-                </div>
-                <div style="padding-bottom: 18px;">Email<br/>
-                    <input type="text" id="data_5" name="data_5" style="max-width : 400px;" class="form-control"/>
-                </div>
-                <div style="padding-bottom: 18px;">Date<span style="color: red;"> *</span><br/>
-                    <input type="text" id="data_6" name="data_6" style="max-width : 250px;" class="form-control"/>
-                </div>
-                <script src="https://cdnjs.cloudflare.com/ajax/libs/pikaday/1.4.0/pikaday.min.js" type="text/javascript"></script>
-                <link href="https://cdnjs.cloudflare.com/ajax/libs/pikaday/1.4.0/css/pikaday.min.css" rel="stylesheet" type="text/css" />
-                <script type="text/javascript">new Pikaday({ field: document.getElementById('data_6') });</script>
-                <div style="padding-bottom: 18px;">Time<span style="color: red;"> *</span><br/>
-                    <input type="text" id="data_7" name="data_7" style="max-width : 250px;" class="form-control"/>
-                </div>
-                <div style="padding-bottom: 18px;">Number of Attendees<span style="color: red;"> *</span><br/>
-                    <select id="data_8" name="data_8" style="max-width : 250px;" class="form-control"><option>1</option>
-                        <option>2</option>
-                        <option>3</option>
-                        <option>4</option>
-                        <option>5</option>
-                        <option>6</option>
-                        <option>7</option>
-                        <option>8</option>
-                        <option>9</option>
-                        <option>10</option>
-                        <option>10+ (Specify in Comments)</option>
-                    </select>
-                </div>
-                <div style="padding-bottom: 18px;">Comments / Additional Requests<br/>
-                    <textarea id="data_9" false name="data_9" style="max-width : 400px;" rows="6" class="form-control"></textarea>
-                </div>
-                <div style="padding-bottom: 18px;"><input name="skip_Submit" value="Submit" type="submit"/></div>
-                <div>
-                    <!--<div style="float:right"><a href="https://www.100forms.com" id="lnk100" title="form to email">form to email</a></div>
+                <form method="post" action="//submit.form" onSubmit="return validateForm();">
+                    <div style="max-width: 400px;">
+                    </div>
+                    <div style="padding-bottom: 18px;font-size : 50px; font-family:  Brush Script MT, Brush Script Std, cursive; color:#87a3ab;" >Table Reservation</div>
+                    <div style="padding-bottom: 18px;font-size : 18px;">We would be glad to reserve a table for you at our restaurant!</div>
+                    <div style="padding-bottom: 18px;">Name<span style="color: red;"> *</span><br/>
+                        <input type="text" id="data_3" name="data_3" style="max-width : 400px;" class="form-control"/>
+                    </div>
+                    <div style="padding-bottom: 18px;">Phone<br/>
+                        <input type="text" id="data_4" name="data_4" style="max-width : 400px;" class="form-control"/>
+                    </div>
+                    <div style="padding-bottom: 18px;">Email<br/>
+                        <input type="text" id="data_5" name="data_5" style="max-width : 400px;" class="form-control"/>
+                    </div>
+                    <div style="padding-bottom: 18px;">Date<span style="color: red;"> *</span><br/>
+                        <input type="text" id="data_6" name="data_6" style="max-width : 250px;" class="form-control"/>
+                    </div>
+                    <script src="https://cdnjs.cloudflare.com/ajax/libs/pikaday/1.4.0/pikaday.min.js" type="text/javascript"></script>
+                    <link href="https://cdnjs.cloudflare.com/ajax/libs/pikaday/1.4.0/css/pikaday.min.css" rel="stylesheet" type="text/css" />
+                    <script type="text/javascript">new Pikaday({ field: document.getElementById('data_6') });</script>
+                    <div style="padding-bottom: 18px;">Time<span style="color: red;"> *</span><br/>
+                        <input type="text" id="data_7" name="data_7" style="max-width : 250px;" class="form-control"/>
+                    </div>
+                    <div style="padding-bottom: 18px;">Number of Attendees<span style="color: red;"> *</span><br/>
+                        <select id="data_8" name="data_8" style="max-width : 250px;" class="form-control"><option>1</option>
+                            <option>2</option>
+                            <option>3</option>
+                            <option>4</option>
+                            <option>5</option>
+                            <option>6</option>
+                            <option>7</option>
+                            <option>8</option>
+                            <option>9</option>
+                            <option>10</option>
+                            <option>10+ (Specify in Comments)</option>
+                        </select>
+                    </div>
+                    <div style="padding-bottom: 18px;">Comments / Additional Requests<br/>
+                        <textarea id="data_9" false name="data_9" style="max-width : 400px;" rows="6" class="form-control"></textarea>
+                    </div>
+                    <div style="padding-bottom: 18px;"><input name="skip_Submit" value="Submit" type="submit"/></div>
+                    <div>
+                        <!--<div style="float:right"><a href="https://www.100forms.com" id="lnk100" title="form to email">form to email</a></div>
 <!--<script src="https://www.100forms.com/js/FORMKEY:GP2NQBS3GS2Z/SEND:my@email.com" type="text/javascript"></script>-->
-                </div>
-            </form>
+                    </div>
+                </form>
+            </div>
+            <!--<div>
+                <p id="p1">"We’ve been told numerous times that our cooking is 'feminine,' which people always intend as a compliment. We’re happy to be identified with femaleness, as strong and proud women, but the masculine/feminine binary has no legitimate place in culinary expression or its criticism. It’s an artificial construct we’d be happy to see done away with." </p>
+            </div> --> 
+            <div>
+                <img style="padding: : 100px" src="Images/reservation/chef.png">
+            </div>
         </div>
 
 
@@ -205,6 +214,7 @@ x[myIndex-1].style.display = "block";
 setTimeout(carousel, 9000);    
 }
 </script>  -->
+
             <section class="booking">
                 <div class="booking-1">
                     <div class="booking-2">
@@ -216,9 +226,9 @@ setTimeout(carousel, 9000);
             </section>
         </main>
 
-        
-            <footer class="ftco-footer">
-               <div class="footer-div">
+
+        <footer class="ftco-footer">
+            <div class="footer-div">
                 <div class="footer-contact">
                     <h2 class="ftco-heading-2" >CONTACT</h2>
                     <p style="color: white">Magnolia Ave 153 </p>
@@ -229,20 +239,20 @@ setTimeout(carousel, 9000);
                     <p style="color: white">Email: freshness@info.com</p>
                 </div>
 
-                   <div class="footer-links">
+                <div class="footer-links">
                     <h2 class="ftco-heading-2" >LINKS</h2>
-                      <p> <a style="color: white" href="https://www.facebook.com/">Facebook</a></p> 
-                      <p> <a style="color: white" href="https://www.instagram.com/">Instagram</a></p> 
-                      <p> <a style="color: white" href="https://www.google.com/">Google</a></p> 
-                      <p> <a style="color: white" href="https://www.linkedin.com/">LinkedIn</a></p> 
+                    <p> <a style="color: white" href="https://www.facebook.com/">Facebook</a></p> 
+                    <p> <a style="color: white" href="https://www.instagram.com/">Instagram</a></p> 
+                    <p> <a style="color: white" href="https://www.google.com/">Google</a></p> 
+                    <p> <a style="color: white" href="https://www.linkedin.com/">LinkedIn</a></p> 
                 </div>
-                 
+
                 <div class="footer-blog">
                     <h2 class="ftco-heading-2" >FROM THE BLOG</h2>
                     <p style="color: white">New Menu is Comming </p>
                     <button>READ MORE &#187;</button>
                 </div>
-                   <div class="footer-subscribe">
+                <div class="footer-subscribe">
                     <h2 class="ftco-heading-2" >SUBSCRIBE</h2>
                     <form action="#" class="subscribe-form">
                         <div class="form-group">
@@ -252,13 +262,13 @@ setTimeout(carousel, 9000);
                         </div>
                     </form>
                 </div>
-              </div> 
+            </div> 
             <hr class="separator">
             <p>
                 Copyright &copy; 2020 - All rights reserved - Freshness
             </p>
 
-            </footer>
+        </footer>
     </body>
 
 </html>

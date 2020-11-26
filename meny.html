@@ -1,71 +1,222 @@
 <!DOCTYPE html>
 <html lang="en">
 
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA==" crossorigin="anonymous"/>
-  <link rel="stylesheet" type="text/css" href="style/style.css">
-  <title>Menu</title>
-</head>
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA==" crossorigin="anonymous"/>
+        <link rel="stylesheet" type="text/css" href="style/style_reservation.css">
+        <title>Reservations</title>
 
-<body>
- 
+        <style> 
+            .fixed-bg{
+                background-image: url("Images/reservation/1.jpg");
+                min-height: 300px;
+                background-attachment: fixed;
+                background-position: center;
+                background-repeat: no-repeat;
+                background-size: cover;
+            }
 
-  <header>
-    <div class="social-top" id="social-top">
-      <div class="social-top-content">
-        <div class="social-icons">
-          <a href="https://www.linkedin.com/"><i class="fab fa-linkedin-in"></i></a>
-          <a href="https://twitter.com/"><i class="fab fa-twitter"></i></a>
-          <a href="https://www.pinterest.com/"><i class="fab fa-pinterest"></i></a>
-          <a href="https://www.google.com/"><i class="fab fa-google-plus-g"></i></a>
-          <a href="https://www.rss.com"><i class="fas fa-rss-square"></i></a>
+            .fixed-bg-2{
+                background-image: url("Images/reservation/lobsterr.jfif");
+                min-height: 300px;
+                background-attachment: fixed;
+                background-position: center;
+                background-repeat: no-repeat;
+                background-size: cover;
+            }
+        </style>
+
+    </head>
+
+
+    <body>
+
+
+        <header>
+            <div class="social-top" id="social-top">
+                <div class="social-top-content">
+                    <div class="social-icons">
+                        <a href="https://www.linkedin.com/"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="https://twitter.com/"><i class="fab fa-twitter"></i></a>
+                        <a href="https://www.pinterest.com/"><i class="fab fa-pinterest"></i></a>
+                        <a href="https://www.google.com/"><i class="fab fa-google-plus-g"></i></a>
+                        <a href="https://www.rss.com"><i class="fas fa-rss-square"></i></a>
+                    </div>
+
+
+                    <div class="header-right">
+                        <input type="text" name="" id="searchBox" placeholder="Search Our Website...." />
+                        <input type="submit" value="SUBMIT" />
+                    </div>
+
+                </div>
+            </div> 
+
+            <div>
+                <div class="homepage-description header-left">
+                    <p class="header-title">
+                        Freshness
+                    </p>
+                    <p class="header-description">
+                        Eat healthy, eat fresh!
+                    </p>
+                </div>
+
+                <nav class="header-right ">
+                    <ul id="menu">
+                        <li class="nav-item"><a href="index.html" class="nav-link">HOME</a> </li>
+                        <li class="nav-item"><a href="about.html">ABOUT US </a></li>
+                        <li class="nav-item"><a href="meny.html">MENU </a></li>
+                        <li class="nav-item"><a href="order.html">ORDER NOW </a></li>
+                        <li class="nav-item"><a href="reservations.html">RESERVATION </a>
+                        <li class="nav-item"><a href="staff.html">OUR STAFF </a>
+                        <li class="nav-item"><a href="contact.html">CONTACT </a>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+
+        <hr class="separator">
+        <div id="foto1" >  
+            <div>
+                <img id="foto"  src="Images/reservation/food.jpg" height="400px">
+
+            </div>
+            <div id="tekst1">
+                <h4 id="rezervimi">Menu</h4>
+            </div>
+        </div>  
+
+
+
+
+
+        <p>BEST RESTAURANT IN TOWN  <strong>Note:</strong> Try every food.</p>
+
+        <div class="fixed-bg"></div>
+
+        <div class="reservation-form" >
+
+            <div style="height:800px;background-color:white;">
+
+            </div>
+           
         </div>
-       
-          
-      <div class="header-right">
-        <input type="text" name="" id="searchBox" placeholder="Search Our Website...." />
-        <input type="submit" value="SUBMIT" />
-      </div>
-          
-      </div>
-    </div> 
-    
-    <div>
-      <div class="homepage-description header-left">
-        <p class="header-title">
-          Freshness
-        </p>
-        <p class="header-description">
-          Eat healthy, eat fresh!
-        </p>
-      </div>
 
-      <nav class="header-right ">
-        <ul id="menu">
-          <li class="nav-item"><a href="index.html" class="nav-link">HOME</a> </li>
-          <li class="nav-item"><a href="about.html">ABOUT US </a></li>
-          <li class="nav-item"><a href="meny.html">MENU </a></li>
-          <li class="nav-item"><a href="order.html">ORDER NOW </a></li>
-          <li class="nav-item"><a href="reservations.html">RESERVATION </a>
-          <li class="nav-item"><a href="staff.html">OUR STAFF </a>
-          <li class="nav-item"><a href="contact.html">CONTACT </a>
-        </ul>
-      </nav>
-    </div>
-  </header>
 
-  <hr class="separator">
-  <main>
+        <script type="text/javascript">
+            function validateForm() {
+                if (isEmpty(document.getElementById('data_3').value.trim())) {
+                    alert('Name is required!');
+                    return false;
+                }
+                if (!validateEmail(document.getElementById('data_5').value.trim())) {
+                    alert('Email must be a valid email address!');
+                    return false;
+                }
+                if (isEmpty(document.getElementById('data_6').value.trim())) {
+                    alert('Date is required!');
+                    return false;
+                }
+                if (isEmpty(document.getElementById('data_7').value.trim())) {
+                    alert('Time is required!');
+                    return false;
+                }
+                return true;
+            }
+            function isEmpty(str) { return (str.length === 0 || !str.trim()); }
+            function validateEmail(email) {
+                var re = /^([\w-]+(?:\.[\w-]+)*)@((?:[\w-]+\.)*\w[\w-]{0,66})\.([a-z]{2,15}(?:\.[a-z]{2})?)$/i;
+                return isEmpty(email) || re.test(email);
+            }
+        </script>
 
-  </main>
-  <footer>
-    <hr class="separator">
-    <p>
-      Copyright &copy; 2020 - All rights reserved - Freshness
-    </p>
-  </footer>
-</body>
+
+
+        <p>BEST RESTAURANT IN TOWN  <strong>Note:</strong> Try every food.</p>
+
+        <div class="fixed-bg-2"></div>
+
+        <div style="height:800px;background-color:white;">
+
+
+        </div>
+        <main>
+
+
+            <!--      <script>
+var myIndex = 0;
+carousel();
+
+function carousel() {
+var i;
+var x = document.getElementsByClassName("mySlides");
+for (i = 0; i < x.length; i++) {
+x[i].style.display = "none";  
+}
+myIndex++;
+if (myIndex > x.length) {myIndex = 1}    
+x[myIndex-1].style.display = "block";  
+setTimeout(carousel, 9000);    
+}
+</script>  -->
+
+            <section class="booking">
+                <div class="booking-1">
+                    <div class="booking-2">
+                        <div class="booking-3">
+                            <h2 id="delicious">We Make Delicious &amp; Nutritious Food <br></h2>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+
+        <footer class="ftco-footer">
+            <div class="footer-div">
+                <div class="footer-contact">
+                    <h2 class="ftco-heading-2" >CONTACT</h2>
+                    <p style="color: white">Magnolia Ave 153 </p>
+                    <p style="color: white">Wildwood</p>
+                    <p style="color: white">08260</p>
+                    <p style="color: white">Tel: +411248723984</p>
+                    <p style="color: white">Fax: +411248723984</p>
+                    <p style="color: white">Email: freshness@info.com</p>
+                </div>
+
+                <div class="footer-links">
+                    <h2 class="ftco-heading-2" >LINKS</h2>
+                    <p> <a style="color: white" href="https://www.facebook.com/">Facebook</a></p> 
+                    <p> <a style="color: white" href="https://www.instagram.com/">Instagram</a></p> 
+                    <p> <a style="color: white" href="https://www.google.com/">Google</a></p> 
+                    <p> <a style="color: white" href="https://www.linkedin.com/">LinkedIn</a></p> 
+                </div>
+
+                <div class="footer-blog">
+                    <h2 class="ftco-heading-2" >FROM THE BLOG</h2>
+                    <p style="color: white">New Menu is Comming </p>
+                    <button>READ MORE &#187;</button>
+                </div>
+                <div class="footer-subscribe">
+                    <h2 class="ftco-heading-2" >SUBSCRIBE</h2>
+                    <form action="#" class="subscribe-form">
+                        <div class="form-group">
+                            <p><input type="text" placeholder="Enter your name"></p>
+                            <p><input type="text"  placeholder="Enter email address"></p>
+                            <input type="submit" value="Subscribe" >
+                        </div>
+                    </form>
+                </div>
+            </div> 
+            <hr class="separator">
+            <p>
+                Copyright &copy; 2020 - All rights reserved - Freshness
+            </p>
+
+        </footer>
+    </body>
 
 </html>

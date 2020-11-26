@@ -289,3 +289,11 @@ button:focus {
 .footer-div{
     background-color: #33302f;
 }
+.reservation-form {
+    display: flex;
+    margin-left: 20px;
+}
+#p1 {
+    padding-top: 100px;
+    padding-left: 30px;
+}
