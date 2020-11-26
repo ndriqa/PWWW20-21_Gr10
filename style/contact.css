@@ -2,6 +2,9 @@
     --our-cyan: #3BAFBE;
     --our-dark-gray: #353535;
     --our-gray: #454545;
+    --our-dark-gray: #202020;
+    --our-light-gray: #999999;
+    --our-gray: #303030;
 }
 /* html {
     overflow-x: hidden;
@@ -23,6 +26,7 @@ html, body {
     font-size: 14px;
     line-height: 1.5;
     overflow-x: hidden;
+    margin: 0;
 }
 
 /* body {
@@ -61,8 +65,7 @@ a {
 
 .the-header {
     display: flex;
-    box-sizing: border-box;
-    justify-content: space-between;
+    justify-content: space-around;
     align-content: flex-end;
     width: 100%;
     padding: 10px;
@@ -129,18 +132,27 @@ ul#menu li a:active{
     display: flex;
     justify-content: space-between;
 }
-header{
-    display: flex;
-    flex-direction: column;
-}
+
 .header-hr {
     opacity: 0.0;
     width: 100%;
 }
 
+.header-title {
+    font-size: xx-large;
+    margin-left: 15px;
+    font-weight: bold;
+
+}
+
+.header-description {
+    flex: 1;
+    font-size: medium;
+    margin-left: 15px;
+}
 
 .header-nav-bar {
-    
+    display: flex;
     flex: 2;
 }
 
@@ -154,7 +166,7 @@ header{
 
 .homepage-description {
     font-family: "Times New Roman", Times, serif;
-    line-height: 0;
+    line-height: 0%;
     font-weight: 100;
 }
 
@@ -329,6 +341,59 @@ input:focus, textarea:focus, keygen:focus, select:focus {
     color: white;
   }
   
+
+  .main-footer{
+    display: flex;
+    box-sizing: border-box;
+    justify-content: space-between;
+    align-content: center;
+    background-color: var(--our-gray);
+    color: whitesmoke;
+}
+.main-footer .sector {
+    color: whitesmoke;
+    line-height: 1;
+    margin: 0;
+    flex-basis: 24%;
+}
+.main-footer .sector h1{
+    color: whitesmoke;
+    font-size: 22px;
+    font-weight: 100;
+}
+.main-footer .sector p{
+    color: var(--our-light-gray);
+}
+.main-footer .sector pre{
+    color: var(--our-light-gray);
+    line-height: 1.5;
+}
+.main-footer .sector input{
+    display: block;
+    margin-top: 10px;
+}
+.main-footer .sector input::placeholder{
+    color: var(--our-light-gray);
+    opacity: 0.5;
+}
+a {
+    color: var(--our-cyan);
+}
+.sep{
+    width: 100%;
+    background-color: var(--our-light-gray);
+    opacity: 0.1;
+    height: 1px;
+    border: none;
+}
+.end-footer {
+    background-color: var(--our-dark-gray);
+    display: flex;
+    justify-content: space-between;
+}
+.end-footer p {
+    color: var(--our-light-gray);
+}
 
 
 @media only screen and (max-width: 660px) {
