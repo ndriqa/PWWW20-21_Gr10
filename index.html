@@ -67,26 +67,30 @@
     <div id="info" class="sections">
 
       <div class="dishes-panel">
-        <img src="images/homepage/dish2.png" alt="chicken special" class="dish">
+        <!--Image 1-->
+        <img id="dish-image" src="images/homepage/dish1.png" alt="chicken special" class="dish">
       </div>
 
       <div class="dishes-slides">
-        <h1>
-          Lasagna
-        </h1>
-        <p>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit,
-          sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-          Diam volutpat commodo sed egestas egestas.
-          Eleifend mi in nulla posuere sollicitudin.
-          Dictum sit amet justo donec enim diam vulputate ut pharetra.
-        </p>
+        <!--Image 1 text-->
+        <div class="my-slides-text fade">
+          <h1 id="dish-name">
+            Lasagna
+          </h1>
+          <p id="dish-description">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+            sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+            Diam volutpat commodo sed egestas egestas.
+            Eleifend mi in nulla posuere sollicitudin.
+            Dictum sit amet justo donec enim diam vulputate ut pharetra.
+          </p>
+        </div>
         <button>READ MORE &#187;</button>
         <div class="dots">
-          <span class="dot"></span>
-          <span class="dot"></span>
-          <span class="dot"></span>
-          <span class="dot"></span>
+          <span class="dot" onclick="currentSlide(1)"></span>
+          <span class="dot" onclick="currentSlide(2)"></span>
+          <span class="dot" onclick="currentSlide(3)"></span>
+          <span class="dot" onclick="currentSlide(4)"></span>
         </div>
       </div>
     </div>
@@ -94,7 +98,7 @@
     <div id="speciality-dishes" class="speciality-section">
       <div class="speciality">
         <img src="images/homepage/speciality1.jpg" alt="" class="speciality-image">
-        <h1>Speciality 1</h1>
+        <h1>Flija</h1>
         <p>It consists of multiple crêpe-like layers
           brushed with cream and served with sour cream.
         </p>
@@ -247,5 +251,5 @@ to last throughout the day
     </div>
   </footer>
 </body>
-
+<script src="js/script.js"></script>
 </html>
