@@ -109,7 +109,7 @@ a {
     text-decoration: none;
 }
 ul#menu li {
-    display: inline;
+    display: inline-block;
     opacity: 2;
     color: #999999;
     font-family: Georgia, Georgia, MyriadPro-Regular, AdobeInvisFont;
@@ -117,8 +117,15 @@ ul#menu li {
 }
 ul#menu li a{
     color: var(--our-gray);
+    display: inline-block;
+    text-align: center;
     font-size: 12px;
     font-weight: bold;
+    padding: 5px;
+}
+ul#menu li a:hover{
+    color: var(--our-cyan);
+    background-color: #f5f5f5;
 }
 ul#menu li a:active{
     color: var(--our-cyan);
@@ -134,13 +141,18 @@ header{
     display: flex;
     flex-direction: column;
 }
+.main-header{
+    display: flex;
+    justify-content: space-between;
+}
 .header-hr {
     opacity: 0.0;
     width: 100%;
 }
 
 .header-nav-bar {
-    flex: 2;
+    align-items: flex-end;
+    justify-content: flex-end;
 }
 
 .top-page-accent-line {
@@ -152,6 +164,7 @@ header{
 }
 
 .homepage-description {
+    display: inline-block;
     font-family: "Times New Roman", Times, serif;
     line-height: 0;
     font-weight: 100;
@@ -393,6 +406,12 @@ button:focus {
     color: var(--our-light-gray);
     opacity: 0.5;
 }
+.main-footer .sector input::-ms-input-placeholder {
+    /* Microsoft Edge */
+    color: var(--our-light-gray);
+    opacity: 0.5;
+}
+
 a {
     color: var(--our-cyan);
 }
