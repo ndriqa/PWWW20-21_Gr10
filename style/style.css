@@ -366,7 +366,6 @@ button:focus {
 .deep-thought {
     max-width: 700px;
 }
-
 .main-footer {
     display: flex;
     box-sizing: border-box;
@@ -375,7 +374,6 @@ button:focus {
     background-color: var(--our-gray);
     color: whitesmoke;
 }
-
 .main-footer .sector {
     color: whitesmoke;
     padding-left: 10px;
@@ -383,13 +381,11 @@ button:focus {
     margin: 0;
     flex-basis: 24%;
 }
-
 .main-footer .sector h1 {
     color: whitesmoke;
     font-size: 22px;
     font-weight: 100;
 }
-
 .main-footer .sector p {
     color: var(--our-light-gray);
 }
@@ -418,7 +414,6 @@ button:focus {
 a {
     color: var(--our-cyan);
 }
-
 .sep {
     width: 100%;
     background-color: var(--our-light-gray);
