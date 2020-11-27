@@ -316,3 +316,39 @@ button:focus {
 .active, .nav-item:hover {
   color: skyblue;
 }
+.menu {display: none}
+.bgimg {
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-image: url("/w3images/pizza.jpg");
+  min-height: 90%;
+}
+.menu-wrap {
+    margin-bottom: 3em;
+    padding: 3em 1.5em .5em 1.5em;
+    border: 1.5px dashed #e6e6e6;
+    position: relative;
+    background: #fcfcfc;
+    -moz-transition: all 0.6s ease;
+    -o-transition: all 0.6s ease;
+    -webkit-transition: all 0.6s ease;
+    -ms-transition: all 0.6s ease;
+    transition: all 0.6s ease;
+}
+.menut {
+    display: flex;
+    padding: 30px;
+}
+.menus .menu-img {
+    width: 80px;
+    height: 80px;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    border-radius: 50%;
+}
+.hotel-img, .img, .blog-img, .user-img {
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
