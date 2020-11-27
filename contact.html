@@ -26,7 +26,7 @@
           
       <div class="header-right">
         <input type="text" name="" id="searchBox" placeholder="Search Our Website...." />
-        <input type="submit" value="SUBMIT" />
+        <input type="submit" value="SEARCH" />
       </div>
           
       </div>
@@ -50,7 +50,7 @@
           <li class="nav-item"><a href="order.html">ORDER NOW </a></li>
           <li class="nav-item"><a href="reservations.html">RESERVATION </a>
           <li class="nav-item"><a href="staff.html">OUR STAFF </a>
-          <li class="nav-item"><a href="contact.html">CONTACT </a>
+          <li class="nav-item active"><a href="contact.html">CONTACT </a>
         </ul>
       </nav>
     </div>
@@ -99,18 +99,62 @@
         map = new google.maps.Map(document.getElementById('gmap_canvas'), myOptions);
         marker = new google.maps.Marker({map: map,position: new google.maps.LatLng(42.463486,21.468315)});
         infowindow = new google.maps.InfoWindow({content:'<strong>My Location</strong><br>Gjilan<br>'});
-        google.maps.event.addListener(marker, 'click', function(){infowindow.open(map,marker);});infowindow.open(map,marker);}
+        google.maps.event.addListener(marker, 'click', function(){infowindow.open(map,marker);});
+        infowindow.open(map,marker);}
         google.maps.event.addDomListener(window, 'load', init_map);
         </script>
       </section>
     </div>
   </main>
   <footer>
-    <hr class="separator">
-    <p>
-      Copyright &copy; 2020 - All rights reserved - Freshness
-    </p>
-  </footer>
+  <div class="main-footer">
+    <div id="contact-details" class="sector">
+      <h1>Contact Details </h1>
+      <pre>
+Freshness
+Dardania
+Prishtine
+10000
+      </pre>
+      <p>Tel: +383 45 123 456</p>
+      <p>Fax: 1234 56789</p>
+      <p>Email: <a href="mailto::username@domain.com">username@domain.com</a></p>
+    </div>
+    <div id="quick-links" class="sector">
+      <h1>Quick Links</h1>
+      <a href="#">Our specialities</a>
+      <hr class="sep">
+      <a href="#">Our wonderful staff</a>
+      <hr class="sep">
+      <a href="#">Make a reservation</a>
+      <hr class="sep">
+      <a href="#">Order now</a>
+      <hr class="sep">
+    </div>
+    <div id="from-the-blog" class="sector">
+      <h1>From The Blog</h1>
+      <pre>
+<strong>Preparing Tuna Fish</strong>
+<small>Posted by </small>Admin on 00.00.0000
+This is usually a coast side 
+dish with the calories needed
+to last throughout the day
+      </pre>
+      <a href="#" style="float: right;">See More &#187;</a>
+    </div>
+    <div id="newsletter" class="sector">
+      <h1>Newsletter</h1>
+      <input type="text" placeholder="Name">
+      <input type="text" placeholder="Email">
+      <input type="submit" style="font-weight: bold;">
+
+    </div>
+  </div>
+  <div class="end-footer">
+    <p>Copyright &copy; <sub>2013</sub> Domain Name - All Rights Reserved</p>
+    <p>Made By Group 10</p>
+  </div>
+</footer>
 </body>
 
 </html>

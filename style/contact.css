@@ -2,12 +2,16 @@
     --our-cyan: #3BAFBE;
     --our-dark-gray: #353535;
     --our-gray: #454545;
+    --our-dark-gray: #202020;
+    --our-light-gray: #999999;
+    --our-gray: #303030;
 }
 /* html {
     overflow-x: hidden;
     font-family: 'Old Standard TT', serif;
     overflow-anchor: none;
 } */
+
 
 h1, h2, h3 {
     color: var(--our-dark-gray);
@@ -22,6 +26,7 @@ html, body {
     font-size: 14px;
     line-height: 1.5;
     overflow-x: hidden;
+    margin: 0;
 }
 
 /* body {
@@ -58,7 +63,7 @@ a {
     /* transition: all 350ms ease-in-out; */
 }
 
-#the-header {
+.the-header {
     display: flex;
     justify-content: space-around;
     align-content: flex-end;
@@ -135,11 +140,15 @@ ul#menu li a:active{
 
 .header-title {
     font-size: xx-large;
+    margin-left: 15px;
+    font-weight: bold;
+
 }
 
 .header-description {
     flex: 1;
     font-size: medium;
+    margin-left: 15px;
 }
 
 .header-nav-bar {
@@ -163,7 +172,7 @@ ul#menu li a:active{
 
 .separator {
     width: 200%;
-    margin-left: -30px;
+    margin-left: -100px;
 }
 
 input {
@@ -229,7 +238,7 @@ input:focus, textarea:focus, keygen:focus, select:focus {
 	opacity: 1;
 }
 ::-webkit-input-placeholder {
-	color: #666;
+	color:white;
 	font-weight: 300;
 }
 
@@ -244,7 +253,7 @@ input:focus, textarea:focus, keygen:focus, select:focus {
 	    font-size: 40px;
     margin: 25px;
     text-transform: uppercase;
-    color: #16F1D4;
+    color: var(--our-cyan);
     font-weight: 400;
 }
 .section2 {
@@ -270,8 +279,8 @@ input:focus, textarea:focus, keygen:focus, select:focus {
     font-size: 16px;
     background: #323232;
     margin: 7px 0;
-    border: 1px solid #00C1A8;
-    color: #6BECDB;
+    border: 1px solid var(--our-cyan);
+    color: var(--our-cyan);
     opacity: 0.5;
     min-height: 45px;
     text-shadow: none;
@@ -282,14 +291,14 @@ input:focus, textarea:focus, keygen:focus, select:focus {
 	resize: none;
 }
 .section2 .contactform button.form-fields.button {
-	color: #16F1D4;
+	color: var(--our-cyan);
 	font-size: 14px;
 	padding: 0;
 	text-transform: uppercase;
 
 }
 .section2 .contactform button.form-fields.button:hover {
-	background: #00C1A8;
+	background: var(--our-cyan);
 	color: #fff;
 	cursor: pointer;
 	opacity: 1;
@@ -300,7 +309,7 @@ input:focus, textarea:focus, keygen:focus, select:focus {
 }
 
 .section2 .contactform h5 {
-	color: #16F1D4;
+	color: var(--our-cyan);
     font-size: 16px;
     margin-bottom: 15px;
 }
@@ -309,6 +318,81 @@ input:focus, textarea:focus, keygen:focus, select:focus {
     padding: 14px;
     position: absolute;
     z-index: 99;
+}
+
+.nav-item {
+    border: none;
+    outline: none;
+    padding: 10px 16px;
+    cursor: pointer;
+    font-size: 18px;
+    
+  }
+  
+
+  .header-right {
+     text-align: center;
+     position: relative;
+     overflow: hidden;
+  }
+  
+  .active, .nav-item:hover {
+    background-color: #DCDCDC;
+    color: white;
+  }
+  
+
+  .main-footer{
+    display: flex;
+    box-sizing: border-box;
+    justify-content: space-between;
+    align-content: center;
+    background-color: var(--our-gray);
+    color: whitesmoke;
+}
+.main-footer .sector {
+    color: whitesmoke;
+    line-height: 1;
+    margin: 0;
+    flex-basis: 24%;
+}
+.main-footer .sector h1{
+    color: whitesmoke;
+    font-size: 22px;
+    font-weight: 100;
+}
+.main-footer .sector p{
+    color: var(--our-light-gray);
+}
+.main-footer .sector pre{
+    color: var(--our-light-gray);
+    line-height: 1.5;
+}
+.main-footer .sector input{
+    display: block;
+    margin-top: 10px;
+}
+.main-footer .sector input::placeholder{
+    color: var(--our-light-gray);
+    opacity: 0.5;
+}
+a {
+    color: var(--our-cyan);
+}
+.sep{
+    width: 100%;
+    background-color: var(--our-light-gray);
+    opacity: 0.1;
+    height: 1px;
+    border: none;
+}
+.end-footer {
+    background-color: var(--our-dark-gray);
+    display: flex;
+    justify-content: space-between;
+}
+.end-footer p {
+    color: var(--our-light-gray);
 }
 
 
