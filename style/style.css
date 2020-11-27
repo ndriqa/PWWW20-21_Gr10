@@ -368,6 +368,7 @@ button:focus {
 }
 .main-footer .sector {
     color: whitesmoke;
+    padding-left: 10px;
     line-height: 1;
     margin: 0;
     flex-basis: 24%;
@@ -409,4 +410,6 @@ a {
 }
 .end-footer p {
     color: var(--our-light-gray);
+    padding-left: 10px;
+    padding-right: 10px;
 }
