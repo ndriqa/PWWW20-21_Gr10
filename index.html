@@ -76,11 +76,17 @@
       <div class="dishes-slides">
         <!--Image 1 text-->
         <div class="my-slides-text fade">
-          <h1 id="dish-name">
-            Lasagna
-          </h1>
+          <div class="dish-intro">
+            <h1 id="dish-name">
+              Lazanje
+            </h1>
+            <div class="slide-buttons-panel">
+              <button class="slide-button"  onclick="prevSlide()">&lt;</button>
+              <button class="slide-button" onclick="nextSlide()">&gt;</button>
+            </div>
+          </div>
           <p id="dish-description">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit
             sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
             Diam volutpat commodo sed egestas egestas.
             Eleifend mi in nulla posuere sollicitudin.
@@ -89,17 +95,21 @@
         </div>
         <button>READ MORE &#187;</button>
         <div class="dots">
-          <span class="dot" onclick="currentSlide(1)"></span>
-          <span class="dot" onclick="currentSlide(2)"></span>
-          <span class="dot" onclick="currentSlide(3)"></span>
-          <span class="dot" onclick="currentSlide(4)"></span>
+          <span class="dot" onclick="changeSlide(1)"></span>
+          <span class="dot" onclick="changeSlide(2)"></span>
+          <span class="dot" onclick="changeSlide(3)"></span>
+          <span class="dot" onclick="changeSlide(4)"></span>
         </div>
       </div>
     </div>
     <hr>
+      <p class="specialities-title"><em><strong>National Kosovan Dishes
+      </strong></em></p>
+
     <div id="speciality-dishes" class="speciality-section">
+
       <div class="speciality">
-        <img src="images/homepage/speciality1.jpg" alt="" class="speciality-image">
+        <img src="images/homepage/speciality1.jpg" alt="speciality dish image" class="speciality-image">
         <h1>Flija</h1>
         <p>It consists of multiple crêpe-like layers
           brushed with cream and served with sour cream.
@@ -107,16 +117,16 @@
         <button>READ MORE &#187;</button>
       </div>
       <div class="speciality">
-        <img src="images/homepage/speciality1.jpg" alt="" class="speciality-image">
-        <h1>Speciality 2</h1>
+        <img src="images/homepage/speciality1.jpg" alt="speciality dish image" class="speciality-image">
+        <h1>Pitja</h1>
         <p>It consists of multiple crêpe-like layers
           brushed with cream and served with sour cream.
         </p>
         <button>READ MORE &#187;</button>
       </div>
       <div class="speciality">
-        <img src="images/homepage/speciality1.jpg" alt="" class="speciality-image">
-        <h1>Speciality 3</h1>
+        <img src="images/homepage/speciality1.jpg" alt="speciality dish image" class="speciality-image">
+        <h1>Pasuli</h1>
         <p>It consists of multiple crêpe-like layers
           brushed with cream and served with sour cream.
         </p>
