@@ -12,6 +12,12 @@
     overflow-anchor: none;
 } */
 
+.specialities-title{
+    margin: 5px 5px;
+    text-align: center;
+    font-size: x-large;
+}
+
 h1, h2, h3 {
     color: var(--our-dark-gray);
 }
@@ -183,8 +189,15 @@ header {
 }
 
 .separator {
-    width: 200%;
-    margin-left: -30px;
+    width: 100%;
+}
+.dish-intro{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.slide-buttons {
+
 }
 
 input {
@@ -271,10 +284,11 @@ button:focus {
     display: flex;
     flex-basis: 30%;
     max-width: 500px;
-    padding: 1vw;
+    padding: 2vw;
     background: url(../images/homepage/tepsia.png);
     background-size: 100%;
     background-repeat: no-repeat;
+    border-radius: 10%;
 }
 
 .space {
@@ -292,6 +306,7 @@ button:focus {
 
 .dish {
     max-width: 100%;
+    border-radius: 10%;
     height: auto;
 }
 .speciality {
