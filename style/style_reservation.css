@@ -412,3 +412,6 @@ button:focus {
 a {
     color: var(--our-cyan);
 }
+menus d-flex ftco-animate fadeInUp ftco-animated {
+    height: 100px;
+}
