@@ -22,20 +22,30 @@ let slideObjects = [
 ]
 
 
-let slideIndex = 0;
+let slideIndex = 1;
+let skip = false;
+
 showSlides(slideIndex);
 
+function forcedNext(){
+    nextSlide();
+    skip = true;
+}
+function forcedPrev(){
+    prevSlide();
+    skip = true;
+}
 function nextSlide(){
-    if(slideIndex >= slideObjects.length-1){
-        slideIndex = 0;
+    if(slideIndex >= slideObjects.length){
+        slideIndex = 1;
     } else {
         slideIndex++; 
     }
     showSlides()
 }
 function prevSlide(){
-    if(slideIndex <= 0){
-        slideIndex = slideObjects.length-1;
+    if(slideIndex <= 1){
+        slideIndex = slideObjects.length;
     } else {
         slideIndex--; 
     }
@@ -45,20 +55,31 @@ function prevSlide(){
 function changeSlide(dot){
     slideIndex = dot;
     showSlides();
+    skip = true;
 }
 
+function changeActiveDot(activeDot){
+    let dots = document.getElementsByClassName("dot");
+    let i;
+    for(i = 0; i < dots.length; i++){
+        dots[i].classList.remove("active")
+    }
+    dots[activeDot].classList.add("active")
+}
+function iterateSlides(){
+    if(!skip){
+        nextSlide();
+    } else {
+        skip = false;
+    }
+}
 function showSlides() {
     document.getElementById("dish-image").src = slideObjects[slideIndex-1].image_path;
     document.getElementById("dish-name").innerHTML = slideObjects[slideIndex-1].title;
     document.getElementById("dish-description").innerHTML = slideObjects[slideIndex-1].description;
-    let max = slideObjects.length-1
-    if(slideIndex >= max){
-        slideIndex = 0;
-    } else {
-        slideIndex++; 
-    }
+    changeActiveDot(slideIndex-1)
 }
 window.onload = function() {
     showSlides();
-    setTimeout(showSlides, 1000);
+    setInterval(iterateSlides, 3000);
 }

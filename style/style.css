@@ -1,6 +1,6 @@
 :root {
     --our-cyan: #3BAFBE;
-    --our-darker-cyan: #45BAC9;
+    --our-darker-cyan: #2f8591;
     --our-dark-gray: #202020;
     --our-light-gray: #999999;
     --our-gray: #303030;
@@ -197,7 +197,7 @@ header {
     justify-content: space-between;
 }
 .slide-buttons {
-
+    /**something*/
 }
 
 input {
@@ -308,7 +308,7 @@ button:focus {
     max-width: 100%;
     border-radius: 10%;
     height: auto;
-}
+  }
 .speciality {
     flex: 1;
     padding: 10px;
@@ -480,14 +480,23 @@ a {
 
 .dot {
     cursor: pointer;
-    height: 15px;
-    width: 15px;
+    height: 20px;
+    width: 20px;
     background-color: var(--our-cyan);
     border-radius: 50%;
     display: inline-block;
-    transition: background-color 0.6s ease;
+    transition: all 0.1s ease-out;
 }
-.active, .dot:hover {
+.dot:hover {
     background-color: var(--our-darker-cyan);
-  }
+    width: 14px;
+    height: 14px;
+    margin: 3px;
+}
+.active {
+    background-color: var(--our-darker-cyan);
+    height: 20px;
+    width: 20px;
+    margin: 0px;
+}
   
