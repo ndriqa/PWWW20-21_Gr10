@@ -412,6 +412,22 @@ button:focus {
 a {
     color: var(--our-cyan);
 }
-menus d-flex ftco-animate fadeInUp ftco-animated {
-    height: 100px;
+.heading-section .subheading {
+    font-weight: normal;
+    font-size: 40px;
+    display: block;
+    margin-bottom: 0;
+    color: rgba(0, 0, 0, 0.2);
+    color: #eb5860;
+    position: relative;
+    line-height: 1;
+    font-family: "Dancing Script", cursive;
+    margin-bottom: -20px;
+    z-index: -1;
+    text-align: center !important;
+}
+.mb-4 {
+    text-align: center !important;
+    font-family: cursive;
+    color: black;
 }
