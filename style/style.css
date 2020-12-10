@@ -33,7 +33,11 @@ html, body {
     overflow-x: hidden;
     margin: 0;
 }
-
+main{
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+}
 /* body {
     margin: 0;
     padding: 0;
@@ -129,6 +133,7 @@ ul#menu li {
 ul#menu li a {
     color: var(--our-gray);
     display: inline-block;
+    border-radius: 5px;
     text-align: center;
     font-size: 12px;
     font-weight: bold;
@@ -195,6 +200,12 @@ header {
     display: flex;
     align-items: center;
     justify-content: space-between;
+}
+#dish-name{
+    font-size: 40px;
+}
+#dish-description{
+    font-size: 25px;
 }
 .slide-buttons {
     /**something*/
@@ -315,7 +326,7 @@ button:focus {
     display: flex;
     flex-basis: 33%;
     flex-direction: column;
-    max-width: 30%;
+    max-width: 25%;
 }
 
 .speciality h1 {
@@ -337,6 +348,9 @@ button:focus {
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
+}
+#critics-opinions .opinions{
+    margin-top: 10px;
 }
 
 .opinions {
