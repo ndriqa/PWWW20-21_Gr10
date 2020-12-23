@@ -1,6 +1,6 @@
 :root {
     --our-cyan: #3BAFBE;
-    --our-darker-cyan: #2f8591;
+    --our-darker-cyan: #006b6b;
     --our-dark-gray: #202020;
     --our-light-gray: #999999;
     --our-gray: #303030;
@@ -38,14 +38,6 @@ main{
     margin-left: auto;
     margin-right: auto;
 }
-/* body {
-    margin: 0;
-    padding: 0;
-    font-size: 100%;
-    background-color: #FFFFFF; */
-
-/* } */
-
 a {
     text-decoration: none;
 }
@@ -513,4 +505,28 @@ a {
     width: 20px;
     margin: 0px;
 }
-  
+.form-section{
+    padding: 0px;
+    margin: 0px;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+}
+.form-section * {
+    margin: 10px;
+}
+.form-section label{
+    font-size: 16px;
+    text-align: center;
+    line-height: 2;
+}
+.form-section select {
+    padding-left: 5px;
+    font-weight: bold;
+    border-radius: 10px;
+    background-color: #f5f5f5;
+    border: 1px solid var(--our-darker-cyan);
+    color: var(--our-darker-cyan);
+    outline: none;
+}
