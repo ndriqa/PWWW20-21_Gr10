@@ -8,7 +8,6 @@ let foodObjects = [
         strawberry_pancakes: "images/reservation/strawberrypancakes.jpg",
         toast: "images/reservation/toast.jpg",
         crepes: "images/reservation/crepes.jpg",
-        oatmeal: "images/reservation/oatmeal.jpg",
         avocado_omlette: "images/reservation/avocadoomlette.jpg",
         vegetarian_omlette: "images/reservation/vegetarianomlette.jpg",
     },
@@ -20,14 +19,12 @@ let foodObjects = [
         buffalo_wings: "images/reservation/Buffalo Wings.jpg",
         pot_roast: "images/reservation/Pot Roast.jpg",
         meatloaf: "images/reservation/meatloaf.jpg",
-        chop_suey: "images/reservation/Chop Suey.jpg",
         barbecue_ribs: "images/reservation/Barbecue Ribs.jpg",
         steak_tartare: "images/reservation/Steak tartare.jpg",
         salisbury_steak: "images/reservation/Salisbury Steak.jpg",
     },
     { //pizza and pasta
         margherita_pizza: "images/reservation/margheritapizza.jfif",
-        bbq_chicken_pizza: "images/reservation/bbqpizza.jfif",
         veggie_pizza: "images/reservation/veggiepizza.jpg",
         pepperoni_pizza: "images/reservation/pepperonipizza.webp",
         cheese_pizza: "images/reservation/cheesepizza.jpg",
@@ -39,7 +36,6 @@ let foodObjects = [
         cheese_balls: "images/reservation/cheeseballs.jpg",
     },
     { //specials
-        food: "images/reservation/bagel.jpg",
         food: "images/reservation/bagel.jpg",
         food: "images/reservation/bagel.jpg",
         food: "images/reservation/bagel.jpg",
@@ -70,17 +66,51 @@ let foodObjects = [
     }
 ]
 
+let choosenFood = -1;
+let choosenDrink = -1;
+
 function foodTypeChosen(){
     let foodParent = document.getElementById("ushqimet")
+    foodParent.innerHTML = "";
     let foodType = document.getElementById("foods");
     
     let keys = Object.keys(foodObjects[foodType.selectedIndex]);
+    let images = Object.values(foodObjects[foodType.selectedIndex]);
     let foods = [];
 
-    for(var i = 0; i < keys.length; i++){
+    for(let i = 0; i < keys.length; i++){
         foods[i] = ""+fixFoodName(keys[i]);
     }
+
+    for(let j = 0; j < foods.length; j++){
+        var emri = document.createElement("h3");
+        emri.classList.add("emri-ushqimit");
+        emri.innerText = foods[j];
+
+        var foto = document.createElement("img");
+        foto.classList.add("foto-ushqimit");
+        foto.src = images[j];
+
+        var butoni = document.createElement("button");
+        butoni.classList.add("zgjedh-ushqimin");
+        butoni.innerText = "Zgjedh";
+        butoni.onclick = function(){
+            foodGotChosen(j);
+        };
+
+        var ushqimi = document.createElement("div");
+        ushqimi.classList.add("ushqim");
+        ushqimi.appendChild(emri);
+        ushqimi.appendChild(foto);
+        ushqimi.appendChild(butoni);
+
+        foodParent.appendChild(ushqimi);
+    }
     console.log(foods);
+}
+function foodGotChosen(a){
+    choosenFood = a;
+    console.log(a);
 }
 function fixFoodName(s){
     let nameParts = s.split("_");

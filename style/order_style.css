@@ -5,6 +5,13 @@
     --our-light-gray: #999999;
     --our-gray: #303030;
 }
+main{
+    min-height: 60vh;
+}
+form fieldset{
+    border: none;
+    box-shadow: 5px 5px 15px var(--our-dark-gray);
+}
 .form-section{
     padding: 0px;
     margin: 0px;
@@ -29,4 +36,53 @@
     border: 1px solid var(--our-darker-cyan);
     color: var(--our-darker-cyan);
     outline: none;
+}
+.message{
+    text-align: center;
+    font-size: large;
+}
+#ushqimet{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+}
+#pijet{
+    display: none;
+}
+.test{
+    width: 100px;
+    height: 100px;
+    background-color: var(--our-darker-cyan);
+}
+.ushqim{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+}
+.emri-ushqimit{
+    margin-top: 5px;
+    position: absolute;
+    top: 0px;
+    font-size: 1.3rem;
+    font-weight: bold;
+    font-style: italic;
+    color: white;
+    text-shadow:    1px 1px 2px black,
+                    1px 1px 5px black,
+                    1px 1px 10px black,
+                    0px 0px 30px black;
+    word-wrap: break-word;
+}
+.foto-ushqimit{
+    max-width: 150px;
+    max-height: 150px;
+    object-fit: cover;
+    border-radius: 10%;
+    box-shadow: inset 0px 0px 30px black;
+}
+.zgjedh-ushqimin{
+    margin-top: 5px;
+    margin-bottom: 5px;
 }
