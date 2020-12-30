@@ -229,10 +229,12 @@ button {
 
 button:hover {
     cursor: pointer;
+    box-shadow: inset 0px 0px 15px var(--our-darker-cyan);
 }
 
 input[type=submit]:hover {
     cursor: pointer;
+    box-shadow: inset 0px 0px 15px var(--our-darker-cyan);
 }
 
 input[type=text] {

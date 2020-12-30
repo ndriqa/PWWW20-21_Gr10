@@ -1,6 +1,6 @@
 :root {
     --our-cyan: #3BAFBE;
-    --our-darker-cyan: #45BAC9;
+    --our-darker-cyan: #006b6b;
     --our-dark-gray: #202020;
     --our-light-gray: #999999;
     --our-gray: #303030;
@@ -85,4 +85,9 @@ form fieldset{
 .zgjedh-ushqimin{
     margin-top: 5px;
     margin-bottom: 5px;
+    font-weight: bold;
+    box-shadow: inset 0px 0px 15px var(--our-darker-cyan);
+}
+.zgjedh-ushqimin:hover{
+    box-shadow: inset 0px 0px 5px var(--our-darker-cyan);
 }
