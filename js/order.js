@@ -66,39 +66,46 @@ let foodObjects = [
     }
 ]
 
+let choosenFoodType = -1;
 let choosenFood = -1;
 let choosenDrink = -1;
 
-function foodTypeChosen(){
+function foodTypeChosen() {
+document.getElementById("intro").style.display = "none";
+
     let foodParent = document.getElementById("ushqimet")
     foodParent.innerHTML = "";
+
+    document.getElementById("ushqimeParent").style.display = "block"
+
     let foodType = document.getElementById("foods");
-    
-    let keys = Object.keys(foodObjects[foodType.selectedIndex]);
-    let images = Object.values(foodObjects[foodType.selectedIndex]);
+    choosenFoodType = foodType.selectedIndex;
+
+    let keys = Object.keys(foodObjects[choosenFoodType]);
+    let images = Object.values(foodObjects[choosenFoodType]);
     let foods = [];
 
-    for(let i = 0; i < keys.length; i++){
-        foods[i] = ""+fixFoodName(keys[i]);
+    for (let i = 0; i < keys.length; i++) {
+        foods[i] = "" + fixFoodName(keys[i]);
     }
 
-    for(let j = 0; j < foods.length; j++){
-        var emri = document.createElement("h3");
+    for (let j = 0; j < foods.length; j++) {
+        let emri = document.createElement("h3");
         emri.classList.add("emri-ushqimit");
         emri.innerText = foods[j];
 
-        var foto = document.createElement("img");
+        let foto = document.createElement("img");
         foto.classList.add("foto-ushqimit");
         foto.src = images[j];
 
-        var butoni = document.createElement("button");
+        let butoni = document.createElement("button");
         butoni.classList.add("zgjedh-ushqimin");
         butoni.innerText = "Zgjedh";
-        butoni.onclick = function(){
+        butoni.onclick = function () {
             foodGotChosen(j);
         };
 
-        var ushqimi = document.createElement("div");
+        let ushqimi = document.createElement("div");
         ushqimi.classList.add("ushqim");
         ushqimi.appendChild(emri);
         ushqimi.appendChild(foto);
@@ -106,20 +113,89 @@ function foodTypeChosen(){
 
         foodParent.appendChild(ushqimi);
     }
-    console.log(foods);
 }
-function foodGotChosen(a){
-    choosenFood = a;
-    console.log(a);
+function foodGotChosen(f) {
+    choosenFood = f;
+
+    document.getElementById("ushqimeParent").style.display = "none"
+    document.getElementById("pijeParent").style.display = "block"
+
+
+    let drinkParent = document.getElementById("pijet");
+    drinkParent.innerHTML = "";
+
+    let drinkKeys = Object.keys(foodObjects[4]);
+    let drinkImages = Object.values(foodObjects[4]);
+    let drinks = [];
+
+    for (let i = 0; i < drinkKeys.length; i++) {
+        drinks[i] = "" + fixFoodName(drinkKeys[i]);
+    }
+
+    for (let j = 0; j < drinks.length; j++) {
+        let emri = document.createElement("h3");
+        emri.classList.add("emri-ushqimit");
+        emri.innerText = drinks[j];
+
+        let foto = document.createElement("img");
+        foto.classList.add("foto-ushqimit");
+        foto.src = drinkImages[j];
+
+        let butoni = document.createElement("button");
+        butoni.classList.add("zgjedh-ushqimin");
+        butoni.innerText = "Zgjedh";
+        butoni.onclick = function () {
+            drinkGotChosen(j);
+        };
+
+        let ushqimi = document.createElement("div");
+        ushqimi.classList.add("pije");
+        ushqimi.appendChild(emri);
+        ushqimi.appendChild(foto);
+        ushqimi.appendChild(butoni);
+
+        drinkParent.appendChild(ushqimi);
+    }
 }
-function fixFoodName(s){
+function drinkGotChosen(d) {
+    choosenDrink = d;
+    document.getElementById("perzgjedhja").style.display = "flex"
+    document.getElementById("pijeParent").style.display = "none"
+
+    let foodKeys = Object.keys(foodObjects[choosenFoodType]);
+    let foodValues = Object.values(foodObjects[choosenFoodType]);
+
+    let foodImage = foodValues[choosenFood];
+    let foodName = fixFoodName(foodKeys[choosenFood]);
+
+    let drinkKeys = Object.keys(foodObjects[4]);
+    let drinkValues = Object.values(foodObjects[4]);
+
+    let drinkName = fixFoodName(drinkKeys[choosenDrink]);
+    let drinkImage = drinkValues[choosenDrink];
+
+    document.getElementById("chosen_food").src = foodImage;
+    document.getElementById("chosen_drink").src = drinkImage;
+
+    document.getElementById("food_name").innerText = foodName;
+    document.getElementById("food_price").innerText = "5.00$";
+    document.getElementById("drink_name").innerText = drinkName;
+    document.getElementById("drink_price").innerText = "3.00$";
+
+    document.getElementById("total_price").innerText = "8.00$";
+}
+function cashout(){
+    document.getElementById("perzgjedhja").style.display = "none";
+    document.getElementById("intro").style.display = "block";
+}
+function fixFoodName(s) {
     let nameParts = s.split("_");
     let name = "";
-    for(let i = 0; i < nameParts.length; i++){
-        name = name + firstUpperLetter(nameParts[i]) + " "
+    for (let i = 0; i < nameParts.length; i++) {
+        name = name + firstUpperLetter(nameParts[i]) + " ";
     }
     return name;
 }
- function firstUpperLetter(s){
-    return (s.charAt(0).toUpperCase()+s.slice(1));
+function firstUpperLetter(s) {
+    return (s.charAt(0).toUpperCase() + s.slice(1));
 }
