@@ -404,6 +404,7 @@ button:focus {
     box-sizing: border-box;
     justify-content: space-between;
     align-content: center;
+    padding: 20px 10px;
     background-color: var(--our-gray);
     color: whitesmoke;
 }
@@ -414,7 +415,23 @@ button:focus {
     line-height: 1;
     margin: 0;
     flex-basis: 24%;
+    height: 100%;
 }
+#quick-links{
+    display: flex;
+    flex-direction: column;
+    height: max-content;
+}
+#quick-links a{
+    padding: 10px 5px;
+    display: block;
+    width: 80%;
+    border-radius: 10px;
+}
+#quick-links a:hover{
+    background-color: var(--our-dark-gray);
+}
+
 
 .main-footer .sector h1 {
     color: whitesmoke;
@@ -452,10 +469,11 @@ a {
 }
 
 .sep {
-    width: 100%;
-    background-color: var(--our-light-gray);
+    width: 80%;
     opacity: 0.1;
-    height: 1px;
+    background-color: var(--our-light-gray);
+    min-height: 1px;
+    max-height: 1px;
     border: none;
 }
 
