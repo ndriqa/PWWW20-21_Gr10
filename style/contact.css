@@ -116,7 +116,7 @@ ul#menu li a {
   display: inline-block;
   border-radius: 5px;
   text-align: center;
-  font-size: 12px;
+  font-size: 16px;
   font-weight: bold;
   padding: 5px;
 }
@@ -172,6 +172,7 @@ header {
   font-family: "Times New Roman", Times, serif;
   line-height: 0;
   font-weight: 100;
+  font-size: 20px;
 }
 
 .separator {
