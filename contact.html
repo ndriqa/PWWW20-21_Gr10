@@ -83,54 +83,74 @@
   </header>
 
   <hr class="separator"/>
-  <main>
+   <!--ACTUAL PAGE STUFF-->
+   <main>
     <div class="container">
       <section class="section1">
         <div class="sec1title">
-          <h1>Get in touch</h1>
-        </div>	
-      </section>
-      <section class="section2"> 
-        <div class="contactform">
-        <h5>Drop us a line...</h5>
-          <form action="#">
-            <label for="firstname">
-              <i class="cntfrmicn fa fa-user"></i>
-              <input name="firstname" class="form-fields" type="text">
-            </label>
-            <label for="email">
-              <i class="cntfrmicn fa fa-envelope"></i>
-              <input name="email" class="form-fields" type="text">
-            </label>
-            <label for="contact">
-              <i class="cntfrmicn fa fa-phone"></i>
-              <input name="contact" class="form-fields" type="text">
-            </label>
-            <label for="textarea">
-              <i class="cntfrmicn fa fa-comment"></i>
-              <textarea class="form-fields" name="textarea" id="" cols="30" rows="10"></textarea>
-            </label>
-            <button class="form-fields button" value="Send" type="submit">Send <i class="fa fa-paper-plane"></i></button>
-          </form>
+          <h1 class="text-message">Get in touch</h1>
         </div>
-        <script src='https://maps.googleapis.com/maps/api/js?v=3.exp'></script>
-        <div class="contmap" style='overflow:hidden;height:550px;width:100%;'>
-        <div id='gmap_canvas' style='height:100%;width:100%;'></div>
-        <div><small><a href="http://embedgooglemaps.com">	embed google maps</a></small></div>
-        <div><small><a href="http://freedirectorysubmissionsites.com/">free web directories</a></small></div>
-        <style>#gmap_canvas img{max-width:none!important;background:none!important}</style></div>
-        <script type='text/javascript'>
-        function init_map(){
-        var myOptions = {zoom:14,center:new google.maps.LatLng(42.463486,21.468315),mapTypeId: google.maps.MapTypeId.ROADMAP};
-        map = new google.maps.Map(document.getElementById('gmap_canvas'), myOptions);
-        marker = new google.maps.Marker({map: map,position: new google.maps.LatLng(42.463486,21.468315)});
-        infowindow = new google.maps.InfoWindow({content:'<strong>My Location</strong><br>Gjilan<br>'});
-        google.maps.event.addListener(marker, 'click', function(){infowindow.open(map,marker);});
-        infowindow.open(map,marker);}
-        google.maps.event.addDomListener(window, 'load', init_map);
-        </script>
       </section>
+      <h1 class="brand"><span>Freshness restaurant</span></h1>
+
+      <div class="wrapper">
+        <!-- RESTAURANT INFORMATION -->
+        <div class="company-info">
+          <h3>Freshness restaurant</h3>
+
+          <ul>
+            <li><i class="fa fa-road"></i> 44,Dardania, Prishtine</li>
+            <li><i class="fa fa-phone"></i> (555) 555-5555</li>
+            <li><i class="fa fa-envelope"></i> test@gmail.com</li>
+          </ul>
+        </div>
+        
+
+        <!-- CONTACT FORM -->
+        <div class="contact">
+          <h3 id="emailus">E-mail Us</h3>
+
+          <form id="contact-form">
+            <p>
+              <label>Name</label>
+              <input type="text" name="name" id="name" required />
+            </p>
+
+            <p>
+              <label>Company</label>
+              <input type="text" name="company" id="company" />
+            </p>
+
+            <p>
+              <label>E-mail Address</label>
+              <input type="email" name="email" id="email" required />
+            </p>
+
+            <p>
+              <label>Phone Number</label>
+              <input type="text" name="phone" id="phone" />
+            </p>
+
+            <p class="full">
+              <label>Message</label>
+              <textarea name="message" rows="5" id="message"></textarea>
+            </p>
+
+            <p class="full">
+              <button type="submit">Submit</button>
+            </p>
+          </form>
+          <!-- End #contact-form -->
+        </div>
+        <!-- End .contact -->
+      </div>
+      <!-- End .wrapper -->
     </div>
+    <section class="sectionn2">
+      <div class="sec2title">
+        <h2 class="text-message">Location (Get directions)</h2>
+      </div>
+    </section>
   </main>
   <footer>
   <div class="main-footer">
