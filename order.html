@@ -9,7 +9,6 @@
     crossorigin="anonymous" />
   <link rel="stylesheet" type="text/css" href="style/style.css">
   <link rel="stylesheet" type="text/css" href="style/order_style.css">
-  <script src="/js/order.js"></script>
   <title>Order Now</title>
 </head>
 
@@ -76,7 +75,7 @@
             <option value="pizzapasta">Pizza and Pasta</option>
             <option value="specials">Specials</option>
           </select>
-          <button onclick="foodTypeChosen()">Choose</button>
+          <button id="choose" type="button">Choose</button>
         </div>
       </fieldset>
       <div id="intro">
@@ -122,11 +121,11 @@
         <div id="user_info">
           <div id="user_name">
             <label for="fname" >First name:</label>
-            <input type="text" id="fname" name="fname" required><br>
+            <input type="text" id="fname" name="fname" required>
             <label for="lname">Last name:</label>
             <input type="text" id="lname" name="lname" required>
             <label for="num">Number:</label>
-            <input type="text" id="num" name="num" required><br>
+            <input type="text" id="num" name="num" required>
             <label for="address">Address:</label>
             <input type="text" id="address" name="address" required><br>
                       
@@ -134,15 +133,15 @@
           <div id="user_submit">
             <h4 class="message">Payment</h4>
             <input type="radio" id="cash" name="payment" value="cash">
-            <label for="cash">Cash</label><br>
+            <label for="cash">Cash</label>
             <input type="radio" id="paypal" name="payment" value="paypal">
-            <label for="paypal">Paypal</label><br>
+            <label for="paypal">Paypal</label>
             <input type="radio" id="card" name="payment" value="card">
-            <label for="card">Credit Card</label><br>
+            <label for="card">Credit Card</label>
             <input type="radio" id="other" name="payment" value="other">
-            <label for="other">Other</label>
+            <label for="other">Other</label> <br>
           
-            <button id="cash_out" onclick="cashout()">Submit</button>
+            <button id="cash_out" onclick="cashout()" type="button">Submit</button>
           </div>
         </div>
 
@@ -200,6 +199,7 @@ to last throughout the day
       <p>Made By Group 10</p>
     </div>
   </footer>
+  <script src="./js/order.js"></script>
 </body>
 
 </html>

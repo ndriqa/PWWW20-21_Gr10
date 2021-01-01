@@ -70,6 +70,8 @@ let choosenFoodType = -1;
 let choosenFood = -1;
 let choosenDrink = -1;
 
+document.getElementById("choose").onclick = foodTypeChosen;
+
 function foodTypeChosen() {
 document.getElementById("intro").style.display = "none";
 
@@ -101,6 +103,7 @@ document.getElementById("intro").style.display = "none";
         let butoni = document.createElement("button");
         butoni.classList.add("zgjedh-ushqimin");
         butoni.innerText = "Zgjedh";
+        butoni.type = "button"
         butoni.onclick = function () {
             foodGotChosen(j);
         };
@@ -144,6 +147,7 @@ function foodGotChosen(f) {
         let butoni = document.createElement("button");
         butoni.classList.add("zgjedh-ushqimin");
         butoni.innerText = "Zgjedh";
+        butoni.type = "button"
         butoni.onclick = function () {
             drinkGotChosen(j);
         };
