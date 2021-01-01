@@ -466,6 +466,30 @@ textarea {
     margin-bottom: 50px;
   }
 
+  .our-socials{
+    padding: 10px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+.social{
+    margin: 20px;
+    flex: 1;
+    min-height: 100px;
+    border-radius: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+.social img{
+    border: 10px;
+    max-width: 80px;
+}
+.social a{
+    text-decoration: none;
+}
 .main-footer {
     display: flex;
     box-sizing: border-box;
