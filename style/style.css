@@ -12,7 +12,7 @@
     overflow-anchor: none;
 } */
 
-.specialities-title{
+.specialities-title {
     margin: 5px 5px;
     text-align: center;
     font-size: x-large;
@@ -33,11 +33,13 @@ html, body {
     overflow-x: hidden;
     margin: 0;
 }
-main{
+
+main {
     max-width: 1200px;
     margin-left: auto;
     margin-right: auto;
 }
+
 a {
     text-decoration: none;
 }
@@ -188,17 +190,21 @@ header {
 .separator {
     width: 100%;
 }
-.dish-intro{
+
+.dish-intro {
     display: flex;
     align-items: center;
     justify-content: space-between;
 }
-#dish-name{
+
+#dish-name {
     font-size: 40px;
 }
-#dish-description{
+
+#dish-description {
     font-size: 25px;
 }
+
 .slide-buttons {
     /**something*/
 }
@@ -313,7 +319,8 @@ button:focus {
     max-width: 100%;
     border-radius: 10%;
     height: auto;
-  }
+}
+
 .speciality {
     flex: 1;
     padding: 10px;
@@ -343,7 +350,8 @@ button:focus {
     flex-direction: column;
     flex-wrap: wrap;
 }
-#critics-opinions .opinions{
+
+#critics-opinions .opinions {
     margin-top: 10px;
 }
 
@@ -389,6 +397,7 @@ button:focus {
 .deep-thought {
     max-width: 700px;
 }
+
 .main-footer {
     display: flex;
     box-sizing: border-box;
@@ -397,6 +406,7 @@ button:focus {
     background-color: var(--our-gray);
     color: whitesmoke;
 }
+
 .main-footer .sector {
     color: whitesmoke;
     padding-left: 10px;
@@ -404,11 +414,13 @@ button:focus {
     margin: 0;
     flex-basis: 24%;
 }
+
 .main-footer .sector h1 {
     color: whitesmoke;
     font-size: 22px;
     font-weight: 100;
 }
+
 .main-footer .sector p {
     color: var(--our-light-gray);
 }
@@ -437,6 +449,7 @@ button:focus {
 a {
     color: var(--our-cyan);
 }
+
 .sep {
     width: 100%;
     background-color: var(--our-light-gray);
@@ -481,6 +494,7 @@ a {
         opacity: 1
     }
 }
+
 /*.dots {
     padding: 10px;
     margin-left: auto;
@@ -506,4 +520,27 @@ a {
     height: 20px;
     width: 20px;
     margin: 0px;
+}*/
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    max-width: 100px;
+    box-shadow: 0px 4px 8px var(--our-gray);
+    padding: 10px;
+    z-index: 1;
+}
+
+.dropdown-content a{
+    display: block;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
 }
