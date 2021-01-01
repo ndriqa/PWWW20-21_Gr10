@@ -432,6 +432,32 @@ textarea {
     color: var(--our-cyan);
 }
 
+@media only screen and (min-width: 700px) {
+    .wrapper {
+      display: grid;
+      grid-template-columns: 1fr 2fr;
+    }
+  
+    .wrapper > * {
+      padding: 2em;
+    }
+  
+    .company-info {
+      border-radius: 4px 0 0 4px;
+    }
+  
+    .contact {
+      border-radius: 0 4px 4px 0;
+    }
+  
+    .company-info h3,
+    .company-info ul,
+    .brand {
+      text-align: left;
+    }
+    
+  }
+
 /* Map */
 .map {
     border-bottom-left-radius: 4px;
