@@ -32,7 +32,61 @@
         </div>
 
         <div>
-          <input type="text" name="" id="searchBox" placeholder="Search Our Website...." />
+          <input {
+            height: 33px;
+            border-radius: 10px;
+            border: none;
+            color: white;
+            padding-left: 10px;
+            padding-right: 10px;
+        }
+        
+        input[type=submit] {
+            background-color: var(--our-cyan);
+        }
+        
+        button {
+            color: white;
+            background-color: var(--our-cyan);
+            padding-left: 10px;
+            padding-right: 10px;
+            height: 33px;
+            border-radius: 10px;
+            border: none;
+            width: fit-content;
+        }
+        
+        button:hover {
+            cursor: pointer;
+            box-shadow: inset 0px 0px 15px var(--our-darker-cyan);
+        }
+        
+        input[type=submit]:hover {
+            cursor: pointer;
+            box-shadow: inset 0px 0px 15px var(--our-darker-cyan);
+        }
+        
+        input[type=text] {
+            background-color: var(--our-dark-gray);
+        }
+        
+        ::placeholder {
+            /* Shumica e shfletuesve */
+            color: white;
+        }
+        
+        ::-ms-input-placeholder {
+            /* Microsoft Edge */
+            color: white;
+        }
+        
+        input:focus {
+            outline: none;
+        }
+        
+        button:focus {
+            outline: none;
+        }t type="text" name="" id="searchBox" placeholder="Search Our Website...." />
           <input type="submit" value="SEARCH" />
         </div>
       </div>

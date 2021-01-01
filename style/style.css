@@ -177,7 +177,7 @@ header {
     height: 5px;
     margin-top: -20px;
     margin-left: -20px;
-    background-color: var(--our-cyan);
+    background-color: red;
 }
 
 .homepage-description {
@@ -264,6 +264,7 @@ input:focus {
 button:focus {
     outline: none;
 }
+
 
 .container {
     display: flex;
