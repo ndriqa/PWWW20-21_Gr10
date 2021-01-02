@@ -12,7 +12,7 @@
 
         <style> 
             .fixed-bg{
-                background-image: url("Images/reservation/1.jpg");
+                background-image: url("Images/reservation/res.jfif");
                 min-height: 300px;
                 background-attachment: fixed;
                 background-position: center;
@@ -21,7 +21,7 @@
             }
 
             .fixed-bg-2{
-                background-image: url("Images/reservation/lobsterr.jfif");
+                background-image: url("Images/reservation/eating.jfif");
                 min-height: 300px;
                 background-attachment: fixed;
                 background-position: center;
@@ -93,46 +93,53 @@
 
          <main> 
              <div class="container">
-        <div id="foto1" >  
-           <div class="slideshow-container">
+ <section class="main-slider">
+        <div class="container">          
+          <div class="slider-container w3-content w3-display-container">
+            <div class="slider-display-container mySlides">
+              <img src="images/reservation/restaurant.jfif" class="" alt="">
+              <div class="slider-display-bottomleft w3-large w3-container w3-padding-16 w3-black">
+                <h1 class="slider-title">POPULAR TOUR TYPES</h1>
+                <p class="slider-desc">Enjoy all kind of travel with us.</p>
+              </div>
+            </div>
 
-<div class="mySlides fade">
-  <div class="numbertext">1 / 3</div>
-  <img src="Images/reservation/tea.jfif" style="width:100%">
-  <div class="text">Best Food</div>
-</div>
+            <div class="slider-display-container mySlides">
+              <img src="images/reservation/pancake-background.jfif" class="" alt="">
+              <div class="slider-display-bottomleft w3-large w3-container w3-padding-16 w3-black">
+                <h1 class="slider-title">POPULAR TOUR TYPES</h1>
+                <p class="slider-desc">Enjoy all kind of travel with us.</p>
+              </div>
+            </div>
 
-<div class="mySlides fade">
-  <div class="numbertext">2 / 3</div>
-  <img src="Images/reservation/meat-background.jfif" style="width:100%">
-  <div class="text">Best Taste</div>
-</div>
+            <div class="slider-display-container mySlides">
+              <img src="images/reservation/cheers.jfif" class="" alt="">
+              <div class="slider-display-bottomleft w3-large w3-container w3-padding-16 w3-black">
+              </div>
+            </div>
 
-<div class="mySlides fade">
-  <div class="numbertext">3 / 3</div>
-  <img src="Images/reservation/restaurant.jfif" style="width:100%">
-  <div class="text">Best Place</div>
-</div>
+            <div class="w3-container w3-large w3-text-white slider-display-bottommiddle" style="width:100%">
+              <span class="slider-badge demo w3-border w3-transparent w3-hover-white" onclick="currentDiv(1)"></span>
+              <span class="slider-badge demo w3-border w3-transparent w3-hover-white" onclick="currentDiv(2)"></span>
+              <span class="slider-badge demo w3-border w3-transparent w3-hover-white" onclick="currentDiv(3)"></span>
+            </div>
 
-<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-<a class="next" onclick="plusSlides(1)">&#10095;</a>
-
-</div>
-<br>
-
-<div style="text-align:center">
-  <span class="dot" onclick="currentSlide(1)"></span> 
-  <span class="dot" onclick="currentSlide(2)"></span> 
-  <span class="dot" onclick="currentSlide(3)"></span> 
-</div>
-        </div>  
+                  <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                  <a class="next" onclick="plusSlides(1)">&#10095;</a>
+          </div>
+        </div>
+      </section>
 
 
 
 
 
-        <p>BEST RESTAURANT IN TOWN  <strong>Note:</strong> Try every food.</p>
-
+        
+                      <div class="col-md-7 text-center heading-section ftco-animate fadeInUp ftco-animated">
+					<span class="subheading">Make a Reservation NOW!</span>
+					<h2 class="mb-4" style="margin-bottom: 1.5rem" >Have fun!</h2>
+                    
+				</div>
         <div class="fixed-bg"></div>
 
         <div class="reservation-form" >
@@ -303,8 +310,56 @@ setTimeout(carousel, 9000);
             </section>
              </div>
         </main>
-
-        
+<script>
+    var slideIndexe = 0;
+    showDives();
+    
+    function showDives() {
+      var i;
+      var x = document.getElementsByClassName("mySlides");
+      var y = document.getElementsByClassName("demo");
+      for (i = 0; i < x.length; i++) {
+        x[i].style.display = "none";  
+      }
+      slideIndexe++;
+      if (slideIndexe > x.length) {slideIndexe = 1}    
+      for (i = 0; i < y.length; i++) {
+        y[i].className = y[i].className.replace(" w3-white", "");
+      }
+      x[slideIndexe-1].style.display = "block";  
+      y[slideIndexe-1].className += "  w3-white";
+      setTimeout(showDives, 4000); // Change image every 4 seconds
+    }
+  </script>
+          <!-- SLIDER -->
+  <script>
+    var slideIndex = 1;
+    showSlides(slideIndex);
+    
+    function plusSlides(n) {
+      showSlides(slideIndex += n);
+    }
+    
+    function currentDiv(n) {
+      showSlides(slideIndex = n);
+    }
+    
+    function showSlides(n) {
+      var i;
+      var slides = document.getElementsByClassName("mySlides");
+      var dots = document.getElementsByClassName("demo");
+      if (n > slides.length) {slideIndex = 1}    
+      if (n < 1) {slideIndex = slides.length}
+      for (i = 0; i < slides.length; i++) {
+          slides[i].style.display = "none";  
+      }
+      for (i = 0; i < dots.length; i++) {
+          dots[i].className = dots[i].className.replace(" w3-white", "");
+      }
+      slides[slideIndex-1].style.display = "block";  
+      dots[slideIndex-1].className += " w3-white";
+    }
+  </script>
         <footer>
             <div class="container">
 

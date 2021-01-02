@@ -1233,6 +1233,60 @@ setTimeout(carousel, 9000);
             </div>
             </div>
             </div>
+            
+            
+            
+            <!-- Change Color Based on Time --> 
+  <script>
+    function updateBackground() {
+    var 
+      hr = (new Date()).getHours(),
+      body = document.body,
+      bstyle = body.style,
+      headertopstyle = document.querySelector('.social-top'),
+      headerstyle = document.querySelector('.main-header'),
+      headerspacestyle = document.querySelector('.header-space'),
+      footer = document.querySelector('.main-footer');
+      
+    if (hr < 10) {
+      bstyle.backgroundColor = '#FFFFFF';
+      headertopstyle.style.backgroundColor = '#FFFFFF';
+      headerstyle.style.backgroundColor = '#EBEBEB';
+      headerspacestyle.style.backgroundColor = '#FFFFFF';
+      bstyle.color = '#000000';
+      document.querySelectorAll("presentation-category").forEach(function(element) { element.style.color = '#313131'; });
+      document.querySelectorAll('.social-icons-btn').forEach(function(element) { element.style.backgroundColor = '#D2D2D2'; });
+      document.getElementById("st0").style.stroke = '#000000';
+      document.getElementById("st1").style.stroke = '#000000';
+    } else if (hr > 10 && hr < 19) {
+      bstyle.backgroundColor = '#FFFFFF';
+      headertopstyle.style.backgroundColor = '#FFFFFF';
+      headerstyle.style.backgroundColor = '#EBEBEB';
+      headerspacestyle.style.backgroundColor = '#FFFFFF';
+      bstyle.color = '#000000';
+      document.querySelectorAll("presentation-category").forEach(function(element) { element.style.color = '#313131'; });
+      document.querySelectorAll('.social-icons-btn').forEach(function(element) { element.style.backgroundColor = '#D2D2D2'; });
+      document.getElementById("st0").style.stroke = '#000000';
+      document.getElementById("st1").style.stroke = '#000000';
+
+    } else {
+      bstyle.backgroundColor = '#0E0E0E';
+      headertopstyle.style.backgroundColor = '#000000';
+      headerstyle.style.backgroundColor = '#000000';
+      headerspacestyle.style.backgroundColor = '#0E0E0E';
+      footer.style.backgroundColor = '#000000';
+      bstyle.color = '#FFFFFF';
+      document.querySelectorAll(".presentation-category").forEach(function(element) { element.style.color = '#FFFFFF'; });
+      document.querySelectorAll('.social-icons-btn').forEach(function(element) { element.style.backgroundColor = '#1A1A1A'; });
+      document.getElementById("st0").style.stroke = '#505050';
+      document.getElementById("st1").style.stroke = '#505050';
+    } 
+  }
+
+    setInterval(updateBackground, 1000 * 60);
+    updateBackground();
+  </script>
+            
         </main>
 
   <footer>
