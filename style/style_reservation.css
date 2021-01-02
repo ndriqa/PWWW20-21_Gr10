@@ -1,28 +1,6 @@
-:root {
-    --our-cyan: #3BAFBE;
-    --our-dark-gray: #353535;
-    --our-gray: #454545;
-}
-/* html {
-overflow-x: hidden;
-font-family: 'Old Standard TT', serif;
-overflow-anchor: none;
-} */
 
-h1, h2, h3 {
-    color: var(--our-dark-gray);
-}
 
-p {
-    color: var(--our-gray);
-}
 
-html, body {
-    font-family: Georgia, 'Times New Roman', Times, serif, sans-serif;
-    font-size: 14px;
-    line-height: 1.5;
-    overflow-x: hidden;
-}
 .container {
     width: 1140px;
     margin: 0 auto;
@@ -35,105 +13,18 @@ font-size: 100%;
 background-color: #FFFFFF; */
 /* } */
 
-a {
-    text-decoration: none;
-}
+
 .header-right {
     float: right;
 }
 
-#pjate {
-    background-position: left center;
-    background-repeat: repeat-x;
-    background-attachment: fixed;
-    font-size: 30px;
-    font-family: Arial, Helvetica, sans-serif;
+
+
 }
 
-#lorem {
-    color: aliceblue;
-}
-
-.background {
-    position: static;
-}
-
-.social-top {
-    background-color: #ffffff;
-    padding: 10px;
+#foto1 {
     position: relative;
-    /* transition: all 350ms ease-in-out; */
-}
 
-#the-header {
-    display: flex;
-    justify-content: space-around;
-    align-content: flex-end;
-    width: 100%;
-    padding: 10px;
-}
-
-.social-top-content {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-}
-
-.social-icons {
-    display: flex;
-}
-
-.social-icons a {
-    background-color: var(--our-dark-gray);
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 33px;
-    height: 33px;
-    margin-left: 5px;
-    margin-right: 5px;
-    text-decoration: none;
-    border-radius: 50px;
-}
-
-.social-icons a:hover {
-    background-color: #EE802F;
-    cursor: pointer;
-}
-
-.social-icons a i {
-    font-size: 18px;
-    color: #FFFFFF;
-    text-align: center;
-}
-
-.social-links a {
-    color: #97455F;
-    padding: 0 5px;
-    text-decoration: none;
-}
-ul#menu li {
-    display: inline;
-    opacity: 2;
-    color: #999999;
-    font-family: Georgia, Georgia, MyriadPro-Regular, AdobeInvisFont;
-    font-size: 12px;
-}
-ul#menu li a{
-    color: var(--our-gray);
-    font-size: 12px;
-    font-weight: bold;
-}
-ul#menu li a:active{
-    color: var(--our-cyan);
-}
-.active{
-    color: var(--our-cyan);
-}
-
-#foto {
-    position: relative;
-    width: 100%;
 }
 
 
@@ -159,44 +50,11 @@ ul#menu li a:active{
     justify-content: space-between;
 }
 
-header {
-    display: flex;
-    flex-direction: column;
-}
 
-.main-header {
-    display: flex;
-    justify-content: space-between;
-}
 
-.header-hr {
-    opacity: 0.0;
-    width: 100%;
-}
 
-.header-nav-bar {
-    align-items: flex-end;
-    justify-content: flex-end;
-}
 
-.top-page-accent-line {
-    width: 150%;
-    height: 5px;
-    margin-top: -20px;
-    margin-left: -20px;
-    background-color: var(--our-cyan);
-}
 
-.homepage-description {
-    display: inline-block;
-    font-family: "Times New Roman", Times, serif;
-    line-height: 0;
-    font-weight: 100;
-}
-
-.separator {
-    width: 100%;
-}
 
 .separator {
     width: 200%;
@@ -424,7 +282,7 @@ a {
     display: block;
     margin-bottom: 0;
     color: rgba(0, 0, 0, 0.2);
-    color: #eb5860;
+    color: var(--our-cyan);
     position: relative;
     line-height: 1;
     font-family: "Dancing Script", cursive;
@@ -553,4 +411,26 @@ img {vertical-align: middle;}
 /* On smaller screens, decrease text size */
 @media only screen and (max-width: 300px) {
   .prev, .next,.text {font-size: 11px}
+}
+
+.img1 {
+     filter: brightness(40%);
+}
+ .subheading1{
+font-weight: normal;
+    font-size: 40px;
+    display: block;
+    margin-bottom: 0;
+    color: rgba(0, 0, 0, 0.2);
+     color: var(--our-light-gray);
+    position: relative;
+    line-height: 1;
+    font-family: "Dancing Script", cursive;
+    margin-bottom: -20px;
+    z-index: -1;
+    text-align: center !important;
+}
+.subheading2 {
+    font-family:courier new;
+    color: var(--our-cyan);
 }

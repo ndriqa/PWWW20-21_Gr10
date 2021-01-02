@@ -6,6 +6,8 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA==" crossorigin="anonymous"/>
         <link rel="stylesheet" type="text/css" href="style/style_reservation.css">
+                <link rel="stylesheet" type="text/css" href="style/style.css">
+
         <title>Menu</title>
 
         <style> 
@@ -16,6 +18,7 @@
                 background-position: center;
                 background-repeat: no-repeat;
                 background-size: cover;
+                filter: brightness(50%);
                 
             }
 
@@ -85,49 +88,70 @@
                 </div>
             </div> 
 
-            <div>
-                <div class="homepage-description header-left">
-                    <p class="header-title">
-                        Freshness
-                    </p>
-                    <p class="header-description">
-                        Eat healthy, eat fresh!
-                    </p>
-                </div>
+            <div class="the-header">
+      <div class="homepage-description">
+        <h1>
+          Freshness
+        </h1>
+        <p>
+          Eat healthy, eat fresh!
+        </p>
+      </div>
 
-                <nav class="header-right ">
-                    <ul id="menu">
-                        <li class="nav-item"><a href="index.html" class="nav-link">HOME</a> </li>
-                        <li class="nav-item"><a href="about.html">ABOUT US </a></li>
-                        <li class="nav-item"><a href="meny.html">MENU </a></li>
-                        <li class="nav-item"><a href="order.html">ORDER NOW </a></li>
-                        <li class="nav-item"><a href="reservations.html">RESERVATION </a>
-                        <li class="nav-item"><a href="staff.html">OUR STAFF </a>
-                        <li class="nav-item"><a href="contact.html">CONTACT </a>
-                    </ul>
-                </nav>
+      <nav class="header-nav-bar ">
+        <ul id="menu">
+          <li class="nav-item"><a href="index.html" class="nav-link">HOME</a> </li>
+          <li class="nav-item"><a href="about.html">ABOUT US </a></li>
+          <li class="nav-item"><a href="meny.html">MENU </a></li>
+          <li class="nav-item"><a href="order.html">ORDER NOW </a></li>
+          <li class="nav-item"><a href="reservations.html">RESERVATION </a></li>
+          <li class="nav-item">
+            <div class="dropdown">
+              <a>OUR STAFF</a>
+              <div class="dropdown-content">
+                <a href="board.html">BOARD</a> <hr>
+                <a href="chefs.html">CHEFS</a>
+              </div>
             </div>
+          </li>
+          <li class="nav-item"><a href="contact.html">CONTACT </a></li>
+        </ul>
+      </nav> 
+    </div>
            </div>
         </header>
         <main>
             <div class="container">
         <hr class="separator">
-        <div id="foto1" >  
+   <!--     <div id="foto1" >  
             <div>
-                <img id="foto"  src="Images/reservation/restaurant.jfif" height="400px">
+                <img id="foto"  src="Images/reservation/restaurant.jfif" height="400px" width="100%">
 
             </div>
             <div id="tekst1">
                 <h4 id="rezervimi">Menu</h4>
             </div>
-        </div>  
+        </div>  -->
+                <div class="menu-image">
+  <img src="Images/reservation/restaurant.jfif" alt="restaurant" class="img1" style="width: 100%; height: 400px">
+  <div class="overlay">
+    <div class="menu-image-text">
+       
+					<span class="subheading1">Find your favorite food</span>
+                    <h2 class="subheading2" style="margin-bottom: 1.5rem" >-Restaurant-</h2>
+      </div>
+  </div>
+</div>
 
 
 
+                      <div class="col-md-7 text-center heading-section ftco-animate fadeInUp ftco-animated">
+					<span class="subheading">Find your favorite food</span>
+					<h2 class="mb-4" style="margin-bottom: 1.5rem" >scroll down</h2>
+                    
+				</div>
 
-
-        <p>BEST RESTAURANT IN TOWN  <strong>Note:</strong> Try every food.</p>
-
+                
         <div class="fixed-bg"></div>
                 <div class="col-md-7 text-center heading-section ftco-animate fadeInUp ftco-animated">
 					<span class="subheading">Specialties</span>
