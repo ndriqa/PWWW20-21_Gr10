@@ -136,6 +136,7 @@ ul#menu li a {
 
 ul#menu li a:hover {
     color: var(--our-cyan);
+    background-color: #f5f5f5;
 }
 
 ul#menu li a:active {
@@ -143,10 +144,7 @@ ul#menu li a:active {
 }
 
 .active {
-    color: var(--our-darker-cyan);
-}
-.nav-link-active{
-    color: var(--our-darker-cyan);
+    color: var(--our-cyan);
 }
 
 .logo-info {
@@ -565,13 +563,7 @@ a {
 .dropdown:hover .dropdown-content {
     display: block;
 }
-<<<<<<< HEAD
 
 
 
 
-=======
-.nav-link-active {
-    color: #959595!important;
-}
->>>>>>> 2c1c49a9c78eb5e313b95dc2543241aa00dd1749
