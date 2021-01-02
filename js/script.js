@@ -83,3 +83,11 @@ window.onload = function() {
     showSlides();
     setInterval(iterateSlides, 3000);
 }
+// function onPageChange(n){
+//     let items = document.getElementsByClassName("nav-item");
+//     let i;
+//     for(i = 0; i<items.length; i++){
+//         items[i].classList.remove("active");
+//     }
+//     items[i].classList.add("active");
+// }
