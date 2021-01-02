@@ -67,8 +67,8 @@
     <body>
 
 
-        <header>
-            <div class="container">
+        <header class="main-header">
+          
             <div class="social-top" id="social-top">
                 <div class="social-top-content">
                     <div class="social-icons">
@@ -117,8 +117,9 @@
           <li class="nav-item"><a href="contact.html">CONTACT </a></li>
         </ul>
       </nav> 
+                <span class="header-space"></span>
     </div>
-           </div>
+         
         </header>
         <main>
             <div class="container">
@@ -1242,13 +1243,15 @@ setTimeout(carousel, 9000);
       body = document.body,
       bstyle = body.style,
       headertopstyle = document.querySelector('.social-top'),
-      headerstyle = document.querySelector('.main-header'),
+      navitem = document.querySelector('nav-link'),
+      headerstyle = document.querySelector('.menu'),
       headerspacestyle = document.querySelector('.header-space'),
       footer = document.querySelector('.main-footer');
       
     if (hr < 8) {
       bstyle.backgroundColor = '#FFFFFF';
       headertopstyle.style.backgroundColor = '#FFFFFF';
+      navitem.style.color= '#EBEBEB';
       headerstyle.style.backgroundColor = '#EBEBEB';
       headerspacestyle.style.backgroundColor = '#FFFFFF';
       bstyle.color = '#000000';
@@ -1258,9 +1261,10 @@ setTimeout(carousel, 9000);
       document.getElementById("st1").style.stroke = '#000000';
     } else if (hr > 8 && hr < 19) {
       bstyle.backgroundColor = '#FFFFFF';
-      headertopstyle.style.backgroundColor = '#FFFFFF';
+      headertopstyle.style.backgroundColor = '#000000';
       headerstyle.style.backgroundColor = '#EBEBEB';
       headerspacestyle.style.backgroundColor = '#FFFFFF';
+         navitem.style.color= '#EBEBEB';
       bstyle.color = '#000000';
       document.querySelectorAll("presentation-category").forEach(function(element) { element.style.color = '#313131'; });
       document.querySelectorAll('.social-icons-btn').forEach(function(element) { element.style.backgroundColor = '#D2D2D2'; });
@@ -1288,7 +1292,6 @@ setTimeout(carousel, 9000);
         </main>
 
   <footer>
-            <div class="container">
 
         <div class="main-footer">
       <div id="contact-details" class="sector">
@@ -1337,7 +1340,7 @@ to last throughout the day
       <p>Copyright &copy; <sub>2013</sub> Domain Name - All Rights Reserved</p>
       <p>Made By Group 10</p>
     </div>
-            </div>
+     
   </footer>
     </body>
 
