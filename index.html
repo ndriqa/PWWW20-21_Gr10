@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" manifest="">
 
 <head>
   <meta charset="UTF-8" />
@@ -7,11 +7,8 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"
     integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA=="
     crossorigin="anonymous" />
-  <link rel="stylesheet" type="text/css" href="style/style.css">
+  <link rel="stylesheet" type="text/css" href="./style/style.css">
   <title>Freshness</title>
-
-  <!--for testing purposes-->
-  <!-- <meta http-equiv="refresh" content="1"> -->
 
   <!--needed font-->
   <link rel="preconnect" href="https://fonts.gstatic.com">
@@ -24,69 +21,15 @@
     <div class="social-top">
       <div class="social-top-content">
         <div class="social-icons">
-          <a href="https://www.linkedin.com/"><i class="fab fa-linkedin-in"></i></a>
-          <a href="https://twitter.com/"><i class="fab fa-twitter"></i></a>
-          <a href="https://www.pinterest.com/"><i class="fab fa-pinterest"></i></a>
-          <a href="https://www.google.com/"><i class="fab fa-google-plus-g"></i></a>
-          <a href="https://www.rss.com"><i class="fas fa-rss-square"></i></a>
+          <a href="https://www.linkedin.com/" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+          <a href="https://www.twitter.com/" target="_blank"><i class="fab fa-twitter"></i></a>
+          <a href="https://www.pinterest.com/" target="_blank"><i class="fab fa-pinterest"></i></a>
+          <a href="https://www.google.com/" target="_blank"><i class="fab fa-google-plus-g"></i></a>
+          <a href="https://www.rss.com" target="_blank"><i class="fas fa-rss-square"></i></a>
         </div>
 
         <div>
-          <input {
-            height: 33px;
-            border-radius: 10px;
-            border: none;
-            color: white;
-            padding-left: 10px;
-            padding-right: 10px;
-        }
-        
-        input[type=submit] {
-            background-color: var(--our-cyan);
-        }
-        
-        button {
-            color: white;
-            background-color: var(--our-cyan);
-            padding-left: 10px;
-            padding-right: 10px;
-            height: 33px;
-            border-radius: 10px;
-            border: none;
-            width: fit-content;
-        }
-        
-        button:hover {
-            cursor: pointer;
-            box-shadow: inset 0px 0px 15px var(--our-darker-cyan);
-        }
-        
-        input[type=submit]:hover {
-            cursor: pointer;
-            box-shadow: inset 0px 0px 15px var(--our-darker-cyan);
-        }
-        
-        input[type=text] {
-            background-color: var(--our-dark-gray);
-        }
-        
-        ::placeholder {
-            /* Shumica e shfletuesve */
-            color: white;
-        }
-        
-        ::-ms-input-placeholder {
-            /* Microsoft Edge */
-            color: white;
-        }
-        
-        input:focus {
-            outline: none;
-        }
-        
-        button:focus {
-            outline: none;
-        }t type="text" name="" id="searchBox" placeholder="Search Our Website...." />
+          <input type="text" name="" id="searchBox" placeholder="Search Our Website...." />
           <input type="submit" value="SEARCH" />
         </div>
       </div>
@@ -104,21 +47,21 @@
 
       <nav class="header-nav-bar ">
         <ul id="menu">
-          <li class="nav-item"><a href="index.html" class="nav-link">HOME</a> </li>
-          <li class="nav-item"><a href="about.html">ABOUT US </a></li>
-          <li class="nav-item"><a href="meny.html">MENU </a></li>
-          <li class="nav-item"><a href="order.html">ORDER NOW </a></li>
-          <li class="nav-item"><a href="reservations.html">RESERVATION </a></li>
+          <li class="nav-item"><a href="./index.html" class="nav-link">HOME</a> </li>
+          <li class="nav-item"><a href="./about.html">ABOUT US </a></li>
+          <li class="nav-item"><a href="./meny.html">MENU </a></li>
+          <li class="nav-item"><a href="./order.html">ORDER NOW </a></li>
+          <li class="nav-item"><a href="./reservations.html">RESERVATION </a></li>
           <li class="nav-item">
             <div class="dropdown">
               <a>OUR STAFF</a>
               <div class="dropdown-content">
-                <a href="board.html">BOARD</a> <hr>
-                <a href="chefs.html">CHEFS</a>
+                <a href="./board.html">BOARD</a> <hr>
+                <a href="./chefs.html">CHEFS</a>
               </div>
             </div>
           </li>
-          <li class="nav-item"><a href="contact.html">CONTACT </a></li>
+          <li class="nav-item"><a href="./contact.html">CONTACT </a></li>
         </ul>
       </nav> 
     </div>
@@ -132,7 +75,7 @@
 
       <div class="dishes-panel">
         <!--Image 1-->
-        <img id="dish-image" src="images/homepage/dish1.png" alt="chicken special" class="dish">
+        <img id="dish-image" src="./images/homepage/dish1.png" alt="chicken special" class="dish">
       </div>
 
       <div class="dishes-slides">
@@ -171,7 +114,7 @@
     <div id="speciality-dishes" class="speciality-section">
 
       <div class="speciality">
-        <img src="images/homepage/speciality1.jpg" alt="speciality dish image" class="speciality-image">
+        <img src="./images/homepage/speciality1.jpg" alt="speciality dish image" class="speciality-image">
         <h1>Flija</h1>
         <p>It consists of multiple crêpe-like layers
           brushed with cream and served with sour cream.
@@ -179,7 +122,7 @@
         <button>READ MORE &#187;</button>
       </div>
       <div class="speciality">
-        <img src="images/homepage/speciality1.jpg" alt="speciality dish image" class="speciality-image">
+        <img src="./images/homepage/speciality1.jpg" alt="speciality dish image" class="speciality-image">
         <h1>Pitja</h1>
         <p>It consists of multiple crêpe-like layers
           brushed with cream and served with sour cream.
@@ -187,7 +130,7 @@
         <button>READ MORE &#187;</button>
       </div>
       <div class="speciality">
-        <img src="images/homepage/speciality1.jpg" alt="speciality dish image" class="speciality-image">
+        <img src="./images/homepage/speciality1.jpg" alt="speciality dish image" class="speciality-image">
         <h1>Pasuli</h1>
         <p>It consists of multiple crêpe-like layers
           brushed with cream and served with sour cream.
@@ -209,7 +152,7 @@
       <div class="opinions">
         <div class="critic">
           <div class="avatar">
-            <img src="images/homepage/avatar/m.png" alt="critic face">
+            <img src="./images/homepage/avatar/m.png" alt="critic face">
           </div>
           <div class="opinion">
             <a href="#">Magnificent</a>
@@ -219,7 +162,7 @@
         </div>
         <div class="critic">
           <div class="avatar">
-            <img src="images/homepage/avatar/f.png" alt="critic face">
+            <img src="./images/homepage/avatar/f.png" alt="critic face">
           </div>
           <div class="opinion">
             <a href="#">Magnificent</a>
@@ -229,7 +172,7 @@
         </div>
         <div class="critic">
           <div class="avatar">
-            <img src="images/homepage/avatar/m.png" alt="critic face">
+            <img src="./images/homepage/avatar/m.png" alt="critic face">
           </div>
           <div class="opinion">
             <a href="#">Magnificent</a>
@@ -241,7 +184,7 @@
       <div class="opinions">
         <div class="critic">
           <div class="avatar">
-            <img src="images/homepage/avatar/f.png" alt="critic face">
+            <img src="./images/homepage/avatar/f.png" alt="critic face">
           </div>
           <div class="opinion">
             <a href="#">Magnificent</a>
@@ -251,7 +194,7 @@
         </div>
         <div class="critic">
           <div class="avatar">
-            <img src="images/homepage/avatar/m.png" alt="critic face">
+            <img src="./images/homepage/avatar/m.png" alt="critic face">
           </div>
           <div class="opinion">
             <a href="#">Magnificent</a>
@@ -261,7 +204,7 @@
         </div>
         <div class="critic">
           <div class="avatar">
-            <img src="images/homepage/avatar/f.png" alt="critic face">
+            <img src="./images/homepage/avatar/f.png" alt="critic face">
           </div>
           <div class="opinion">
             <a href="#">Magnificent</a>
@@ -326,5 +269,5 @@ to last throughout the day
     </div>
   </footer>
 </body>
-<script src="js/script.js"></script>
+<script src="./js/script.js"></script>
 </html>
