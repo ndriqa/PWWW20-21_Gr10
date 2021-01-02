@@ -437,6 +437,14 @@ font-weight: normal;
 .subheading2 {
     font-family:courier new;
     color: var(--our-cyan);
+    text-align: center !important;
+
+}
+.menu-image-text{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
 .mySlides {
     display: none;
