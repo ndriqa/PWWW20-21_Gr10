@@ -565,13 +565,16 @@ a {
 .dropdown:hover .dropdown-content {
     display: block;
 }
-<<<<<<< HEAD
 
 
 
 
-=======
 .nav-link-active {
     color: #959595!important;
 }
->>>>>>> 2c1c49a9c78eb5e313b95dc2543241aa00dd1749
+.night-text{
+
+}
+.night-background{
+
+}
