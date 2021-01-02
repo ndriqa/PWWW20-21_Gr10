@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" manifest="https://ndriqa.github.io/PWWW20-21_Gr10/reservations.html">
 
     <head>
         <meta charset="UTF-8" />
@@ -87,12 +87,12 @@
     </div>
                  <hr class="separator">
        
-            
         </header>
 
          <main> 
              <div class="container">
- <section class="main-slider">
+                 <br>
+    <section class="main-slider">
         <div class="container">          
           <div class="slider-container w3-content w3-display-container">
             <div class="slider-display-container mySlides">
@@ -128,10 +128,6 @@
           </div>
         </div>
       </section>
-
-
-
-
 
         
                       <div class="col-md-7 text-center heading-section ftco-animate fadeInUp ftco-animated">
@@ -358,6 +354,18 @@ setTimeout(carousel, 9000);
       slides[slideIndex-1].style.display = "block";  
       dots[slideIndex-1].className += " w3-white";
     }
+  </script>
+        <script>
+    $(document).ready(function () {
+        var url = window.location.href;
+        let me = $('ul#menu li a');
+        $(me).map(function(idx, elem) {
+          if(url.includes($(elem).attr("href"))){
+            $(elem).addClass("nav-link-active");
+          }
+        });
+      }
+    );
   </script>
         <footer>
 

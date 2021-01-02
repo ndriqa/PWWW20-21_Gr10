@@ -10,7 +10,11 @@
 
         <title>Menu</title>
 
-        <style> 
+		<style> 
+			.nav-link-active {
+				color: #959595!important;
+			}
+
             .fixed-bg{
                 background-image: url("Images/reservation/1.jpg");
                 min-height: 300px;
@@ -67,8 +71,8 @@
     <body>
 
 
-        <header class="main-header">
-          
+        <header>
+            <div class="container">
             <div class="social-top" id="social-top">
                 <div class="social-top-content">
                     <div class="social-icons">
@@ -109,17 +113,16 @@
             <div class="dropdown">
               <a>OUR STAFF</a>
               <div class="dropdown-content">
-                <a href="board.html">BOARD</a> <hr>
-                <a href="chefs.html">CHEFS</a>
+                <a href="board.html" class="dr">BOARD</a> <hr>
+                <a href="chefs.html" class="dr">CHEFS</a>
               </div>
             </div>
           </li>
           <li class="nav-item"><a href="contact.html">CONTACT </a></li>
         </ul>
       </nav> 
-                <span class="header-space"></span>
     </div>
-         
+           </div>
         </header>
         <main>
             <div class="container">
@@ -1163,135 +1166,11 @@
                    
            
         </div>
-
-
-        <script type="text/javascript">
-            function validateForm() {
-                if (isEmpty(document.getElementById('data_3').value.trim())) {
-                    alert('Name is required!');
-                    return false;
-                }
-                if (!validateEmail(document.getElementById('data_5').value.trim())) {
-                    alert('Email must be a valid email address!');
-                    return false;
-                }
-                if (isEmpty(document.getElementById('data_6').value.trim())) {
-                    alert('Date is required!');
-                    return false;
-                }
-                if (isEmpty(document.getElementById('data_7').value.trim())) {
-                    alert('Time is required!');
-                    return false;
-                }
-                return true;
-            }
-            function isEmpty(str) { return (str.length === 0 || !str.trim()); }
-            function validateEmail(email) {
-                var re = /^([\w-]+(?:\.[\w-]+)*)@((?:[\w-]+\.)*\w[\w-]{0,66})\.([a-z]{2,15}(?:\.[a-z]{2})?)$/i;
-                return isEmpty(email) || re.test(email);
-            }
-        </script>
-
-
-
-       <!--  <p>BEST RESTAURANT IN TOWN  <strong>Note:</strong> Try every food.</p>
-
-       <div class="fixed-bg-2"></div>
-
-        <div style="height:800px;background-color:white;">
-
-
-        </div>  -->
-       
-            <!--      <script>
-var myIndex = 0;
-carousel();
-
-function carousel() {
-var i;
-var x = document.getElementsByClassName("mySlides");
-for (i = 0; i < x.length; i++) {
-x[i].style.display = "none";  
-}
-myIndex++;
-if (myIndex > x.length) {myIndex = 1}    
-x[myIndex-1].style.display = "block";  
-setTimeout(carousel, 9000);    
-}
-</script>  -->
-
-        <!--    <section class="booking">
-                <div class="booking-1">
-                    <div class="booking-2">
-                        <div class="booking-3">
-                            <h2 id="delicious">We Make Delicious &amp; Nutritious Food <br></h2>
-                        </div>
-                    </div>
-                </div>
-            </section>  --> 
-            </div>
-            </div>
-            </div>
-            
-            
-            
-            <!-- Change Color Based on Time --> 
-  <script>
-    function updateBackground() {
-    var 
-      hr = (new Date()).getHours(),
-      body = document.body,
-      bstyle = body.style,
-      headertopstyle = document.querySelector('.social-top'),
-      navitem = document.querySelector('nav-link'),
-      headerstyle = document.querySelector('.menu'),
-      headerspacestyle = document.querySelector('.header-space'),
-      footer = document.querySelector('.main-footer');
-      
-    if (hr < 8) {
-      bstyle.backgroundColor = '#FFFFFF';
-      headertopstyle.style.backgroundColor = '#FFFFFF';
-      navitem.style.color= '#EBEBEB';
-      headerstyle.style.backgroundColor = '#EBEBEB';
-      headerspacestyle.style.backgroundColor = '#FFFFFF';
-      bstyle.color = '#000000';
-      document.querySelectorAll("presentation-category").forEach(function(element) { element.style.color = '#313131'; });
-      document.querySelectorAll('.social-icons-btn').forEach(function(element) { element.style.backgroundColor = '#D2D2D2'; });
-      document.getElementById("st0").style.stroke = '#000000';
-      document.getElementById("st1").style.stroke = '#000000';
-    } else if (hr > 8 && hr < 19) {
-      bstyle.backgroundColor = '#FFFFFF';
-      headertopstyle.style.backgroundColor = '#000000';
-      headerstyle.style.backgroundColor = '#EBEBEB';
-      headerspacestyle.style.backgroundColor = '#FFFFFF';
-         navitem.style.color= '#EBEBEB';
-      bstyle.color = '#000000';
-      document.querySelectorAll("presentation-category").forEach(function(element) { element.style.color = '#313131'; });
-      document.querySelectorAll('.social-icons-btn').forEach(function(element) { element.style.backgroundColor = '#D2D2D2'; });
-      document.getElementById("st0").style.stroke = '#000000';
-      document.getElementById("st1").style.stroke = '#000000';
-
-    } else {
-      bstyle.backgroundColor = '#0E0E0E';
-      headertopstyle.style.backgroundColor = '#000000';
-      headerstyle.style.backgroundColor = '#000000';
-      headerspacestyle.style.backgroundColor = '#0E0E0E';
-      footer.style.backgroundColor = '#000000';
-      bstyle.color = '#FFFFFF';
-      document.querySelectorAll(".presentation-category").forEach(function(element) { element.style.color = '#FFFFFF'; });
-      document.querySelectorAll('.social-icons-btn').forEach(function(element) { element.style.backgroundColor = '#1A1A1A'; });
-      document.getElementById("st0").style.stroke = '#505050';
-      document.getElementById("st1").style.stroke = '#505050';
-    } 
-  }
-
-    setInterval(updateBackground, 1000 * 60);
-    updateBackground();
-  </script>
             
         </main>
 
   <footer>
+            <div class="container">
 
         <div class="main-footer">
       <div id="contact-details" class="sector">
@@ -1340,8 +1219,103 @@ to last throughout the day
       <p>Copyright &copy; <sub>2013</sub> Domain Name - All Rights Reserved</p>
       <p>Made By Group 10</p>
     </div>
-     
+            </div>
   </footer>
-    </body>
 
+
+
+  <script src="https://code.jquery.com/jquery-3.5.1.min.js" integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
+
+        <script type="text/javascript">
+            function validateForm() {
+                if (isEmpty(document.getElementById('data_3').value.trim())) {
+                    alert('Name is required!');
+                    return false;
+                }
+                if (!validateEmail(document.getElementById('data_5').value.trim())) {
+                    alert('Email must be a valid email address!');
+                    return false;
+                }
+                if (isEmpty(document.getElementById('data_6').value.trim())) {
+                    alert('Date is required!');
+                    return false;
+                }
+                if (isEmpty(document.getElementById('data_7').value.trim())) {
+                    alert('Time is required!');
+                    return false;
+                }
+                return true;
+            }
+            function isEmpty(str) { return (str.length === 0 || !str.trim()); }
+            function validateEmail(email) {
+                var re = /^([\w-]+(?:\.[\w-]+)*)@((?:[\w-]+\.)*\w[\w-]{0,66})\.([a-z]{2,15}(?:\.[a-z]{2})?)$/i;
+                return isEmpty(email) || re.test(email);
+            }
+        </script>
+
+ 
+            
+            
+            <!-- Change Color Based on Time --> 
+  <script>
+    function updateBackground() {
+		var 
+		hr = (new Date()).getHours(),
+		body = document.body,
+		bstyle = body.style,
+		headertopstyle = document.querySelector('.social-top'),
+		headertitle = document.querySelector('.homepage-description h1'),
+		headerdescription = document.querySelector('.homepage-description p'),
+		footer = document.querySelector('.main-footer');
+		
+		if (hr < 8) {
+			bstyle.backgroundColor = '#FFFFFF';
+			headertopstyle.style.backgroundColor = '#FFFFFF';
+			headertitle.style.color = '#000000';
+			headerdescription.style.color = '#000000';
+			// footer.style.backgroundColor = '#FFFFFF';
+			bstyle.color = '#000000';
+			document.querySelectorAll('.nav-item a').forEach(function(element) { element.style.color = '#000000'; });
+			document.querySelector('.mb-4').style.color = '#000000';
+		} else if (hr > 8 && hr < 19) {
+			bstyle.backgroundColor = '#FFFFFF';
+			headertopstyle.style.backgroundColor = '#FFFFFF';
+			headertitle.style.color = '#000000';
+			headerdescription.style.color = '#000000';
+			// footer.style.backgroundColor = '#FFFFFF';
+			bstyle.color = '#000000';
+			document.querySelectorAll('.nav-item a').forEach(function(element) { element.style.color = '#000000'; });
+			document.querySelector('.mb-4').style.color = '#000000';
+		} else {
+			bstyle.backgroundColor = '#0E0E0E';
+			headertopstyle.style.backgroundColor = '#000000';
+			headertitle.style.color = '#FFFFFF';
+			headerdescription.style.color = '#FFFFFF';
+			// footer.style.backgroundColor = '#000000';
+			bstyle.color = '#FFFFFF';
+			document.querySelectorAll('.nav-item a').forEach(function(element) { element.style.color = '#FFFFFF' });
+			document.querySelector('.mb-4').style.color = '#FFFFFF';
+			document.querySelectorAll('.dropdown-content').forEach(function(element) { element.style.backgroundColor = '#CCC'});
+		} 
+	}
+
+    setInterval(updateBackground, 1000 * 60);
+    updateBackground();
+  </script>
+
+  <!-- Add NAV LINK ACTIVE CLASS FOR ACTIVE MENU PAGE -->
+  <script>
+    $(document).ready(function () {
+        var url = window.location.href;
+        let me = $('ul#menu li a');
+        $(me).map(function(idx, elem) {
+          if(url.includes($(elem).attr("href"))){
+            $(elem).addClass("nav-link-active");
+          }
+        });
+      }
+    );
+  </script>
+
+	</body>
 </html>
