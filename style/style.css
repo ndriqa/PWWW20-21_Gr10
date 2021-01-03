@@ -344,6 +344,7 @@ button:focus {
     max-width: 300px;
     max-height: 160px;
     border-radius: 10px;
+    object-fit: cover;
 }
 
 #critics-opinions {
