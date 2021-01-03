@@ -19,10 +19,15 @@ function init() {
 
 function setMode(mode = DEFAULT_MODE) {
     if (mode === DARK_MODE) {
-        let bg = Array.prototype.slice(document.getElementsByClassName('.nm-bg'));
-        console.log(bg);
+        let bg = document.getElementsByClassName('nm-bg');
+        Array.from(bg).forEach(element => {
+            element.classList.add("dark-bg")
+        });
     } else if (mode === LIGHT_MODE) {
-        
+        let bg = document.getElementsByClassName('nm-bg');
+        Array.from(bg).forEach(element => {
+            element.classList.remove("dark-bg")
+        });
     }
 }
 

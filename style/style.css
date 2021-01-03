@@ -4,6 +4,7 @@
     --our-dark-gray: #202020;
     --our-light-gray: #999999;
     --our-gray: #303030;
+    --new-gray: #3d3d3d;
 }
 
 /* html {
@@ -578,4 +579,8 @@ a {
 
 .nav-link-active {
     color: var(--our-darker-cyan)!important;
+}
+.dark-bg{
+    background-color: var(--new-gray)!important;
+    color: white !important;
 }
