@@ -65,6 +65,17 @@ let foodObjects = [
         champagne: "images/reservation/champagne.jpg",
     }
 ]
+let fprice;
+let dprice;
+fprice = sessionStorage.getItem('food')
+dprice = sessionStorage.getItem('drink')
+
+if(!fprice){
+    fprice = 5.00;
+} else {}
+if(!dprice){
+    dprice = 3.00;
+} else {}
 
 const PHONE_REGEX_PATTERN = /^[+][/0-9]{8,12}$/gm;
 
@@ -183,12 +194,13 @@ function drinkGotChosen(d) {
     document.getElementById("chosen_food").src = foodImage;
     document.getElementById("chosen_drink").src = drinkImage;
 
+    
     document.getElementById("food_name").innerText = foodName;
-    document.getElementById("food_price").innerText = "5.00$";
+    document.getElementById("food_price").innerText = `${fprice}$`;
     document.getElementById("drink_name").innerText = drinkName;
-    document.getElementById("drink_price").innerText = "3.00$";
+    document.getElementById("drink_price").innerText = `${dprice}$`;
 
-    document.getElementById("total_price").innerText = "8.00$";
+    document.getElementById("total_price").innerText = `${fprice+dprice}$`;
 }
 function cashout() {
     let fname = document.getElementById("fname").value;
@@ -196,14 +208,16 @@ function cashout() {
     let phone = document.getElementById("num").value;
     console.log(phone);
     if (!fname || !lname){
-        window.alert("Please write first and last name")
+        window.alert("Please write first and last name");
+        throw new Error("First or last name not valid");
     } else if (!PHONE_REGEX_PATTERN.test(phone)) {
         //qite naj pop-up qe gabim eshte numri i tel
-        window.alert("The number should be of format: +123456789")
+        window.alert("The number should be of format: +123456789");
         throw new Error("Phone number not valid");
     } else {
         document.getElementById("perzgjedhja").style.display = "none";
         document.getElementById("intro").style.display = "block";
+        window.alert("Order has been made and will arrive shortly");
     }
 
 }

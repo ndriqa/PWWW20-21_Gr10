@@ -9,10 +9,10 @@ const btn = document.querySelector('#theme-switcher');
 init();
 
 function init() {
-    let storedMode = sessionStorage.getItem('mode');
+    let storedMode = localStorage.getItem('mode');
     if (!storedMode) {
         storedMode = DEFAULT_MODE;
-        sessionStorage.setItem('mode', DEFAULT_MODE);
+        localStorage.setItem('mode', DEFAULT_MODE);
     }
     setMode(storedMode);
 }
@@ -26,18 +26,18 @@ function setMode(mode = DEFAULT_MODE) {
 }
 
 btn.addEventListener('click', function () {
-    let mode = sessionStorage.getItem('mode');
+    let mode = localStorage.getItem('mode');
     if (mode) {
         let newMode = mode == DARK_MODE ? LIGHT_MODE : DARK_MODE;
         setMode(newMode);
-        sessionStorage.setItem('mode', newMode);
+        localStorage.setItem('mode', newMode);
     }
 });
 
 
 function updateBackground() {
     var hr = (new Date()).getHours();
-    let storedMode = sessionStorage.getItem('mode');
+    let storedMode = localStorage.getItem('mode');
 
     if (hr >= 18 || hr < 8) {
         storedMode = DARK_MODE;
