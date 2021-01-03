@@ -16,23 +16,41 @@ body{
     margin-left: auto !important;
     margin-right: auto !important;
 }
-
-.about-section{
-margin-left: 50px; 
-margin-right: 50px;
-margin-top: 50px;  
- background: url(../Images/about/restaurant/hamburger.jfif) no-repeat left;
-    background-size: 55%;
+.main{
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.about{
     background-color:var(--our-darker-cyan);
+    z-index: 0;
+}
+.about-section{
+    margin-top: 50px;
+    position: relative;  
+    background-size: 55%;
     overflow: hidden;
     padding: 100px 0;
+    z-index: 2;
+}
+.about-background{
+    position: absolute;
+    background: url(../Images/about/restaurant/hamburger.jfif) no-repeat left;
+    background-size: 70% 100%;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    z-index: 1;
 }
 
 .inner-container{
-    width: 55%;
+    position: relative;
+    width: 75%;
     float: right;
     background-color: #fdfdfd;
     padding: 150px;
+    z-index: 2;
 }
 
 .inner-container h1{
@@ -60,6 +78,10 @@ margin-top: 50px;
     .inner-container{
         padding: 80px;
     }
+    .about-background{
+        background-size: 100% 100%;
+    }
+
 }
 
 @media screen and (max-width:1000px){
@@ -67,6 +89,10 @@ margin-top: 50px;
         background-size: 100%;
         padding: 100px 40px;
     }
+    .about-background{
+        background-size: 100% 100%;
+    }
+
     .inner-container{
         width: 100%;
     }
@@ -76,6 +102,10 @@ margin-top: 50px;
     .about-section{
         padding: 0;
     }
+    .about-background{
+        background-size: 100% 100%;
+    }
+
     .inner-container{
         padding: 60px;
     }
@@ -93,25 +123,39 @@ html {
   
   .column {
     float: left;
-    width: 33.3%;
+    margin: 10px;
   }
   
   .card {
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-    margin: 0 50 25 50;
+    border-radius: 10px;
   }
  .card2{
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-    margin: 25 50 50 50px;
+    margin: 10px;
+    padding-top: 10px;
+    border-radius: 10px;
+}
+ .card2 img{
+     width: 100%;
+     border-radius: 10px;
  }
-  
+ .card img{
+    width: 100%;
+    border-radius: 10px;
+}
+
   .about-section {
     padding: 50px;
   }
   
   
   .container {
-    padding: 0 16px;
+
+  }
+  .row{
+      display: flex;
+      width: 100%;
   }
   
   .container::after, .row::after {
@@ -154,13 +198,16 @@ html {
 	text-transform: capitalize;
 	font-style: italic;
 }
+#happy_clients{
+    width: 100%;
+    margin-bottom: 50px;
+}
 .ins {
-	width: 80%;
+    display: flex;
 	flex-direction: row;
     text-align: center;
     content: "";
     clear: both;
-    display: flex;
 }
 
 div.team span {
@@ -197,6 +244,12 @@ div.team span {
 .ig4 img{
 	display:inline-block;
 	vertical-align:center;
+}
+.team{
+    padding: 10px;
+}
+.team audio{
+    outline: none;
 }
 .team h4{
     padding: 5px;
