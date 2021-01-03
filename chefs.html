@@ -9,7 +9,7 @@
     crossorigin="anonymous" />
   <link rel="stylesheet" type="text/css" href="style/style.css">
   <link rel="stylesheet" type="text/css" href="style/staff.css">
-  <title>Board</title>
+  <title>Chefs</title>
 
   <!--for testing purposes-->
   <!-- <meta http-equiv="refresh" content="1"> -->
@@ -81,10 +81,10 @@
         <div class="card">
           <img src="Images/staff/chefs/chefwoman.jpg" alt="Jeho" style="width:300px; height: 400px">
           <div class="container">
-            <h2>Jehona Hasolli</h2>
-            <p class="title"> Master Chef </p>
-            <p>If you are a chef, no matter how good a chef you are, it's not good cooking for yourself; the joy is in cooking for others - it's the same with music.</p>
-            <p>jeho@chef.com</p>
+            <h2 id="name">Jehona Hasolli</h2>
+            <p id="name"> Master Chef </p>
+            <p id="name">If you are a chef, no matter how good a chef you are, it's not good cooking for yourself; the joy is in cooking for others - it's the same with music.</p>
+            <p id="name">jeho@chef.com</p>
             <p><button class="button">Contact</button></p>
           </div>
         </div>
@@ -94,10 +94,10 @@
         <div class="card">
           <img src="Images/staff/chefs/chef1.jpg" alt="Ndriqa" style="width:300; height: 400px">
           <div class="container">
-            <h2>Ndricim Rrahmani</h2>
-            <p class="title">Master Chef</p>
-            <p>Everyone has taste. Even if you're not a great chef, there's nothing to stop you understanding the difference between what tastes good and what doesn't.</p>
-            <p>ndriqa@chef.com</p>
+            <h2 id="name">Ndricim Rrahmani</h2>
+            <p id="name">Master Chef</p>
+            <p id="name">Everyone has taste. Even if you're not a great chef, there's nothing to stop you understanding the difference between what tastes good and what doesn't.</p>
+            <p id="name">ndriqa@chef.com</p>
             <p><button class="button">Contact</button></p>
           </div>
         </div>
@@ -107,16 +107,87 @@
         <div class="card">
           <img src="Images/staff/chefs/chef3.jpg" alt="Tato" style="width:300px; height: 400px">
           <div class="container">
-            <h2>Urata Sadiku</h2>
-            <p class="title">Master Chef</p>
-            <p>If you want to become a great chef, be a great chef and work with great chefs. And that's exactly what I did and now I'm a Master Chef .</p>
-            <p>tato@chef.com</p>
+            <h2 id="name">Urata Sadiku</h2>
+            <p id="name">Master Chef</p>
+            <p id="name">If you want to become a great chef, be a great chef and work with great chefs. And that's exactly what I did and now I'm a Master Chef .</p>
+            <p id="name">tato@chef.com</p>
             <p><button class="button">Contact</button></p>
           </div>
         </div>
       </div>
     </div>
+                 
+            <!-- Change Color Based on Time --> 
+  <script>
+    function updateBackground() {
+		var 
+		hr = (new Date()).getHours(),
+		body = document.body,
+		bstyle = body.style,
+		headertopstyle = document.querySelector('.social-top'),
+        cardtitle = document.querySelector('.container #name'),
+        carddescription = document.querySelector('.card p'),
+		headertitle = document.querySelector('.homepage-description h1'),
+		headerdescription = document.querySelector('.homepage-description p'),
+		footer = document.querySelector('.main-footer');
+		
+		if (hr < 8) {
+			bstyle.backgroundColor = '#FFFFFF';
+			headertopstyle.style.backgroundColor = '#FFFFFF';
+			headertitle.style.color = '#000000';
+            cardtitle.style.color='#FFF';
+            carddescription.style.color='#FFF';
+			headerdescription.style.color = '#000000';
+			// footer.style.backgroundColor = '#FFFFFF';
+			bstyle.color = '#000000';
+			document.querySelectorAll('.container #name').forEach(function(element) { element.style.color = '#FFFFFF'; });
+            document.querySelectorAll('.nav-item a').forEach(function(element) { element.style.color = '#000000'; });
+			document.querySelector('.mb-4').style.color = '#000000';
+		} else if (hr > 8 && hr < 19) {
+			bstyle.backgroundColor = '#FFFFFF';
+			headertopstyle.style.backgroundColor = '#FFFFFF';
+			headertitle.style.color = '#000000';
+            cardtitle.style.color='#000000';
+            carddescription.style.color='#000000';
+			headerdescription.style.color = '#000000';
+			// footer.style.backgroundColor = '#FFFFFF';
+			bstyle.color = '#000000';
+			document.querySelectorAll('.container #name').forEach(function(element) { element.style.color = '#000'; });
+            document.querySelectorAll('.nav-item a').forEach(function(element) { element.style.color = '#000000'; });
+			document.querySelector('.mb-4').style.color = '#000000';
+		} else {
+			bstyle.backgroundColor = '#0E0E0E';
+			headertopstyle.style.backgroundColor = '#000000';
+			headertitle.style.color = '#FFFFFF';
+            cardtitle.style.color='#000000';
+            carddescription.style.color='#000000';
+			headerdescription.style.color = '#FFFFFF';
+			// footer.style.backgroundColor = '#000000';
+			bstyle.color = '#FFFFFF';
+			document.querySelectorAll('.container #name').forEach(function(element) { element.style.color = '#FFF'; });
+            document.querySelectorAll('.nav-item a').forEach(function(element) { element.style.color = '#FFFFFF' });
+			document.querySelector('.mb-4').style.color = '#FFFFFF';
+			document.querySelectorAll('.dropdown-content').forEach(function(element) { element.style.backgroundColor = '#CCC'});
+		} 
+	}
 
+    setInterval(updateBackground, 1000 * 60);
+    updateBackground();
+  </script>
+      
+ <!-- Add NAV LINK ACTIVE CLASS FOR ACTIVE MENU PAGE -->
+  <script>
+    $(document).ready(function () {
+        var url = window.location.href;
+        let me = $('ul#menu li a');
+        $(me).map(function(idx, elem) {
+          if(url.includes($(elem).attr("href"))){
+            $(elem).addClass("nav-link-active");
+          }
+        });
+      }
+    );
+  </script>
   </main>
   <!--FOOTER STUFF-->
   <footer>

@@ -569,11 +569,6 @@ a {
 
 
 .nav-link-active {
-    color: #959595!important;
+    color: var(--our-darker-cyan);!important;
 }
-.night-text{
-
-}
-.night-background{
-
-}
+.
