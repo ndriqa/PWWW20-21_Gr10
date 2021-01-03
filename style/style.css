@@ -207,13 +207,11 @@ header {
     font-size: 25px;
 }
 
-
-
 input {
     height: 33px;
     border-radius: 10px;
     border: none;
-    color: white;
+    color: black;
     padding-left: 10px;
     padding-right: 10px;
 }

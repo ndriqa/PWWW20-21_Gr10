@@ -4,7 +4,6 @@ const DARK_MODE = 'dark';
 const LIGHT_MODE = 'light';
 const DEFAULT_MODE = LIGHT_MODE;
 
-
 init();
 
 function init() {
