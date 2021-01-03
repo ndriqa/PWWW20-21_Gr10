@@ -95,6 +95,7 @@ ul {
   padding: 1em;
   border: solid 1px var(--our-darker-cyan);
   border-radius: 4px;
+  color: black;
 }
 
 .contact form textarea {
@@ -117,7 +118,7 @@ ul {
 }
 
 #contact-form input {
-  color: var(--our-darker-cyan) !important;
+  color:black !important;
   background-color: white;
   outline: none;
 }
