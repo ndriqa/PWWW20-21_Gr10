@@ -66,6 +66,8 @@ let foodObjects = [
     }
 ]
 
+const PHONE_REGEX_PATTERN = /^[+][/0-9]{8,12}$/gm;
+
 let choosenFoodType = -1;
 let choosenFood = -1;
 let choosenDrink = -1;
@@ -73,7 +75,7 @@ let choosenDrink = -1;
 document.getElementById("choose").onclick = foodTypeChosen;
 
 function foodTypeChosen() {
-document.getElementById("intro").style.display = "none";
+    document.getElementById("intro").style.display = "none";
 
     let foodParent = document.getElementById("ushqimet")
     foodParent.innerHTML = "";
@@ -188,9 +190,22 @@ function drinkGotChosen(d) {
 
     document.getElementById("total_price").innerText = "8.00$";
 }
-function cashout(){
-    document.getElementById("perzgjedhja").style.display = "none";
-    document.getElementById("intro").style.display = "block";
+function cashout() {
+    let fname = document.getElementById("fname").value;
+    let lname = document.getElementById("lname").value;
+    let phone = document.getElementById("num").value;
+    console.log(phone);
+    if (!fname || !lname){
+        window.alert("Please write first and last name")
+    } else if (!PHONE_REGEX_PATTERN.test(phone)) {
+        //qite naj pop-up qe gabim eshte numri i tel
+        window.alert("The number should be of format: +123456789")
+        throw new Error("Phone number not valid");
+    } else {
+        document.getElementById("perzgjedhja").style.display = "none";
+        document.getElementById("intro").style.display = "block";
+    }
+
 }
 function fixFoodName(s) {
     let nameParts = s.split("_");
