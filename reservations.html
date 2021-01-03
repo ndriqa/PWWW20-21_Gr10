@@ -11,7 +11,7 @@
         <title>Reservations</title>
 
         <style> 
-            .newspaper {
+            .mb-5 {
                 column-count: 3;
                 column-gap: 40px;
                 column-rule-style: solid;
@@ -82,8 +82,8 @@
             <div class="dropdown">
               <a>OUR STAFF</a>
               <div class="dropdown-content">
-                <a href="board.html">BOARD</a> <hr>
-                <a href="chefs.html">CHEFS</a>
+                <a href="board.html" class="dr">BOARD</a> <hr>
+                <a href="chefs.html" class="dr">CHEFS</a>
               </div>
             </div>
           </li>
@@ -272,7 +272,7 @@ function showSlides(n) {
 <svg data-src="https://s.svgbox.net/loaders.svg?ic=bars" width="32" height="32" fill="currentColor"></svg>
                  
     
-<div class="newspaper">
+<div class="mb-5">
 A restaurant  , or an eatery, is a business that prepares and serves food and drinks to customers. Meals are generally served and eaten on the premises, but many restaurants also offer take-out and food delivery services. Restaurants vary greatly in appearance and offerings, including a wide variety of cuisines and service models ranging from inexpensive fast food restaurants and cafeterias, to mid-priced family restaurants, to high-priced luxury establishments.
 
 In Western countries, most mid-to high-range restaurants serve alcoholic beverages such as beer and wine. Some restaurants serve all the major meals, such as breakfast, lunch, and dinner (e.g., major fast food chains, diners, hotel restaurants, and airport restaurants). Other restaurants may serve only a single meal (for example, a pancake house may only serve breakfast) or they may serve two meals (e.g., lunch and dinner).
@@ -351,9 +351,10 @@ In Western countries, most mid-to high-range restaurants serve alcoholic beverag
     );
   </script>
         
+         
             
             
-           <!-- Change Color Based on Time --> 
+            <!-- Change Color Based on Time --> 
   <script>
     function updateBackground() {
 		var 
@@ -361,8 +362,7 @@ In Western countries, most mid-to high-range restaurants serve alcoholic beverag
 		body = document.body,
 		bstyle = body.style,
 		headertopstyle = document.querySelector('.social-top'),
-        cardtitle = document.querySelector('.container #name'),
-        carddescription = document.querySelector('.card p'),
+        formstyle = document.querySelector('.forma #name'),
 		headertitle = document.querySelector('.homepage-description h1'),
 		headerdescription = document.querySelector('.homepage-description p'),
 		footer = document.querySelector('.main-footer');
@@ -371,38 +371,32 @@ In Western countries, most mid-to high-range restaurants serve alcoholic beverag
 			bstyle.backgroundColor = '#FFFFFF';
 			headertopstyle.style.backgroundColor = '#FFFFFF';
 			headertitle.style.color = '#000000';
-            cardtitle.style.color='#FFF';
-            carddescription.style.color='#FFF';
 			headerdescription.style.color = '#000000';
 			// footer.style.backgroundColor = '#FFFFFF';
 			bstyle.color = '#000000';
-			document.querySelectorAll('.forma #name').forEach(function(element) { element.style.color = '#FFFFFF'; });
-            document.querySelectorAll('.nav-item a').forEach(function(element) { element.style.color = '#000000'; });
+			document.querySelectorAll('.nav-item a').forEach(function(element) { element.style.color = '#000000'; });
 			document.querySelector('.mb-4').style.color = '#000000';
+            document.querySelector('.mb-5').style.color = '#000000';
 		} else if (hr > 8 && hr < 19) {
 			bstyle.backgroundColor = '#FFFFFF';
 			headertopstyle.style.backgroundColor = '#FFFFFF';
 			headertitle.style.color = '#000000';
-            cardtitle.style.color='#000000';
-            carddescription.style.color='#000000';
 			headerdescription.style.color = '#000000';
 			// footer.style.backgroundColor = '#FFFFFF';
 			bstyle.color = '#000000';
-			document.querySelectorAll('.forma #name').forEach(function(element) { element.style.color = '#000'; });
-            document.querySelectorAll('.nav-item a').forEach(function(element) { element.style.color = '#000000'; });
+			document.querySelectorAll('.nav-item a').forEach(function(element) { element.style.color = '#000000'; });
 			document.querySelector('.mb-4').style.color = '#000000';
+            document.querySelector('.mb-5').style.color = '#000000';
 		} else {
 			bstyle.backgroundColor = '#0E0E0E';
 			headertopstyle.style.backgroundColor = '#000000';
 			headertitle.style.color = '#FFFFFF';
-            cardtitle.style.color='#000000';
-            carddescription.style.color='#000000';
 			headerdescription.style.color = '#FFFFFF';
 			// footer.style.backgroundColor = '#000000';
-			bstyle.color = '#FFFFFF';
-			document.querySelectorAll('.container #name').forEach(function(element) { element.style.color = '#FFF'; });
-            document.querySelectorAll('.nav-item a').forEach(function(element) { element.style.color = '#FFFFFF' });
+			bstyle.color = '#000';
+			document.querySelectorAll('.nav-item a').forEach(function(element) { element.style.color = '#FFFFFF' });
 			document.querySelector('.mb-4').style.color = '#FFFFFF';
+            document.querySelector('.mb-5').style.color = '#FFFFFF';
 			document.querySelectorAll('.dropdown-content').forEach(function(element) { element.style.backgroundColor = '#CCC'});
 		} 
 	}
@@ -424,6 +418,7 @@ In Western countries, most mid-to high-range restaurants serve alcoholic beverag
       }
     );
   </script>
+
         <footer>
 
         <div class="main-footer">
