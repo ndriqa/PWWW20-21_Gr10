@@ -161,14 +161,18 @@ form fieldset {
     animation: uparrow 0.5s infinite alternate ease-in-out;
     transition: all 0.5s ease-in infinite alternate;
     background-image: url(https://s.svgbox.net/materialui.svg?ic=arrow_upward);
-}
+} 
 
 @keyframes uparrow {
     0% {
-        transform: translateY(5px);
+        transform: translateY(5px) rotateY(0deg); 
+
+    }
+    50%{
+        transform: rotateY(90deg);
     }
     100% {
-        transform: translateY(20px);
+        transform: translateY(20px) rotateY(180deg);
     }
 }
 
