@@ -143,8 +143,8 @@ ul#menu li a:active {
     color: var(--our-cyan);
 }
 
-.active {
-    color: var(--our-cyan);
+.nav-active {
+    color: var(--our-cyan) !important;
 }
 
 .logo-info {
@@ -516,8 +516,16 @@ a {
         opacity: 1
     }
 }
-
-/*.dots {
+#verticalLine{
+    width: 1px;
+    background-color: var(--our-light-gray);
+    height: 100%;
+}
+.dots-div{
+    display: flex;
+    justify-content: space-between;
+}
+.dots {
     padding: 10px;
     margin-left: auto;
 }
@@ -542,7 +550,7 @@ a {
     height: 20px;
     width: 20px;
     margin: 0px;
-}*/
+}
 
 .dropdown {
     position: relative;

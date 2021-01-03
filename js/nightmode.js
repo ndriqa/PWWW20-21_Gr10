@@ -19,7 +19,8 @@ function init() {
 
 function setMode(mode = DEFAULT_MODE) {
     if (mode === DARK_MODE) {
-
+        let bg = Array.prototype.slice(document.getElementsByClassName('.nm-bg'));
+        console.log(bg);
     } else if (mode === LIGHT_MODE) {
         
     }

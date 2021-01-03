@@ -17,7 +17,7 @@
 
 <body>
   <!--HEADER STUFF-->
-  <header class="night-background">
+  <header class="nm-bg">
     <div class="social-top">
       <div class="social-top-content">
         <div class="social-icons">
@@ -29,6 +29,8 @@
         </div>
 
         <div>
+          <button id="theme-switcher">Change theme</button>
+          <span id="verticalLine"></span>
           <input type="text" name="" id="searchBox" placeholder="Search Our Website...." />
           <input type="submit" value="SEARCH" />
         </div>
@@ -47,7 +49,7 @@
 
       <nav class="header-nav-bar ">
         <ul id="menu">
-          <li class="nav-item"><a class="nav-link " href="./index.html" >HOME</a> </li>
+          <li class="nav-item"><a class="nav-link nav-active" href="./index.html" >HOME</a> </li>
           <li class="nav-item"><a class="nav-link " href="./about.html" >ABOUT US </a></li>
           <li class="nav-item"><a class="nav-link " href="./meny.html" >MENU </a></li>
           <li class="nav-item"><a class="nav-link " href="./order.html" >ORDER NOW </a></li>
@@ -99,12 +101,14 @@
             Dictum sit amet justo donec enim diam vulputate ut pharetra.
           </p>
         </div>
-        <button>READ MORE &#187;</button>
+        <div class="dots-div">
+          <button>READ MORE &#187;</button>
         <div class="dots">
           <span class="dot" onclick="changeSlide(1)"></span>
           <span class="dot" onclick="changeSlide(2)"></span>
           <span class="dot" onclick="changeSlide(3)"></span>
           <span class="dot" onclick="changeSlide(4)"></span>
+        </div>
         </div>
       </div>
     </div>
