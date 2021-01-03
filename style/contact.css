@@ -9,7 +9,7 @@
 
 /* ------------------- */
 
-/* COMPANY INFORMATION */
+/* RESTAURANT INFORMATION */
 
 /* ------------------- */
 ul {
@@ -35,13 +35,13 @@ ul {
 .wrapper > * {
   padding: 1em;
 }
-.company-info {
+.restaurant-info {
   background: #c3c9dd;
   border-top-left-radius: 4px;
   border-top-right-radius: 4px;
 }
 
-.company-info h3, .company-info ul {
+.restaurant-info h3, .restaurant-info ul {
   text-align: center;
   margin: 0 0 1rem 0;
   
@@ -148,13 +148,13 @@ textarea {
   .wrapper>* {
     padding: 2em;
   }
-  .company-info {
+  .restaurant-info {
     border-radius: 4px 0 0 4px;
   }
   .contact {
     border-radius: 0 4px 4px 0;
   }
-  .company-info h3, .company-info ul, .brand {
+  .restaurant-info h3, .restaurant-info ul, .brand {
     text-align: left;
   }
 }
