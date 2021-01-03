@@ -147,20 +147,20 @@
 			bstyle.backgroundColor = '#FFFFFF';
 			headertopstyle.style.backgroundColor = '#FFFFFF';
 			headertitle.style.color = '#000000';
-            cardtitle.style.color='#FFF';
-            carddescription.style.color='#FFF';
+            cardtitle.style.color='#000000';
+            carddescription.style.color='#000000';
 			headerdescription.style.color = '#000000';
 			// footer.style.backgroundColor = '#FFFFFF';
 			bstyle.color = '#000000';
-			document.querySelectorAll('.container #name').forEach(function(element) { element.style.color = '#FFF'; });
+			document.querySelectorAll('.container #name').forEach(function(element) { element.style.color = '#000'; });
             document.querySelectorAll('.nav-item a').forEach(function(element) { element.style.color = '#000000'; });
 			document.querySelector('.mb-4').style.color = '#000000';
 		} else {
 			bstyle.backgroundColor = '#0E0E0E';
 			headertopstyle.style.backgroundColor = '#000000';
 			headertitle.style.color = '#FFFFFF';
-            cardtitle.style.color='#FFF';
-            carddescription.style.color='#FFF';
+            cardtitle.style.color='#000000';
+            carddescription.style.color='#000000';
 			headerdescription.style.color = '#FFFFFF';
 			// footer.style.backgroundColor = '#000000';
 			bstyle.color = '#FFFFFF';
@@ -174,7 +174,20 @@
     setInterval(updateBackground, 1000 * 60);
     updateBackground();
   </script>
-
+      
+ <!-- Add NAV LINK ACTIVE CLASS FOR ACTIVE MENU PAGE -->
+  <script>
+    $(document).ready(function () {
+        var url = window.location.href;
+        let me = $('ul#menu li a');
+        $(me).map(function(idx, elem) {
+          if(url.includes($(elem).attr("href"))){
+            $(elem).addClass("nav-link-active");
+          }
+        });
+      }
+    );
+  </script>
   </main>
   <!--FOOTER STUFF-->
   <footer>
