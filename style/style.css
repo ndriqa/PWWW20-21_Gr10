@@ -137,7 +137,7 @@ ul#menu li a {
 
 ul#menu li a:hover {
     color: var(--our-cyan);
-    background-color: #f5f5f5;
+    
 }
 
 ul#menu li a:active {
