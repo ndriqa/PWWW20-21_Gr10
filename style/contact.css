@@ -12,7 +12,29 @@
 /* COMPANY INFORMATION */
 
 /* ------------------- */
+ul {
+  list-style: none;
+  padding: 0;
+}
 
+.brand {
+  text-align: center;
+	font-weight: 300;
+	text-transform: uppercase;
+	letter-spacing: 0.1em;
+}
+
+.brand span {
+  color: #ffffff;
+}
+
+.wrapper {
+  box-shadow: 0 0 20px 0 rgba(57, 82, 163, 0.7);
+}
+
+.wrapper > * {
+  padding: 1em;
+}
 .company-info {
   background: #c3c9dd;
   border-top-left-radius: 4px;
@@ -22,6 +44,7 @@
 .company-info h3, .company-info ul {
   text-align: center;
   margin: 0 0 1rem 0;
+  
 }
 
 /* ------- */
@@ -52,7 +75,6 @@
 
 .contact form label {
   display: block;
-  padding-left: 10px;
   text-align: left;
 }
 
@@ -64,17 +86,20 @@
   grid-column: 1 / 3;
 }
 
-.contact form button, .contact form input, .contact form textarea {
-  width: 90%;
-  padding: 10px;
-  border: solid 1px #627edc;
+
+
+.contact form button,
+.contact form input,
+.contact form textarea {
+  width: 95%;
+  padding: 1em;
+  border: solid 1px #627EDC;
   border-radius: 4px;
 }
 
 .contact form textarea {
   resize: none;
 }
-
 .contact form button {
   background: #627edc;
   border: 0;
@@ -92,6 +117,7 @@
 }
 
 #contact-form input {
+  color: var(--our-darker-cyan) !important;
   background-color: white;
   outline: none;
 }
