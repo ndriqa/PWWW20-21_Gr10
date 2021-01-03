@@ -69,7 +69,7 @@
               </div>
             </div>
           </li>
-          <li class="nav-item"><a class="nav-link " href="./contact.html">CONTACT </a></li>
+          <li class="nav-item"><a class="nav-link nav-active" href="./contact.html">CONTACT </a></li>
         </ul>
       </nav> 
     </div>
@@ -197,6 +197,60 @@
     <!-- End .container -->
   </main>
   <br>
+ <!-- Change Color Based on Time --> 
+ <script>
+  function updateBackground() {
+  var 
+  hr = (new Date()).getHours(),
+  body = document.body,
+  bstyle = body.style,
+  headertopstyle = document.querySelector('.social-top'),
+      formstyle = document.querySelector('.feedback text-message'),
+  headertitle = document.querySelector('.homepage-description h1'),
+  headerdescription = document.querySelector('.homepage-description p'),
+  footer = document.querySelector('.main-footer');
+  
+  if (hr < 8) {
+    bstyle.backgroundColor = '#FFFFFF';
+    headertopstyle.style.backgroundColor = '#FFFFFF';
+    headertitle.style.color = '#3d3d3d';
+    headerdescription.style.color = '#3d3d3d';
+    // footer.style.backgroundColor = '#FFFFFF';
+    bstyle.color = '#3d3d3d';
+    document.querySelectorAll('.nav-item a').forEach(function(element) { element.style.color = '#3d3d3d'; });
+    document.querySelector('.mb-4').style.color = '#3d3d3d';
+          document.querySelector('.mb-5').style.color = '#3d3d3d';
+  } else if (hr > 8 && hr < 19) {
+    bstyle.backgroundColor = '#FFFFFF';
+    headertopstyle.style.backgroundColor = '#FFFFFF';
+    headertitle.style.color = '#3d3d3d';
+    headerdescription.style.color = '#3d3d3d';
+    // footer.style.backgroundColor = '#FFFFFF';
+    bstyle.color = '#3d3d3d';
+    document.querySelectorAll('.nav-item a').forEach(function(element) { element.style.color = '#3d3d3d'; });
+    document.querySelector('.mb-4').style.color = '#3d3d3d';
+          document.querySelector('.mb-5').style.color = '#3d3d3d';
+  } else {
+    bstyle.backgroundColor = '#3d3d3d';
+    headertopstyle.style.backgroundColor = '#3d3d3d';
+    headertitle.style.color = '#FFFFFF';
+    headerdescription.style.color = '#FFFFFF';
+    // footer.style.backgroundColor = '#000000';
+    bstyle.color = '#000';
+    document.querySelectorAll('.nav-item a').forEach(function(element) { element.style.color = '#FFFFFF' });
+    document.querySelector('.mb-4').style.color = '#FFFFFF';
+          document.querySelector('.mb-5').style.color = '#FFFFFF';
+    document.querySelectorAll('.dropdown-content').forEach(function(element) { element.style.backgroundColor = '#CCC'});
+  } 
+}
+
+  setInterval(updateBackground, 1000 * 60);
+  updateBackground();
+</script>
+
+
+
+
   <footer>
   <div class="main-footer">
     <div id="contact-details" class="sector">

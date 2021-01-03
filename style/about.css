@@ -74,6 +74,10 @@ body{
     font-weight: 700;
     font-size: 13px;
 }
+
+.skills span{
+    flex: 2;
+}
 @media screen and (max-width:1200px){
     .inner-container{
         padding: 80px;
@@ -142,6 +146,7 @@ html {
  }
  .card img{
     width: 100%;
+    max-height: 300px;
     padding:10px;
     border-radius: 20px;
 }
@@ -151,9 +156,6 @@ html {
   }
   
   
-  .container {
-
-  }
   .row{
       display: flex;
       width: 100%;
@@ -281,4 +283,30 @@ div.team span {
 .restaurant video{
     margin-left: 220px;
     border-radius: 20px !important;
+}
+
+.skills button {
+    background-color:var(--our-darker-cyan) !important;
+    border: none;
+    border-radius: 13px;
+    letter-spacing: normal;
+    word-spacing: normal;
+    text-transform: none;
+    text-indent: 0px;
+    text-shadow: none;
+    font: 400 13.3333px Arial;
+    word-wrap: none;
+    flex: 1;
+}
+.skills button:hover {
+    background-color: #555 !important;
+  }
+
+.skills button a {
+    padding: 10% 10%;
+    color: #0D153C;
+    font-size: 1.2em;
+    font-family: 'Courier New', Courier, monospace;
+    text-decoration: none;
+    width: 100%;
 }

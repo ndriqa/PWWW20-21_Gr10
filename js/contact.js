@@ -36,4 +36,4 @@ function cashout() {
         document.getElementById("intro").style.display = "block";
     }
 
-}	}
+}	

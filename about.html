@@ -16,11 +16,11 @@
   <title>About Us</title>
 </head>
 
-<body>
+<body class="nm-bg">
 
   <!--HEADER STUFF-->
   <header class="night-background">
-    <div class="social-top">
+    <div class="social-top nm-bg">
       <div class="social-top-content">
         <div class="social-icons">
           <a href="https://www.linkedin.com/" target="_blank"><i class="fab fa-linkedin-in"></i></a>
@@ -39,38 +39,38 @@
 
     <div class="the-header">
       <div class="homepage-description">
-        <h1>
+        <h1 class="nm-bg">
           Freshness
         </h1>
-        <p>
+        <p class="nm-bg">
           Eat healthy, eat fresh!
         </p>
       </div>
 
       <nav class="header-nav-bar ">
         <ul id="menu">
-          <li class="nav-item"><a class="nav-link " href="./index.html" >HOME</a> </li>
-          <li class="nav-item"><a class="nav-link " href="./about.html" >ABOUT US </a></li>
-          <li class="nav-item"><a class="nav-link " href="./meny.html" >MENU </a></li>
-          <li class="nav-item"><a class="nav-link " href="./order.html" >ORDER NOW </a></li>
-          <li class="nav-item"><a class="nav-link " href="./reservations.html" >RESERVATION </a></li>
+          <li class="nav-item"><a class="nav-link nm-bg" href="./index.html" >HOME</a> </li>
+          <li class="nav-item"><a class="nav-link nav-active " href="./about.html" >ABOUT US </a></li>
+          <li class="nav-item"><a class="nav-link nm-bg " href="./meny.html" >MENU </a></li>
+          <li class="nav-item"><a class="nav-link nm-bg " href="./order.html" >ORDER NOW </a></li>
+          <li class="nav-item"><a class="nav-link nm-bg " href="./reservations.html" >RESERVATION </a></li>
           <li class="nav-item">
             <div class="dropdown">
-              <a>OUR STAFF</a>
+              <a  class="nm-bg">OUR STAFF</a>
               <div class="dropdown-content">
-                <a href="./board.html" class="nav-link " >BOARD</a> <hr>
-                <a href="./chefs.html" class="nav-link " >CHEFS</a>
+                <a href="./board.html" class="nav-link nm-bg " >BOARD</a> <hr>
+                <a href="./chefs.html" class="nav-link nm-bg " >CHEFS</a>
               </div>
             </div>
           </li>
-          <li class="nav-item"><a class="nav-link " href="./contact.html">CONTACT </a></li>
+          <li class="nav-item"><a class="nav-link nm-bg " href="./contact.html">CONTACT </a></li>
         </ul>
       </nav> 
     </div>
   </header>
 
   <hr class="separator">
-
+<main>
   <div class="main">
     <div class="about">
       <div class="about-section">
@@ -85,58 +85,14 @@
               people in general and has advanced into a combination between exquisite chic and contemporary fine charge.
             </p>
             <div class="skills">
-              <span>Enjoy our dazzling dishes and make the most of your eating background with us!</span>
+              <span style="color: black;">Enjoy our dazzling dishes and make the most of your eating background with us!</span>
+              <button><a href="https://www.google.com/" style="color: white;">Read more >></a></button>
             </div>  
           </div>
         </div>
       </div>  
     </div>
     <br>
-    <h2 style="text-align:center; font-size: 2.5rem;
-      text-align: center;
-      font-weight: bold;
-      font-style: italic;
-      color: var(--our-darker-cyan);">Our Team</h2>
-    <div class="row">
-      <div class="column">
-        <div class="card">
-          <img src="./Images/about/clients/team1.jpg" alt="Jane">
-          <div class="container">
-            <h2>Jane Doe</h2>
-            <p class="title">CEO & Founder</p>
-            <p>Some text that describes me lorem ipsum ipsum lorem.</p>
-            <p>jane@example.com</p>
-            <p><button class="button">Contact</button></p>
-          </div>
-        </div>
-      </div>
-  
-      <div class="column">
-        <div class="card">
-          <img src="./Images/about/clients/team2.jpg" alt="Mike">
-          <div class="container">
-            <h2>Mike Ross</h2>
-            <p class="title"> Director</p>
-            <p>Some text that describes me lorem ipsum ipsum lorem.</p>
-            <p>mike@example.com</p>
-            <p><button class="button">Contact</button></p>
-          </div>
-        </div>
-      </div>
-  
-      <div class="column">
-        <div class="card">
-          <img src="./Images/about/clients/team3.jpg" alt="John">
-          <div class="container">
-            <h2>John Doe</h2>
-            <p class="title">Main chef</p>
-            <p>Some text that describes me lorem ipsum ipsum lorem.</p>
-            <p>john@example.com</p>
-            <p><button class="button">Contact</button></p>
-          </div>
-        </div>
-      </div>
-    </div>
   
     <h3 id="h3" style="text-align:center; font-size: 2.5rem;
       text-align: center;
@@ -152,7 +108,7 @@
           </div>
   
           <div class="team">
-            <h4 id="hov1">Urata Sadiku</h4>
+            <h4 id="hov1">Jane Doe</h4>
             <audio controls>
               <source src="./audio/1.mp3" type="audio/mpeg">
               Your browser does not support the audio element.
@@ -167,7 +123,7 @@
   
   
           <div class="team">
-            <h4 id="hov2">Ndricim Rrahmani</h4>
+            <h4 id="hov2">Mike Ross</h4>
             <audio controls>
               <source src="./audio/2.mp3" type="audio/mpeg">
               Your browser does not support the audio element.
@@ -179,7 +135,7 @@
             <img src="./Images/about/clients/team3.jpg" alt="client" />
           </div>
           <div class="team">
-            <h4 id="hov3">Jehona Hasolli </h4>
+            <h4 id="hov3">Fabiano Caruana</h4>
             <audio controls>
               <source src="./audio/3.mp3" type="audio/mpeg">
               Your browser does not support the audio element.
@@ -206,8 +162,8 @@
         </div>
     </section>
     </div>
+  </main>
 
-   
   <!--FOOTER STUFF-->
   <footer>
     <div class="main-footer">
@@ -258,6 +214,7 @@ to last throughout the day
       <p>Made By Group 10</p>
     </div>
   </footer>
+  <script src="./js/nightmode_about.js"></script>
 </body>
 
 </html>
