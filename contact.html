@@ -7,7 +7,7 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"
     integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA=="
     crossorigin="anonymous" />
-  <link rel="stylesheet" type="text/css" href="style/contact.css">
+  <link rel="stylesheet" type="text/css" href="./style/contact.css">
   <link rel="stylesheet" href="./style/style.css">
   <title>Freshness</title>
   <script src="./js/contact.js"></script>
@@ -89,7 +89,7 @@
 
       <div class="wrapper">
         <!-- RESTAURANT INFORMATION -->
-        <div class="company-info">
+        <div class="restaurant-info">
           <h3>Freshness restaurant</h3>
 
           <ul>
@@ -211,15 +211,13 @@
   footer = document.querySelector('.main-footer');
   
   if (hr < 8) {
-    bstyle.backgroundColor = '#FFFFFF';
+    bstyle.backgroundColor ='#FFFFFF';
     headertopstyle.style.backgroundColor = '#FFFFFF';
     headertitle.style.color = '#3d3d3d';
     headerdescription.style.color = '#3d3d3d';
     // footer.style.backgroundColor = '#FFFFFF';
     bstyle.color = '#3d3d3d';
     document.querySelectorAll('.nav-item a').forEach(function(element) { element.style.color = '#3d3d3d'; });
-    document.querySelector('.mb-4').style.color = '#3d3d3d';
-          document.querySelector('.mb-5').style.color = '#3d3d3d';
   } else if (hr > 8 && hr < 19) {
     bstyle.backgroundColor = '#FFFFFF';
     headertopstyle.style.backgroundColor = '#FFFFFF';
@@ -228,8 +226,6 @@
     // footer.style.backgroundColor = '#FFFFFF';
     bstyle.color = '#3d3d3d';
     document.querySelectorAll('.nav-item a').forEach(function(element) { element.style.color = '#3d3d3d'; });
-    document.querySelector('.mb-4').style.color = '#3d3d3d';
-          document.querySelector('.mb-5').style.color = '#3d3d3d';
   } else {
     bstyle.backgroundColor = '#3d3d3d';
     headertopstyle.style.backgroundColor = '#3d3d3d';
@@ -238,8 +234,6 @@
     // footer.style.backgroundColor = '#000000';
     bstyle.color = '#000';
     document.querySelectorAll('.nav-item a').forEach(function(element) { element.style.color = '#FFFFFF' });
-    document.querySelector('.mb-4').style.color = '#FFFFFF';
-          document.querySelector('.mb-5').style.color = '#FFFFFF';
     document.querySelectorAll('.dropdown-content').forEach(function(element) { element.style.backgroundColor = '#CCC'});
   } 
 }
@@ -247,9 +241,6 @@
   setInterval(updateBackground, 1000 * 60);
   updateBackground();
 </script>
-
-
-
 
   <footer>
   <div class="main-footer">
@@ -301,5 +292,4 @@ to last throughout the day
   </div>
 </footer>
 </body>
-
 </html>

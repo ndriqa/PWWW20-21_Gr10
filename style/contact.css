@@ -9,7 +9,7 @@
 
 /* ------------------- */
 
-/* COMPANY INFORMATION */
+/* RESTAURANT INFORMATION */
 
 /* ------------------- */
 ul {
@@ -35,13 +35,13 @@ ul {
 .wrapper > * {
   padding: 1em;
 }
-.company-info {
+.restaurant-info {
   background: #c3c9dd;
   border-top-left-radius: 4px;
   border-top-right-radius: 4px;
 }
 
-.company-info h3, .company-info ul {
+.restaurant-info h3, .restaurant-info ul {
   text-align: center;
   margin: 0 0 1rem 0;
   
@@ -148,13 +148,13 @@ textarea {
   .wrapper>* {
     padding: 2em;
   }
-  .company-info {
+  .restaurant-info {
     border-radius: 4px 0 0 4px;
   }
   .contact {
     border-radius: 0 4px 4px 0;
   }
-  .company-info h3, .company-info ul, .brand {
+  .restaurant-info h3, .restaurant-info ul, .brand {
     text-align: left;
   }
 }
@@ -204,102 +204,7 @@ textarea {
   text-decoration: none;
 }
 
-.main-footer {
-  display: flex;
-  box-sizing: border-box;
-  justify-content: space-between;
-  align-content: center;
-  background-color: var(--our-gray);
-  color: whitesmoke;
-}
 
-.main-footer .sector {
-  color: whitesmoke;
-  padding-left: 10px;
-  line-height: 1;
-  margin: 0;
-  flex-basis: 24%;
-}
-
-.main-footer .sector h1 {
-  color: whitesmoke;
-  font-size: 22px;
-  font-weight: 100;
-}
-
-.main-footer .sector p {
-  color: var(--our-light-gray);
-}
-
-.main-footer .sector pre {
-  color: var(--our-light-gray);
-  line-height: 1.5;
-}
-
-.main-footer .sector input {
-  display: block;
-  margin-top: 10px;
-}
-
-.main-footer .sector input::placeholder {
-  color: var(--our-light-gray);
-  opacity: 0.5;
-}
-
-.main-footer .sector input::-ms-input-placeholder {
-  /* Microsoft Edge */
-  color: var(--our-light-gray);
-  opacity: 0.5;
-}
-
-a {
-  color: var(--our-cyan);
-}
-
-.sep {
-  width: 100%;
-  background-color: var(--our-light-gray);
-  opacity: 0.1;
-  height: 1px;
-  border: none;
-}
-
-.end-footer {
-  background-color: var(--our-dark-gray);
-  display: flex;
-  justify-content: space-between;
-}
-
-.end-footer p {
-  color: var(--our-light-gray);
-  padding-left: 10px;
-  padding-right: 10px;
-}
-
-.fade {
-  -webkit-animation-name: fade;
-  -webkit-animation-duration: 1.5s;
-  animation-name: fade;
-  animation-duration: 1.5s;
-}
-
-@-webkit-keyframes fade {
-  from {
-    opacity: 0.4;
-  }
-  to {
-    opacity: 1;
-  }
-}
-
-@keyframes fade {
-  from {
-    opacity: 0.4;
-  }
-  to {
-    opacity: 1;
-  }
-}
 .feedback{
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr 1fr;

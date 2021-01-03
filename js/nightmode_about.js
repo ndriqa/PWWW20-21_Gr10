@@ -30,9 +30,6 @@ function setMode(mode = DEFAULT_MODE) {
     }
 }
 
-
-
-
 function updateBackground() {
     var hr = (new Date()).getHours();
     let storedMode = localStorage.getItem('mode');
