@@ -329,6 +329,7 @@ button:focus {
     flex-basis: 33%;
     flex-direction: column;
     max-width: 25%;
+    justify-content: space-between;
 }
 
 .speciality h1 {
