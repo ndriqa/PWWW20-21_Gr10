@@ -146,3 +146,76 @@ html {
       display: block;
     }
   }
+
+  #h3 {
+	text-align: center;
+	font-size: 1.8em;
+    color: rgb(82, 56, 46);
+	text-transform: capitalize;
+	font-style: italic;
+}
+.ins {
+	width: 80%;
+	flex-direction: row;
+    text-align: center;
+    content: "";
+    clear: both;
+    display: flex;
+}
+
+div.team span {
+  	text-transform: capitalize;
+  	color:   rgb(236, 184, 115);
+  	font-size: 14px;
+  	font-weight: 800;
+}
+.ig1 img
+	{display:inline-block;
+	vertical-align:center;}
+
+.ig1 img:hover
+    {
+		transform: rotateY(360deg);
+		transition: 1s;}
+.ig2 img:hover 
+	{	transform: translate(100px,50px);	
+		transition: 1s;}
+.ig3 img:hover 
+	{	transform: skewY(20deg);
+	}
+.ig4 img:hover 
+	{	transform: scale(1.6);
+	}
+.ig2 img
+	{display:inline-block;
+	vertical-align:center;}
+	
+.ig3 img{
+	display:inline-block;
+	vertical-align:center;
+}
+.ig4 img{
+	display:inline-block;
+	vertical-align:center;
+}
+.team h4{
+    padding: 5px;
+	text-transform:uppercase;
+	color: var(--our-cyan);
+	font-size:22px;
+	font-weight:700;
+    text-align: center;
+}
+
+
+.ig1 p
+	{width:250px;}
+	
+.ig2 p
+	{width:250px;}
+	
+.ig3 p
+	{width:250px;}
+
+.ig4 p
+	{width:250px;}
