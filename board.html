@@ -81,10 +81,10 @@
         <div class="card">
           <img src="Images/staff/board/1.jpg" alt="Jane" style="width:300px; height: 400px">
           <div class="container">
-            <h2>Jane Doe</h2>
-            <p class="title">CEO &amp; Founder</p>
-            <p>Some text that describes me lorem ipsum ipsum lorem.</p>
-            <p>example@example.com</p>
+            <h2 id="name">Jane Doe</h2>
+            <p id="name">CEO &amp; Founder</p>
+            <p id="name">Some text that describes me lorem ipsum ipsum lorem.</p>
+            <p id="name">example@example.com</p>
             <p><button class="button">Contact</button></p>
           </div>
         </div>
@@ -94,10 +94,10 @@
         <div class="card">
           <img src="Images/staff/board/2.jpg" alt="Mike" style="width:300; height: 400px">
           <div class="container">
-            <h2>Mike Ross</h2>
-            <p class="title">Art Director</p>
-            <p>Some text that describes me lorem ipsum ipsum lorem.</p>
-            <p>example@example.com</p>
+            <h2 id="name">Mike Ross</h2>
+            <p id="name">Art Director</p>
+            <p id="name">Some text that describes me lorem ipsum ipsum lorem.</p>
+            <p id="name">example@example.com</p>
             <p><button class="button">Contact</button></p>
           </div>
         </div>
@@ -107,16 +107,84 @@
         <div class="card">
           <img src="Images/staff/board/3.jpg" alt="John" style="width:300px; height: 400px">
           <div class="container">
-            <h2>John Doe</h2>
-            <p class="title">Designer</p>
-            <p>Some text that describes me lorem ipsum ipsum lorem.</p>
-            <p>example@example.com</p>
+            <h2 id="name">John Doe</h2>
+            <p id="name">Designer</p>
+            <p id="name">Some text that describes me lorem ipsum ipsum lorem.</p>
+            <p id="name">example@example.com</p>
             <p><button class="button">Contact</button></p>
           </div>
         </div>
       </div>
     </div>
+<script>
+    function updateBackground() {
+		var 
+		hr = (new Date()).getHours(),
+		body = document.body,
+		bstyle = body.style,
+		headertopstyle = document.querySelector('.social-top'),
+        cardtitle = document.querySelector('.container #name'),
+        carddescription = document.querySelector('.card p'),
+		headertitle = document.querySelector('.homepage-description h1'),
+		headerdescription = document.querySelector('.homepage-description p'),
+		footer = document.querySelector('.main-footer');
+		
+		if (hr < 8) {
+			bstyle.backgroundColor = '#FFFFFF';
+			headertopstyle.style.backgroundColor = '#FFFFFF';
+			headertitle.style.color = '#000000';
+            cardtitle.style.color='#FFF';
+            carddescription.style.color='#FFF';
+			headerdescription.style.color = '#000000';
+			// footer.style.backgroundColor = '#FFFFFF';
+			bstyle.color = '#000000';
+			document.querySelectorAll('.container #name').forEach(function(element) { element.style.color = '#FFFFFF'; });
+            document.querySelectorAll('.nav-item a').forEach(function(element) { element.style.color = '#000000'; });
+			document.querySelector('.mb-4').style.color = '#000000';
+		} else if (hr > 8 && hr < 19) {
+			bstyle.backgroundColor = '#FFFFFF';
+			headertopstyle.style.backgroundColor = '#FFFFFF';
+			headertitle.style.color = '#000000';
+            cardtitle.style.color='#FFF';
+            carddescription.style.color='#FFF';
+			headerdescription.style.color = '#000000';
+			// footer.style.backgroundColor = '#FFFFFF';
+			bstyle.color = '#000000';
+			document.querySelectorAll('.container #name').forEach(function(element) { element.style.color = '#FFF'; });
+            document.querySelectorAll('.nav-item a').forEach(function(element) { element.style.color = '#000000'; });
+			document.querySelector('.mb-4').style.color = '#000000';
+		} else {
+			bstyle.backgroundColor = '#0E0E0E';
+			headertopstyle.style.backgroundColor = '#000000';
+			headertitle.style.color = '#FFFFFF';
+            cardtitle.style.color='#FFF';
+            carddescription.style.color='#FFF';
+			headerdescription.style.color = '#FFFFFF';
+			// footer.style.backgroundColor = '#000000';
+			bstyle.color = '#FFFFFF';
+			document.querySelectorAll('.container #name').forEach(function(element) { element.style.color = '#FFF'; });
+            document.querySelectorAll('.nav-item a').forEach(function(element) { element.style.color = '#FFFFFF' });
+			document.querySelector('.mb-4').style.color = '#FFFFFF';
+			document.querySelectorAll('.dropdown-content').forEach(function(element) { element.style.backgroundColor = '#CCC'});
+		} 
+	}
 
+    setInterval(updateBackground, 1000 * 60);
+    updateBackground();
+  </script>
+       <!-- Add NAV LINK ACTIVE CLASS FOR ACTIVE MENU PAGE -->
+  <script>
+    $(document).ready(function () {
+        var url = window.location.href;
+        let me = $('ul#menu li a');
+        $(me).map(function(idx, elem) {
+          if(url.includes($(elem).attr("href"))){
+            $(elem).addClass("nav-link-active");
+          }
+        });
+      }
+    );
+  </script>
   </main>
   <!--FOOTER STUFF-->
   <footer>
