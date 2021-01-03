@@ -5,7 +5,7 @@
     --our-light-gray: #999999;
     --our-gray: #303030;
   }
-  
+
 *{
     box-sizing: border-box;
 }
@@ -256,6 +256,7 @@ div.team span {
 .restaurant video{
     margin-left: 220px;
     border-radius: 20px !important;
+    outline: none;
 }
 
 .skills button {
