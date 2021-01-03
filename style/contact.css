@@ -173,7 +173,7 @@ textarea {
   text-align: center;
   font-weight: bold;
   font-style: italic;
-  color: var(--our-cyan);
+  color: var(--our-darker-cyan);
 }
 
 .our-socials {
