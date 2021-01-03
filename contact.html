@@ -84,31 +84,7 @@
    <!--ACTUAL PAGE STUFF-->
    <main>
     <div class="container">
-      <div class="feedback">
-        <h1 class="text-message">Give us your feedback</h1>
-        <div id="dragdrop1" class="drag-area" ondrop="drop(event)" ondragover="allowDrop(event)">
-          <img id="happy" draggable="true" ondragstart="drag(event)" src="./Images/contact/feedback/smiling.png">
-          <img id="normal" draggable="true" ondragstart="drag(event)" src="./Images/contact/feedback/confused.png">
-          <img id="sad" draggable="true" ondragstart="drag(event)" src="./Images/contact/feedback/sad.png">
-        </div>
-        <div id="dragdrop2" class="drop-area" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
-        <div class="drag-info">
-          <p>Drag & Drop</p>
-          <img src="./Images/contact/feedback/dragdrop.gif" alt="">
-        </div>
-        <div class="text-area">
-          <div class="text-field">
-            <label for="feedback-text">Feedback:</label>
-            <textarea name="feedback-text" id="feedback-text" cols="30" rows="8"></textarea>
-          </div>
-          <div class="submit-field">
-            <label for="the-name">Name: </label>
-            <input type="text" name="the-name" id="the-name">
-            <button id="submit-feedback">Submit</button>
-          </div>
-
-        </div>
-      </div>
+     
       <section class="section1">
         <div class="sec1title">
           <h1 class="text-message">Get in touch</h1>
@@ -186,6 +162,32 @@
         tabindex="0"
       ></iframe>
     </div>
+    <div class="feedback">
+      <h1 class="text-message">Give us your feedback</h1>
+      <div id="dragdrop1" class="drag-area" ondrop="drop(event)" ondragover="allowDrop(event)">
+        <img id="happy" draggable="true" ondragstart="drag(event)" src="./Images/contact/feedback/smiling.png">
+        <img id="normal" draggable="true" ondragstart="drag(event)" src="./Images/contact/feedback/confused.png">
+        <img id="sad" draggable="true" ondragstart="drag(event)" src="./Images/contact/feedback/sad.png">
+      </div>
+      <div id="dragdrop2" class="drop-area" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+      <div class="drag-info">
+        <p>Drag & Drop</p>
+        <img src="./Images/contact/feedback/dragdrop.gif" alt="">
+      </div>
+      <div class="text-area">
+        <div class="text-field">
+          <label for="feedback-text">Feedback:</label>
+          <textarea name="feedback-text" id="feedback-text" cols="30" rows="8"></textarea>
+        </div>
+        <div class="submit-field">
+          <label for="the-name">Name: </label>
+          <input type="text" name="the-name" id="the-name">
+          <button id="submit-feedback">Submit</button>
+        </div>
+
+      </div>
+    </div>
+    <br>
     <div class="section3">
       <h2 class="text-message">You can follow us here: </h2>
     <div class="our-socials">
@@ -195,8 +197,10 @@
         <div class="social"><a href="https://www.pinterest.com" target="_blank"><img src="Images/contact/icons/pinterest.png"></a></div> 
     </div>    
   </div>
+  
     <!-- End .container -->
   </main>
+  <br>
   <footer>
   <div class="main-footer">
     <div id="contact-details" class="sector">
