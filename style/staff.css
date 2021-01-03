@@ -5,11 +5,7 @@
     --our-light-gray: #999999;
     --our-gray: #303030;
 }
-body{
-    max-width: 1200px;
-    margin-left: auto;
-    margin-right: auto;
-}
+
 .chefs{
     display: flex;
     flex-direction: column;
