@@ -93,7 +93,7 @@ ul {
 .contact form textarea {
   width: 95%;
   padding: 1em;
-  border: solid 1px #627EDC;
+  border: solid 1px var(--our-darker-cyan);
   border-radius: 4px;
 }
 
@@ -101,7 +101,7 @@ ul {
   resize: none;
 }
 .contact form button {
-  background: #627edc;
+  background: var(--our-cyan);
   border: 0;
   color: #e4e4e4;
   text-transform: uppercase;
@@ -110,7 +110,7 @@ ul {
 }
 
 .contact form button:hover, .contact form button:focus {
-  background: #3952a3;
+  background: var(--our-darker-cyan);
   color: #ffffff;
   outline: 0;
   transition: background-color 2s ease-out;
